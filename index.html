@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="pageTitleHome">Chef Gabe Catering | Cocinando con amor — Stockton, CA</title>
+<meta name="description" data-i18n-content="metaDescHome" content="Catering mexicano tradicional para bodas, quinceañeras, eventos corporativos y celebraciones familiares. Servimos Stockton, Lodi, Manteca, Tracy, Modesto y áreas cercanas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Utility bar -->
+<div class="utility-bar">
+  <div class="container utility-inner">
+    <div class="utility-left">
+      <a class="phone-link" href="tel:12097476746">
+        <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (209) 747-6746
+      </a>
+      <!-- Language toggle — Spanish is the default on first visit. -->
+      <div class="lang-toggle" role="group" data-i18n-aria-label="langToggleLabel" aria-label="Cambiar idioma">
+        <button type="button" class="lang-btn is-active" data-lang="es" aria-pressed="true">ES</button>
+        <span class="lang-sep" aria-hidden="true">/</span>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+    <div class="social-links">
+      <a href="#" aria-label="Instagram"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+      <a href="#" aria-label="Facebook"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<!-- Header / Hero -->
+<header class="hero">
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="#" class="logo">
+        <img src="images/logo-cream.png" data-i18n-alt="altLogo" alt="Chef Gabe Inc — Cocinando con amor" class="logo-img">
+      </a>
+      <button class="nav-toggle" data-i18n-aria-label="navToggleLabel" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#home" class="active" data-i18n="navHome">Inicio</a></li>
+        <li><a href="#food" data-i18n="navFood">Nuestra Comida</a></li>
+        <li><a href="#events" data-i18n="navEvents">Eventos</a></li>
+        <li><a href="#menus" data-i18n="navMenus">Menús</a></li>
+        <li><a href="#gallery" data-i18n="navGallery">Galería</a></li>
+        <li><a href="#about" data-i18n="navAbout">Nosotros</a></li>
+        <li><a href="#contact" data-i18n="navContact">Contacto</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary nav-cta" data-i18n="navQuote">Cotizar</a>
+    </div>
+  </nav>
+
+  <div class="hero-media">
+    <img src="images/restaurant-table-spread.png" class="hero-img" data-i18n-alt="altHero" alt="Mesa de madera con platillos mexicanos, arroz, frijoles y aguas frescas">
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="container hero-content">
+    <h1 data-i18n="heroTitle">Comida Hecha<br>Para Celebrar.</h1>
+    <div class="divider-flourish light">◈</div>
+    <p class="hero-copy" data-i18n="heroCopy">Catering mexicano tradicional para bodas, quinceañeras, eventos corporativos y celebraciones familiares.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary"><span data-i18n="heroCtaQuote">Cotiza Tu Evento</span> <span aria-hidden="true">→</span></a>
+      <a href="#menus" class="btn btn-outline-light" data-i18n="heroCtaMenus">Ver Menús</a>
+    </div>
+  </div>
+
+  <div class="trust-strip container">
+    <div class="trust-item">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12a8 8 0 0 1 16 0"/><path d="M2 12h20"/><path d="M12 2v2"/></svg>
+      <div>
+        <h3 data-i18n="trust1Title">Recetas Tradicionales</h3>
+        <p data-i18n="trust1Copy">Hechas desde cero con ingredientes de calidad.</p>
+      </div>
+    </div>
+    <div class="trust-item">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      <div>
+        <h3 data-i18n="trust2Title">Eventos Pequeños y Grandes</h3>
+        <p data-i18n="trust2Copy">Desde reuniones íntimas hasta más de 350 invitados.</p>
+      </div>
+    </div>
+    <div class="trust-item">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      <div>
+        <h3 data-i18n="trust3Title">Familia y Comunidad</h3>
+        <p data-i18n="trust3Copy">Tratamos cada evento como si fuera nuestro.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Our Food -->
+<section class="section food-section" id="food">
+  <div class="container food-grid">
+    <div class="food-intro">
+      <p class="eyebrow"><span aria-hidden="true">◈</span> <span data-i18n="foodEyebrow">Nuestra Cocina</span> <span aria-hidden="true">◈</span></p>
+      <h2 data-i18n="foodTitle">El Sabor de<br>Nuestras Raíces.</h2>
+      <div class="divider-flourish">◈</div>
+      <p data-i18n="foodCopy">Recetas tradicionales, ingredientes frescos y el toque casero que hace que cada platillo sea inolvidable.</p>
+      <a href="#menus" class="btn btn-outline"><span data-i18n="foodCta">Ver Nuestros Menús</span> <span aria-hidden="true">→</span></a>
+    </div>
+
+    <!-- PHOTOS NEEDED: these four dish cards still use placeholder blocks.
+         Nothing currently in images/ is a clean single-dish shot of
+         carne asada, enchiladas, carnitas or birria. Drop real photos in
+         and swap each .placeholder-img div for:
+           <img src="images/<name>.png" class="dish-img" data-i18n-alt="<key>" alt="..."> -->
+    <div class="dish-cards">
+      <article class="dish-card">
+        <div class="placeholder-img dish-img" data-label="Carne Asada photo"></div>
+        <div class="dish-caption">
+          <h3 data-i18n="dish1Name">Carne Asada</h3>
+          <p data-i18n="dish1Tag">Hecha al momento.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <div class="placeholder-img dish-img" data-label="Enchiladas photo"></div>
+        <div class="dish-caption">
+          <h3 data-i18n="dish2Name">Enchiladas</h3>
+          <p data-i18n="dish2Tag">Sabor auténtico.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <div class="placeholder-img dish-img" data-label="Carnitas photo"></div>
+        <div class="dish-caption">
+          <h3 data-i18n="dish3Name">Carnitas</h3>
+          <p data-i18n="dish3Tag">Tiernas y doraditas.</p>
+        </div>
+      </article>
+      <article class="dish-card">
+        <div class="placeholder-img dish-img" data-label="Birria photo"></div>
+        <div class="dish-caption">
+          <h3 data-i18n="dish4Name">Birria</h3>
+          <p data-i18n="dish4Tag">Tradición que enamora.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Feature band -->
+<section class="feature-band">
+  <div class="container feature-grid">
+    <div class="feature-item">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12a8 8 0 0 1 16 0"/><path d="M2 12h20"/></svg>
+      <div>
+        <h3 data-i18n="feat1Title">Fresco y Casero</h3>
+        <p data-i18n="feat1Copy">Tortillas, salsas, aguas frescas y mucho más.</p>
+      </div>
+    </div>
+    <div class="feature-item">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 20A7 7 0 0 1 4 13c0-4 3-8 7-9 4 1 7 5 7 9a7 7 0 0 1-7 7z"/></svg>
+      <div>
+        <h3 data-i18n="feat2Title">Sabor Auténtico</h3>
+        <p data-i18n="feat2Copy">Cocina mexicana tradicional con el auténtico sazón.</p>
+      </div>
+    </div>
+    <div class="feature-item">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+      <div>
+        <h3 data-i18n="feat3Title">Servicio Completo</h3>
+        <p data-i18n="feat3Copy">Catering, montaje, servicio y limpieza.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Events -->
+<section class="section events-section" id="events">
+  <div class="container">
+    <h2 class="section-heading-ornate"><span aria-hidden="true">◈</span> <span data-i18n="eventsEyebrow">¿Qué Vas a Celebrar?</span> <span aria-hidden="true">◈</span></h2>
+    <div class="events-grid">
+      <article class="event-card">
+        <img src="images/salsa-bar-chafing.png" class="event-img" data-i18n-alt="altWeddings" alt="Buffet elegante con mantel azul marino y guirnalda de rosas blancas">
+        <div class="event-caption"><h3 data-i18n="ev1Title">Bodas</h3><p data-i18n="ev1Sub">Weddings</p></div>
+      </article>
+      <article class="event-card">
+        <img src="images/outdoor-celebration-buffet.png" class="event-img" data-i18n-alt="altQuince" alt="Buffet al aire libre con mantel rosado y arreglos florales de colores">
+        <div class="event-caption"><h3 data-i18n="ev2Title">Quinceañeras</h3><p data-i18n="ev2Sub">15 Años</p></div>
+      </article>
+      <article class="event-card">
+        <img src="images/outdoor-park-buffet.png" class="event-img" data-i18n-alt="altFamily" alt="Buffet al aire libre junto al río con mesas de picnic y mantel rojo">
+        <div class="event-caption"><h3 data-i18n="ev3Title">Fiestas Familiares</h3><p data-i18n="ev3Sub">Reuniones y Convivios</p></div>
+      </article>
+      <article class="event-card">
+        <img src="images/catering-buffet-line.png" class="event-img" data-i18n-alt="altCorporate" alt="Línea de buffet montada sobre cajas de madera con mantelería negra">
+        <div class="event-caption"><h3 data-i18n="ev4Title">Eventos Corporativos</h3><p data-i18n="ev4Sub">Corporate Events</p></div>
+      </article>
+      <article class="event-card">
+        <img src="images/outdoor-buffet-trays.png" class="event-img" data-i18n-alt="altSpecial" alt="Charolas de buffet al aire libre decoradas con flores rosas">
+        <div class="event-caption"><h3 data-i18n="ev5Title">Eventos Especiales</h3><p data-i18n="ev5Sub">Special Events</p></div>
+      </article>
+    </div>
+    <div class="center-btn">
+      <a href="#events" class="btn btn-outline"><span data-i18n="eventsCta">Ver Todos los Eventos</span> <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- Experience You Can Trust -->
+<section class="section trust-section" id="about">
+  <div class="container trust-grid">
+    <div class="trust-copy">
+      <h2 data-i18n="trustTitle">Experiencia Que<br>Inspira Confianza.</h2>
+      <div class="divider-flourish light">◈</div>
+      <p data-i18n="trustCopy">Desde reuniones íntimas hasta eventos de más de 350 invitados, tenemos el equipo, el personal y la pasión para lograrlo.</p>
+      <a href="#contact" class="btn btn-primary"><span data-i18n="trustCta">Planeemos Tu Evento</span> <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="trust-media">
+      <img src="images/dessert-fruit-display-table.png" class="trust-img-main" data-i18n-alt="altTrustMain" alt="Mesa de servicio con pan, postres y charola de fruta fresca">
+      <div class="trust-media-side">
+        <img src="images/chef-serving-guests.png" class="trust-img-team" data-i18n-alt="altTrustTeam" alt="Chef de Chef Gabe sirviendo a los invitados en la línea de buffet">
+        <img src="images/plated-tostada-rice-beans.png" class="trust-img-food" data-i18n-alt="altTrustFood" alt="Platillo servido con tostada, arroz mexicano y frijoles refritos">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer" id="contact">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="images/logo-dark.png" data-i18n-alt="altLogo" alt="Chef Gabe Inc — Cocinando con amor" class="footer-logo-img">
+      <p class="footer-quote" data-i18n="footerQuote">Porque cada celebración merece lo mejor.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footerContact">Contacto</h4>
+      <p><a href="tel:12097476746">(209) 747-6746</a></p>
+      <p><a href="mailto:zamora.rosa85@gmail.com">zamora.rosa85@gmail.com</a></p>
+      <p>1149 E Market St.<br>Stockton, CA 95205</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footerServing">Servimos</h4>
+      <p data-i18n="footerServingCopy">Stockton, Lodi, Manteca,<br>Tracy, Modesto y<br>áreas cercanas.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footerFollow">Síguenos</h4>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p><span aria-hidden="true">©</span> <span id="year"></span> <span data-i18n="footerRights">Chef Gabe Inc. Todos los derechos reservados.</span></p>
+  </div>
+
+  <!-- Decorative agave, echoing the mark at the top of the logo.
+       Purely ornamental, so it is hidden from assistive tech. -->
+  <svg class="footer-agave" viewBox="0 0 200 164" fill="none" stroke="currentColor"
+       stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+       aria-hidden="true" focusable="false">
+    <path d="M100 152 Q94 112 100 66 Q106 112 100 152 Z" transform="rotate(-68 100 152)"/>
+    <path d="M100 152 Q93 100 100 44 Q107 100 100 152 Z" transform="rotate(-51 100 152)"/>
+    <path d="M100 152 Q93 100 100 44 Q107 100 100 152 Z" transform="rotate(-34 100 152)"/>
+    <path d="M100 152 Q92 88 100 18 Q108 88 100 152 Z" transform="rotate(-17 100 152)"/>
+    <path d="M100 152 Q92 88 100 12 Q108 88 100 152 Z"/>
+    <path d="M100 152 Q92 88 100 18 Q108 88 100 152 Z" transform="rotate(17 100 152)"/>
+    <path d="M100 152 Q93 100 100 44 Q107 100 100 152 Z" transform="rotate(34 100 152)"/>
+    <path d="M100 152 Q93 100 100 44 Q107 100 100 152 Z" transform="rotate(51 100 152)"/>
+    <path d="M100 152 Q94 112 100 66 Q106 112 100 152 Z" transform="rotate(68 100 152)"/>
+    <path d="M78 154 Q100 146 122 154" stroke-width="1.6"/>
+  </svg>
+</footer>
+
+<script src="js/translations.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

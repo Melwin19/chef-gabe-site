@@ -1,0 +1,1089 @@
+/* =========================================================
+   Chef Gabe Catering — Brand tokens
+   ========================================================= */
+:root {
+  --color-espresso: #0A0A08;
+  --color-rust: #94411B;
+  --color-rust-dark: #7A3515;
+  --color-olive: #313220;
+  --color-olive-dark: #262715;
+  --color-cream: #EBE2D4;
+  --color-tan: #DED1BE;
+  --color-offwhite: #F4F4EF;
+  --color-ink: #1A1806;
+
+  --font-script: 'Pinyon Script', cursive;
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Jost', sans-serif;
+
+  --container-width: 1180px;
+  --radius: 2px;
+  --transition: 0.25s ease;
+
+  /* Uppercase tracking — the mockup uses wide, deliberate letter-spacing
+     on every all-caps run. One token per role keeps it consistent. */
+  --track-eyebrow: 0.18em;   /* eyebrows / small rust labels */
+  --track-nav: 0.12em;       /* nav links, buttons, footer headings */
+  --track-label: 0.08em;     /* small caps h3 labels inside cards */
+  --track-display: 0.02em;   /* large display headings */
+
+  /* Vertical rhythm */
+  --section-pad: 104px;      /* major sections */
+  --band-pad: 60px;          /* slim accent bands */
+
+  /* Photo hover */
+  --zoom-transition: 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background: var(--color-cream);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, .placeholder-img { display: block; max-width: 100%; }
+
+a { color: inherit; text-decoration: none; }
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: var(--track-display);
+}
+
+/* Placeholder image blocks — swap with real <img> tags later */
+.placeholder-img {
+  position: relative;
+  background: repeating-linear-gradient(135deg, #cfc4ac, #cfc4ac 10px, #c3b8a0 10px, #c3b8a0 20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b5f47;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 8px;
+  overflow: hidden;
+}
+.placeholder-img::before {
+  content: attr(data-label);
+  background: rgba(255,255,255,0.85);
+  padding: 4px 10px;
+  border-radius: 3px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: var(--track-nav);
+  text-transform: uppercase;
+  padding: 14px 28px;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+  white-space: nowrap;
+}
+.btn-primary {
+  background: var(--color-rust);
+  color: var(--color-offwhite);
+  border-color: var(--color-rust);
+}
+.btn-primary:hover { background: var(--color-rust-dark); border-color: var(--color-rust-dark); }
+
+.btn-outline-light {
+  background: transparent;
+  color: var(--color-offwhite);
+  border-color: var(--color-offwhite);
+}
+.btn-outline-light:hover { background: var(--color-offwhite); color: var(--color-ink); }
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-rust);
+  border-color: var(--color-rust);
+}
+.btn-outline:hover { background: var(--color-rust); color: var(--color-offwhite); }
+
+/* Eyebrow + dividers */
+.eyebrow {
+  color: var(--color-rust);
+  font-size: 0.8rem;
+  letter-spacing: var(--track-eyebrow);
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+.eyebrow.center { text-align: center; }
+.divider-flourish {
+  color: var(--color-rust);
+  font-size: 1rem;
+  margin: 14px 0;
+}
+.divider-flourish.light { color: var(--color-cream); }
+
+/* =========================================================
+   Utility bar
+   ========================================================= */
+.utility-bar {
+  background: var(--color-espresso);
+  color: var(--color-offwhite);
+  font-size: 0.85rem;
+  padding: 10px 0;
+}
+.utility-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.phone-link { display: inline-flex; align-items: center; gap: 8px; }
+.icon-sm { width: 16px; height: 16px; }
+.social-links { display: flex; gap: 14px; }
+.social-links a { display: inline-flex; }
+
+/* =========================================================
+   Header / Hero
+   ========================================================= */
+.hero { position: relative; color: var(--color-offwhite); }
+
+.navbar {
+  position: relative;
+  z-index: 20;
+  padding: 18px 0;
+}
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.logo { display: flex; align-items: center; }
+.logo-img { height: 64px; width: auto; }
+.nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+  letter-spacing: var(--track-nav);
+  text-transform: uppercase;
+}
+.nav-links a { padding-bottom: 4px; border-bottom: 2px solid transparent; transition: border-color var(--transition), color var(--transition); }
+.nav-links a:hover,
+.nav-links a.active { border-color: var(--color-rust); color: var(--color-rust); }
+
+.nav-cta { flex-shrink: 0; }
+.nav-toggle { display: none; }
+
+.hero-media {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.hero-media .placeholder-img { width: 100%; height: 100%; position: absolute; inset: 0; }
+/* Two stacked gradients, matching the mockup's hero treatment:
+   – vertical: dark at top (nav legibility) and bottom (trust strip),
+     lightest through the middle so the photo still reads;
+   – horizontal: heavier on the left, where the headline sits, fading
+     out to the right so the food stays visible.
+   A flat single-opacity tint either washes out the photo or loses the
+   text; layering keeps both. */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg,
+      rgba(10,10,8,0.82) 0%,
+      rgba(10,10,8,0.42) 26%,
+      rgba(10,10,8,0.38) 55%,
+      rgba(10,10,8,0.70) 82%,
+      rgba(10,10,8,0.92) 100%),
+    linear-gradient(90deg,
+      rgba(10,10,8,0.80) 0%,
+      rgba(10,10,8,0.55) 32%,
+      rgba(10,10,8,0.12) 68%,
+      rgba(10,10,8,0) 100%);
+}
+
+/* Keep the full container width so the headline starts at the container's
+   left edge, as the mockup does, and constrain the children instead for
+   line length. (Capping .hero-content itself at 640px let .container's
+   margin:auto centre the whole block, which fought the left-weighted
+   overlay gradient.) */
+.hero-content {
+  padding: 70px 24px 120px;
+  max-width: var(--container-width);
+}
+.hero-content > * { max-width: 620px; }
+.hero-content h1 {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  line-height: 1.05;
+}
+.hero-copy { font-size: 1.05rem; max-width: 480px; margin: 16px 0 28px; color: var(--color-offwhite); }
+.hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+
+/* Sits on the hero photo itself, as in the mockup. An opaque cream panel
+   here only spans the container, so the hero photo showed through as
+   black gutters to its left and right. Transparent + light text removes
+   the seam; the overlay's dark bottom stop carries the contrast. */
+.trust-strip {
+  position: relative;
+  background: transparent;
+  color: var(--color-offwhite);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding: 8px 24px 56px;
+}
+.trust-item { display: flex; align-items: flex-start; gap: 14px; }
+.icon { width: 30px; height: 30px; flex-shrink: 0; color: var(--color-rust); }
+.trust-strip .icon { color: var(--color-cream); }
+.trust-item h3 { font-family: var(--font-body); font-size: 0.9rem; text-transform: uppercase; letter-spacing: var(--track-label); margin-bottom: 4px; }
+.trust-item p { margin: 0; font-size: 0.85rem; color: #cfcabb; }
+
+/* =========================================================
+   Sections generic
+   ========================================================= */
+.section { padding: var(--section-pad) 0; }
+
+/* Our Food */
+.food-section { background: var(--color-cream); }
+.food-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 2fr;
+  gap: 48px;
+  align-items: start;
+}
+.food-intro h2 { font-size: 2.3rem; text-transform: uppercase; line-height: 1.15; }
+.food-intro p { margin: 16px 0 24px; color: #4a4632; max-width: 340px; }
+
+.dish-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.dish-card { background: var(--color-offwhite); border: 1px solid #d9cdb6; }
+.dish-img { aspect-ratio: 4 / 5; }
+.dish-caption { padding: 16px; text-align: center; }
+.dish-caption h3 { font-size: 1rem; text-transform: uppercase; letter-spacing: var(--track-label); }
+.dish-caption p { margin: 6px 0 0; font-size: 0.85rem; color: #6a6248; }
+
+/* Feature band */
+.feature-band { background: var(--color-olive); color: var(--color-offwhite); padding: var(--band-pad) 0; }
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.feature-item { display: flex; align-items: flex-start; gap: 16px; }
+.feature-item .icon { color: var(--color-offwhite); }
+.feature-item h3 { font-family: var(--font-body); font-size: 0.9rem; text-transform: uppercase; letter-spacing: var(--track-label); margin-bottom: 6px; }
+.feature-item p { margin: 0; font-size: 0.85rem; color: #cfd0bf; }
+
+/* Events */
+.events-section h2 { text-align: center; }
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4px;
+  margin-top: 32px;
+}
+.event-card { position: relative; overflow: hidden; }
+.event-img { aspect-ratio: 3 / 4; }
+.event-caption {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 18px 14px;
+  color: var(--color-offwhite);
+  background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+.event-caption h3 { font-size: 1.2rem; text-transform: uppercase; }
+.event-caption p { margin: 2px 0 0; font-size: 0.8rem; letter-spacing: var(--track-label); }
+.center-btn { display: flex; justify-content: center; margin-top: 36px; }
+
+/* Experience You Can Trust */
+.trust-section { background: var(--color-olive); color: var(--color-offwhite); }
+.trust-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.5fr;
+  gap: 40px;
+  align-items: center;
+}
+.trust-copy h2 { text-transform: uppercase; font-size: 2.3rem; line-height: 1.15; }
+.trust-copy p { color: #cfd0bf; margin: 16px 0 28px; }
+.trust-media { display: grid; grid-template-columns: 1.4fr 1fr; gap: 12px; }
+.trust-img-main { aspect-ratio: 4 / 3; }
+.trust-media-side { display: grid; grid-template-rows: 1fr 1fr; gap: 12px; }
+.trust-img-team, .trust-img-food { aspect-ratio: 4 / 3; }
+
+/* Footer */
+.site-footer { background: var(--color-tan); color: var(--color-ink); padding: 56px 0 0; }
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 32px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #c8b99e;
+}
+.footer-logo-img { height: 70px; width: auto; margin-bottom: 16px; }
+.footer-quote { font-style: italic; font-size: 0.9rem; max-width: 260px; color: #4a4632; }
+.footer-col h4 { font-family: var(--font-body); font-size: 0.8rem; letter-spacing: var(--track-nav); text-transform: uppercase; margin-bottom: 12px; }
+.footer-col p { margin: 0 0 8px; font-size: 0.9rem; color: #4a4632; }
+.footer-col a:hover { color: var(--color-rust); }
+.footer-col .social-links a { color: var(--color-ink); }
+.footer-bottom { padding: 20px 0; text-align: center; font-size: 0.8rem; color: #6a6248; }
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+@media (max-width: 960px) {
+  .food-grid, .trust-grid { grid-template-columns: 1fr; }
+  .dish-cards { grid-template-columns: repeat(2, 1fr); }
+  .events-grid { grid-template-columns: repeat(3, 1fr); }
+  .trust-media { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 720px) {
+  .nav-links, .nav-cta { display: none; }
+  .nav-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+  }
+  .nav-toggle span { width: 24px; height: 2px; background: var(--color-offwhite); display: block; }
+
+  .navbar.menu-open .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0; right: 0;
+    background: var(--color-espresso);
+    padding: 20px 24px;
+    gap: 16px;
+    z-index: 30;
+  }
+  .navbar.menu-open .nav-cta {
+    display: inline-flex;
+    position: absolute;
+    top: calc(100% + 200px);
+    left: 24px;
+  }
+
+  .hero-content h1 { font-size: 2.2rem; }
+  .trust-strip { grid-template-columns: 1fr; }
+  .dish-cards { grid-template-columns: 1fr 1fr; }
+  .events-grid { grid-template-columns: 1fr 1fr; }
+  .feature-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}
+
+/* Focus visibility */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--color-rust);
+  outline-offset: 2px;
+}
+
+/* =========================================================
+   Interior page hero (menus, our-food, events, …)
+   Olive rather than cream: .navbar inherits offwhite text from
+   .hero and the mark is logo-cream.png, so a cream band would
+   need the whole nav restyled. Olive reuses it as-is.
+   ========================================================= */
+.page-hero { background: var(--color-olive); }
+.page-hero-content { padding: 56px 24px 72px; max-width: 660px; }
+.page-hero-content h1 { font-size: 2.8rem; text-transform: uppercase; line-height: 1.08; }
+.page-hero-sub {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--color-tan);
+  margin: 6px 0 0;
+}
+.page-hero-copy { font-size: 1.02rem; color: #cfd0bf; margin: 16px 0 0; max-width: 520px; }
+
+/* Shared section heading helpers */
+.section-title { text-align: center; font-size: 2.3rem; text-transform: uppercase; line-height: 1.15; }
+.section-lead { text-align: center; max-width: 580px; margin: 16px auto 0; color: #4a4632; }
+
+/* =========================================================
+   Menu packages
+   ========================================================= */
+.packages-section { background: var(--color-cream); }
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 44px;
+  align-items: stretch;
+}
+.package-card {
+  background: var(--color-offwhite);
+  border: 1px solid #d9cdb6;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+}
+.package-head { text-align: center; }
+.package-head h3 { font-size: 1.5rem; text-transform: uppercase; letter-spacing: var(--track-label); }
+.package-tagline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--color-rust);
+  margin: 6px 0 0;
+}
+.package-desc { font-size: 0.92rem; color: #4a4632; margin: 18px 0 0; text-align: center; }
+.package-list {
+  list-style: none;
+  margin: 22px 0 0;
+  padding: 22px 0 0;
+  border-top: 1px solid #ded1be;
+  font-size: 0.9rem;
+  color: #4a4632;
+  flex-grow: 1;
+}
+.package-list li { position: relative; padding-left: 20px; margin-bottom: 10px; }
+.package-list li::before {
+  content: "\25C8";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--color-rust);
+  font-size: 0.7rem;
+  line-height: 1.75;
+}
+.package-list strong { font-weight: 500; color: var(--color-ink); }
+.package-price {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 24px 0 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ded1be;
+}
+.package-card .btn { align-self: center; }
+
+/* Placeholder-price marker — asterisk + muted italic footnote.
+   Remove both once real pricing lands. */
+.price-star { color: var(--color-rust); font-weight: 500; }
+.price-note {
+  margin: 30px 0 0;
+  text-align: center;
+  font-style: italic;
+  font-size: 0.82rem;
+  color: #8a8168;
+}
+
+/* =========================================================
+   A la carte / add-ons
+   ========================================================= */
+.addons-section { background: var(--color-offwhite); }
+.addon-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 44px; }
+.addon-group h3 {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: var(--track-nav);
+  color: var(--color-rust);
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ded1be;
+  margin-bottom: 14px;
+}
+.addon-list { list-style: none; margin: 0; padding: 0; }
+.addon-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #4a4632;
+  padding: 8px 0;
+}
+.addon-name { flex-shrink: 0; }
+.addon-dots { flex-grow: 1; border-bottom: 1px dotted #c8b99e; }
+.addon-price { flex-shrink: 0; white-space: nowrap; color: var(--color-ink); }
+
+/* =========================================================
+   Closing CTA band
+   ========================================================= */
+.cta-band { background: var(--color-rust); color: var(--color-offwhite); padding: 88px 0; text-align: center; }
+.cta-band h2 { font-size: 2.3rem; text-transform: uppercase; line-height: 1.15; }
+.cta-band .divider-flourish { color: var(--color-cream); }
+.cta-band p { margin: 16px auto 28px; max-width: 540px; color: #f6e5db; }
+
+/* Menus-page responsive */
+@media (max-width: 960px) {
+  .package-grid { grid-template-columns: 1fr; max-width: 480px; margin-left: auto; margin-right: auto; }
+  .addon-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 720px) {
+  .page-hero-content h1 { font-size: 2rem; }
+  .page-hero-sub { font-size: 1.3rem; }
+  .addon-grid { grid-template-columns: 1fr; }
+  .section-title, .cta-band h2 { font-size: 1.8rem; }
+}
+
+/* Centered variant of the existing .divider-flourish */
+.divider-flourish.center-flourish { text-align: center; }
+
+/* =========================================================
+   Language toggle (utility bar)
+   ========================================================= */
+.utility-left { display: flex; align-items: center; gap: 20px; }
+.lang-toggle { display: inline-flex; align-items: center; gap: 6px; }
+.lang-btn {
+  background: none;
+  border: none;
+  padding: 2px 2px 3px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: var(--track-nav);
+  color: #9a9789;
+  border-bottom: 2px solid transparent;
+  transition: color var(--transition), border-color var(--transition);
+}
+.lang-btn:hover { color: var(--color-offwhite); }
+.lang-btn.is-active {
+  color: var(--color-offwhite);
+  border-bottom-color: var(--color-rust);
+}
+.lang-sep { color: #5c5a50; font-size: 0.78rem; }
+
+/* =========================================================
+   Real photos in slots that previously held .placeholder-img
+   Same aspect ratios as the placeholders, cropped to fill so a
+   portrait source never letterboxes or stretches.
+   ========================================================= */
+.hero-media .hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+}
+
+img.dish-img,
+img.event-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Trust media: the side column's two 4:3 photos set the row height,
+   and the main photo stretches to match so both columns align flush
+   at top and bottom instead of ending at different heights. */
+.trust-media-side img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+img.trust-img-main {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+}
+
+/* The chef sits high in this frame and the slot only shows a ~55% tall
+   window, so anchor to the top instead of cropping through his head. */
+img.trust-img-team { object-position: center top; }
+
+@media (max-width: 960px) {
+  /* .trust-media collapses to one column here, so the main photo has no
+     sibling column to take its height from — restore its own ratio. */
+  img.trust-img-main { height: auto; aspect-ratio: 4 / 3; }
+}
+
+@media (max-width: 480px) {
+  /* Keep phone + language toggle + socials on one line on small phones. */
+  .utility-bar { font-size: 0.78rem; }
+  .utility-inner { gap: 10px; }
+  .utility-left { gap: 12px; }
+}
+
+/* =========================================================
+   Polish pass — matching the mockup's finish
+   ========================================================= */
+
+/* --- Flourishes (item 8) -------------------------------------------
+   The mockup's divider is not a bare glyph: it's a small ornament with
+   a short hairline rule either side. Built with pseudo-elements so the
+   existing "◈" markup stays untouched. */
+.divider-flourish {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--color-rust);
+  font-size: 0.8rem;
+  line-height: 1;
+  margin: 18px 0;
+}
+.divider-flourish::before,
+.divider-flourish::after {
+  content: "";
+  height: 1px;
+  width: 48px;
+  background: currentColor;
+  opacity: 0.5;
+}
+.divider-flourish.center-flourish { justify-content: center; }
+
+/* Eyebrows get the same treatment: a hairline leading out from the
+   ornament on each side, so eyebrow and divider read as one family. */
+.eyebrow { display: flex; align-items: center; gap: 9px; }
+.eyebrow.center { justify-content: center; }
+.eyebrow span[aria-hidden="true"] {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 0.72rem;
+}
+.eyebrow span[aria-hidden="true"]:first-child::before,
+.eyebrow span[aria-hidden="true"]:last-child::after {
+  content: "";
+  height: 1px;
+  width: 26px;
+  background: currentColor;
+  opacity: 0.55;
+}
+
+/* Ornate section heading — large serif with flanking ornaments, as the
+   mockup shows over the events grid. */
+.section-heading-ornate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  line-height: 1.15;
+  text-align: center;
+}
+.section-heading-ornate span[aria-hidden="true"] {
+  color: var(--color-rust);
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.section-heading-ornate span[aria-hidden="true"]:first-child::before,
+.section-heading-ornate span[aria-hidden="true"]:last-child::after {
+  content: "";
+  height: 1px;
+  width: 34px;
+  background: currentColor;
+  opacity: 0.55;
+}
+
+/* --- Card depth + photo hover (items 2 & 3) ------------------------ */
+.dish-card {
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(26, 24, 6, 0.05), 0 14px 30px -20px rgba(26, 24, 6, 0.38);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.dish-card:hover {
+  box-shadow: 0 4px 16px rgba(26, 24, 6, 0.09), 0 22px 44px -22px rgba(26, 24, 6, 0.48);
+  transform: translateY(-3px);
+}
+.dish-caption { padding: 20px 18px 22px; }
+
+/* Zoom the photo inside its clipped frame, not the card itself. */
+.dish-card .dish-img,
+.event-card .event-img {
+  transition: transform var(--zoom-transition);
+}
+.dish-card:hover .dish-img,
+.event-card:hover .event-img {
+  transform: scale(1.05);
+}
+.event-card { transition: box-shadow var(--transition); }
+.event-card:hover { box-shadow: 0 18px 38px -20px rgba(26, 24, 6, 0.55); }
+
+/* --- Button arrows (item 7) ---------------------------------------
+   .btn's flex gap is the single source of text-to-arrow spacing, so
+   every arrow CTA matches. The nudge on hover echoes the fill swap. */
+.btn span[aria-hidden="true"] {
+  display: inline-block;
+  transition: transform var(--transition);
+}
+.btn:hover span[aria-hidden="true"] { transform: translateX(4px); }
+
+/* --- Footer agave (item 6) ----------------------------------------
+   Echoes the agave mark at the top of the logo. Sits bottom-right and
+   bleeds off the edge, very low contrast so it never competes. */
+.site-footer { position: relative; overflow: hidden; }
+.site-footer > .container { position: relative; z-index: 1; }
+.footer-agave {
+  position: absolute;
+  right: -22px;
+  bottom: -14px;
+  width: 200px;
+  height: auto;
+  color: var(--color-ink);
+  opacity: 0.11;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (max-width: 720px) {
+  .footer-agave { width: 140px; opacity: 0.08; }
+  .section-heading-ornate { font-size: 1.7rem; gap: 10px; }
+  .section-heading-ornate span[aria-hidden="true"]:first-child::before,
+  .section-heading-ornate span[aria-hidden="true"]:last-child::after { width: 18px; }
+}
+
+/* Motion-sensitive visitors get the depth cues but none of the movement.
+   The global rule kills transitions; these kill the transforms too. */
+@media (prefers-reduced-motion: reduce) {
+  .dish-card:hover { transform: none; }
+  .dish-card:hover .dish-img,
+  .event-card:hover .event-img { transform: none; }
+  .btn:hover span[aria-hidden="true"] { transform: none; }
+}
+
+/* =========================================================
+   Render-pass corrections
+   ========================================================= */
+
+/* restaurant-table-spread is a near-square source in a wide slot, so the
+   crop only keeps a horizontal band. Anchor slightly above centre to hold
+   the plated food and drinks rather than the empty table edge. */
+.hero-media .hero-img { object-position: center 44%; }
+
+/* Spanish event labels ("Eventos Corporativos") run far longer than the
+   English ones and were wrapping into the sub-label. Smaller caption type
+   plus a taller scrim keeps two-line names readable over the photo. */
+.event-caption {
+  padding: 20px 13px 14px;
+  background: linear-gradient(0deg, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.62) 45%, rgba(0,0,0,0) 100%);
+}
+.event-caption h3 { font-size: 1rem; line-height: 1.18; }
+.event-caption p { margin: 3px 0 0; font-size: 0.72rem; opacity: 0.88; }
+
+/* =========================================================
+   Menus page — category quick-nav, accordion, add-ons, closing
+   Reuses the existing palette, fonts and button classes; only the
+   patterns the site did not already have are defined here.
+   ========================================================= */
+
+/* --- Category quick-nav strip (mockup: icon row with prices) ------- */
+.cat-nav {
+  background: var(--color-offwhite);
+  border-bottom: 1px solid #ded1be;
+}
+.cat-nav-inner {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+.cat-nav-btn {
+  background: none;
+  border: none;
+  border-right: 1px solid #e2d7c4;
+  padding: 6px 10px 4px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  transition: color var(--transition);
+}
+.cat-nav-btn:last-child { border-right: none; }
+.cat-nav-btn:hover { color: var(--color-rust); }
+.cat-nav-btn .icon { width: 26px; height: 26px; color: var(--color-rust); }
+.cat-nav-name {
+  font-size: 0.72rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: var(--track-label);
+  line-height: 1.25;
+}
+.cat-nav-price { font-size: 0.7rem; color: #6a6248; }
+.cat-nav-hint {
+  text-align: center;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #8a8168;
+  margin: 0 0 6px;
+}
+
+/* --- Accordion ----------------------------------------------------- */
+.menu-accordion { border-top: 1px solid #ddd0b9; }
+.acc-item { border-bottom: 1px solid #ddd0b9; }
+.acc-header { margin: 0; }
+.acc-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 26px 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-display);
+  color: var(--color-olive);
+  transition: color var(--transition);
+}
+.acc-trigger:hover { color: var(--color-rust); }
+.acc-title {
+  font-size: 1.55rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: var(--track-display);
+  line-height: 1.15;
+}
+.acc-sep { color: var(--color-rust); opacity: 0.7; }
+.acc-price {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--color-rust);
+  white-space: nowrap;
+}
+.acc-chevron {
+  margin-left: auto;
+  width: 13px;
+  height: 13px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg) translate(-3px, -3px);
+  transition: transform var(--transition);
+  flex-shrink: 0;
+}
+.acc-trigger[aria-expanded="true"] .acc-chevron {
+  transform: rotate(-135deg) translate(-3px, -3px);
+}
+
+.acc-panel { padding: 0 4px 34px; }
+.acc-panel[hidden] { display: none; }
+.acc-panel-inner {
+  display: grid;
+  grid-template-columns: 0.85fr 2fr;
+  gap: 32px;
+  align-items: start;
+  animation: acc-fade 0.3s ease both;
+}
+@keyframes acc-fade {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: none; }
+}
+.acc-photo { aspect-ratio: 4 / 3; }
+.acc-includes {
+  font-size: 0.88rem;
+  color: #4a4632;
+  margin: 0 0 22px;
+  max-width: 780px;
+}
+
+/* Dish list — rust bullet, bold name, description under it */
+.menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  columns: 2;
+  column-gap: 36px;
+}
+.menu-list.single-col { columns: 1; }
+.menu-list li {
+  break-inside: avoid;
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 15px;
+}
+.menu-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-rust);
+}
+.menu-item-name {
+  display: block;
+  font-weight: 500;
+  font-size: 0.92rem;
+  color: var(--color-ink);
+}
+.menu-item-desc {
+  display: block;
+  font-size: 0.85rem;
+  color: #5c563f;
+  line-height: 1.45;
+}
+
+/* Two named sub-groups inside one panel (burrito bowl / pasta) */
+.menu-subgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.menu-subhead {
+  font-family: var(--font-display);
+  font-size: 1.12rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: var(--track-label);
+  color: var(--color-olive);
+  margin: 0 0 12px;
+}
+.menu-note { font-size: 0.88rem; color: #4a4632; margin: 0 0 10px; }
+.menu-note strong { font-weight: 500; color: var(--color-ink); }
+
+/* --- Add-ons ------------------------------------------------------- */
+.sides-section { background: var(--color-offwhite); }
+.sides-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 36px;
+}
+.side-card {
+  background: var(--color-cream);
+  border: 1px solid #ded1be;
+  padding: 26px 28px;
+}
+.side-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 8px;
+}
+.side-name {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: var(--track-label);
+  color: var(--color-olive);
+}
+.side-price {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-rust);
+  white-space: nowrap;
+}
+.side-copy { font-size: 0.88rem; color: #4a4632; margin: 0; }
+
+/* --- Closing block -------------------------------------------------- */
+.booking-section { background: var(--color-olive); color: var(--color-offwhite); }
+.booking-inner { text-align: center; }
+.booking-inner h2 { font-size: 2.3rem; text-transform: uppercase; line-height: 1.15; }
+.booking-types {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: var(--track-eyebrow);
+  color: var(--color-tan);
+  margin: 14px 0 10px;
+}
+.booking-copy { color: #cfd0bf; margin: 0 auto; max-width: 520px; }
+
+.delivery-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  max-width: 720px;
+  margin: 40px auto 0;
+  padding: 22px 26px;
+  background: rgba(148, 65, 27, 0.16);
+  border-left: 3px solid var(--color-rust);
+  text-align: left;
+}
+.delivery-note .icon { color: var(--color-rust); width: 26px; height: 26px; }
+.delivery-note h3 {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: var(--track-nav);
+  color: var(--color-rust);
+  margin-bottom: 6px;
+}
+.delivery-note p { margin: 0; font-size: 0.88rem; color: #dcdccb; }
+
+.build-block {
+  max-width: 720px;
+  margin: 44px auto 0;
+  padding-top: 36px;
+  border-top: 1px solid rgba(235, 226, 212, 0.22);
+}
+.build-title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--color-tan);
+  letter-spacing: 0.01em;
+}
+.build-copy { color: #cfd0bf; margin: 16px auto 30px; font-size: 0.95rem; }
+
+/* --- Responsive ----------------------------------------------------- */
+@media (max-width: 960px) {
+  .cat-nav-inner { grid-template-columns: repeat(4, 1fr); row-gap: 22px; }
+  .cat-nav-btn:nth-child(4n) { border-right: none; }
+  .acc-panel-inner { grid-template-columns: 1fr; }
+  .acc-photo { aspect-ratio: 16 / 9; }
+  .sides-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 720px) {
+  .cat-nav-inner { grid-template-columns: repeat(2, 1fr); }
+  .cat-nav-btn:nth-child(4n) { border-right: 1px solid #e2d7c4; }
+  .cat-nav-btn:nth-child(2n) { border-right: none; }
+  .menu-list, .menu-subgrid { columns: 1; grid-template-columns: 1fr; }
+  .acc-trigger { flex-wrap: wrap; gap: 8px 12px; padding: 22px 4px; }
+  .acc-title { font-size: 1.2rem; }
+  .acc-price { font-size: 1.05rem; }
+  .acc-chevron { margin-left: auto; }
+  .booking-inner h2 { font-size: 1.7rem; }
+  .build-title { font-size: 1.5rem; }
+  .delivery-note { flex-direction: column; gap: 10px; }
+}
+
+/* --- Menus page render-pass corrections --------------------------- */
+
+/* Same trap as .hero-content on the homepage: capping the element that
+   carries .container let margin:auto centre it. Keep container width,
+   constrain the children. */
+.page-hero-content { max-width: var(--container-width); }
+.page-hero-content > * { max-width: 620px; }
+
+/* Category names wrap to one, two or three lines, which pushed each
+   price to a different baseline. A min-height on the name lines them up. */
+.cat-nav-name { min-height: 2.6em; display: flex; align-items: center; justify-content: center; }
+
+/* The strip already reads as a section break, so the accordion below it
+   does not need a full --section-pad above it. */
+.menus-section { padding-top: 56px; }
+.menus-section .cat-nav-hint { margin-bottom: 18px; }

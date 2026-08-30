@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="pageTitleMenus">Menú | Chef Gabe Catering — Stockton, CA</title>
+<meta name="description" data-i18n-content="metaDescMenus" content="Menú de catering mexicano: comidas, desayunos, sopas, cenas premium y postres. Precios por persona. Servimos Stockton, Lodi, Manteca, Tracy y Modesto.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Utility bar -->
+<div class="utility-bar">
+  <div class="container utility-inner">
+    <div class="utility-left">
+      <a class="phone-link" href="tel:12097476746">
+        <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (209) 747-6746
+      </a>
+      <div class="lang-toggle" role="group" data-i18n-aria-label="langToggleLabel" aria-label="Cambiar idioma">
+        <button type="button" class="lang-btn is-active" data-lang="es" aria-pressed="true">ES</button>
+        <span class="lang-sep" aria-hidden="true">/</span>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+    <div class="social-links">
+      <a href="#" aria-label="Instagram"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+      <a href="#" aria-label="Facebook"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<!-- Page header -->
+<header class="hero page-hero">
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo-cream.png" data-i18n-alt="altLogo" alt="Chef Gabe Inc — Cocinando con amor" class="logo-img">
+      </a>
+      <button class="nav-toggle" data-i18n-aria-label="navToggleLabel" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="navHome">Inicio</a></li>
+        <li><a href="our-food.html" data-i18n="navFood">Nuestra Comida</a></li>
+        <li><a href="events.html" data-i18n="navEvents">Eventos</a></li>
+        <li><a href="menus.html" class="active" data-i18n="navMenus">Menús</a></li>
+        <li><a href="gallery.html" data-i18n="navGallery">Galería</a></li>
+        <li><a href="about.html" data-i18n="navAbout">Nosotros</a></li>
+        <li><a href="contact.html" data-i18n="navContact">Contacto</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta" data-i18n="navQuote">Cotizar</a>
+    </div>
+  </nav>
+
+  <div class="container page-hero-content">
+    <p class="eyebrow"><span aria-hidden="true">◈</span> <span data-i18n="mnEyebrow">Nuestro Menú</span> <span aria-hidden="true">◈</span></p>
+    <h1 data-i18n="mnHeroTitle">Comida hecha<br>para celebrar.</h1>
+    <div class="divider-flourish light">◈</div>
+    <p class="page-hero-copy" data-i18n="mnHeroCopy">Platillos mexicanos tradicionales, hechos con ingredientes de calidad y el cuidado que tus invitados merecen.</p>
+  </div>
+</header>
+
+<!-- Category quick-nav -->
+<nav class="cat-nav" aria-label="Categorías del menú">
+  <div class="container cat-nav-inner">
+    <button type="button" class="cat-nav-btn" data-target="panel-cat1">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 14h18a9 9 0 0 0-18 0z"/><path d="M2 18h20"/></svg>
+      <span class="cat-nav-name" data-i18n="cat1Name">Comidas Mexicanas</span>
+      <span class="cat-nav-price" data-i18n="cat1Price">$20 / persona</span>
+    </button>
+    <button type="button" class="cat-nav-btn" data-target="panel-cat2">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 11h16a8 8 0 0 1-16 0z"/><path d="M6 7c0-2 12-2 12 0"/></svg>
+      <span class="cat-nav-name" data-i18n="cat2Name">Burrito Bowl + Pasta Italiana</span>
+      <span class="cat-nav-price" data-i18n="cat2Price">$20 / persona</span>
+    </button>
+    <button type="button" class="cat-nav-btn" data-target="panel-cat3">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg>
+      <span class="cat-nav-name" data-i18n="cat3Name">Desayunos Americanos Clásicos</span>
+      <span class="cat-nav-price" data-i18n="cat3Price">$18 / persona</span>
+    </button>
+    <button type="button" class="cat-nav-btn" data-target="panel-cat4">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 12h16a8 8 0 0 1-16 0z"/><path d="M9 6c0-1 .8-1.5.8-2.5"/><path d="M13 6c0-1 .8-1.5.8-2.5"/></svg>
+      <span class="cat-nav-name" data-i18n="cat4Name">Sopas y Caldos</span>
+      <span class="cat-nav-price" data-i18n="cat4Price">$20 / persona</span>
+    </button>
+    <button type="button" class="cat-nav-btn" data-target="panel-cat5">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 9c2-3 14-3 16 0s-2 8-8 8-10-5-8-8z"/><circle cx="9" cy="11" r="1"/></svg>
+      <span class="cat-nav-name" data-i18n="cat5Name">Cenas Premium</span>
+      <span class="cat-nav-price" data-i18n="cat5Price">$28 / persona</span>
+    </button>
+    <button type="button" class="cat-nav-btn" data-target="panel-cat6">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><ellipse cx="12" cy="13" rx="8" ry="5"/><circle cx="12" cy="12" r="2"/></svg>
+      <span class="cat-nav-name" data-i18n="cat6Name">Desayunos Mexicanos</span>
+      <span class="cat-nav-price" data-i18n="cat6Price">$18 / persona</span>
+    </button>
+    <button type="button" class="cat-nav-btn" data-target="panel-cat7">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 20V11l8-5 8 5v9z"/><path d="M4 14h16"/></svg>
+      <span class="cat-nav-name" data-i18n="cat7Name">Postres</span>
+      <span class="cat-nav-price" data-i18n="cat7Price">$6 / persona</span>
+    </button>
+  </div>
+</nav>
+
+<!-- Menu accordion -->
+<section class="section menus-section">
+  <div class="container">
+    <p class="cat-nav-hint" data-i18n="mnJumpHint">Toca una categoría para ver el menú completo.</p>
+
+    <div class="menu-accordion">
+
+      <!-- 1 — Mexican lunches -->
+      <section class="acc-item">
+        <h2 class="acc-header">
+          <button type="button" class="acc-trigger" id="trigger-cat1" aria-controls="panel-cat1" aria-expanded="false">
+            <span class="acc-title" data-i18n="cat1Name">Comidas Mexicanas</span>
+            <span class="acc-sep" aria-hidden="true">•</span>
+            <span class="acc-price" data-i18n="cat1Price">$20 / persona</span>
+            <span class="acc-chevron" aria-hidden="true"></span>
+          </button>
+        </h2>
+        <div class="acc-panel" id="panel-cat1" role="region" aria-labelledby="trigger-cat1" hidden>
+          <div class="acc-panel-inner">
+            <div class="placeholder-img acc-photo" data-label="Mexican lunches photo — buffet trays of birria, carnitas, fajitas"></div>
+            <div>
+              <p class="acc-includes" data-i18n="mnIncludesStandard">Incluye arroz, frijoles refritos, tortillas de maíz o harina hechas a mano, y una bebida artesanal por persona: horchata, agua de jamaica, agua de tamarindo, aguas frescas de fruta de temporada, agua embotellada o refresco en lata.</p>
+              <ul class="menu-list">
+                <li><span class="menu-item-name" data-i18n="cat1i1n">Birria</span><span class="menu-item-desc" data-i18n="cat1i1d">Res cocida a fuego lento en adobo de chile seco.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat1i2n">Carnitas</span><span class="menu-item-desc" data-i18n="cat1i2d">Cerdo estilo Michoacán cocido en su propia grasa.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat1i3n">Fajitas de Res</span><span class="menu-item-desc" data-i18n="cat1i3d">Res con pimientos y cebolla.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat1i4n">Fajitas de Pollo</span><span class="menu-item-desc" data-i18n="cat1i4d">Pollo con verduras frescas.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat1i5n">Chile Verde</span><span class="menu-item-desc" data-i18n="cat1i5d">Cerdo en salsa verde de tomatillo.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat1i6n">Chile Colorado</span><span class="menu-item-desc" data-i18n="cat1i6d">Res en salsa roja de chile guajillo.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat1i7n">Chiles Rellenos</span><span class="menu-item-desc" data-i18n="cat1i7d">Chiles poblanos rellenos de queso o carne.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat1i8n">Mole de Pollo</span><span class="menu-item-desc" data-i18n="cat1i8d">Pollo en salsa de mole tradicional.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat1i9n">Res a la Mexicana</span><span class="menu-item-desc" data-i18n="cat1i9d">Res con jitomate, cebolla y chile.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat1i10n">Chicharrón en Salsa</span><span class="menu-item-desc" data-i18n="cat1i10d">Chicharrón guisado en salsa roja o verde casera.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2 — Burrito bowl + Italian pasta -->
+      <section class="acc-item">
+        <h2 class="acc-header">
+          <button type="button" class="acc-trigger" id="trigger-cat2" aria-controls="panel-cat2" aria-expanded="false">
+            <span class="acc-title" data-i18n="cat2Name">Burrito Bowl + Pasta Italiana</span>
+            <span class="acc-sep" aria-hidden="true">•</span>
+            <span class="acc-price" data-i18n="cat2Price">$20 / persona</span>
+            <span class="acc-chevron" aria-hidden="true"></span>
+          </button>
+        </h2>
+        <div class="acc-panel" id="panel-cat2" role="region" aria-labelledby="trigger-cat2" hidden>
+          <div class="acc-panel-inner">
+            <div class="placeholder-img acc-photo" data-label="Burrito bowls photo — bowls with rice, beans, guacamole"></div>
+            <div>
+              <p class="acc-includes" data-i18n="mnIncludesStandard">Incluye arroz, frijoles refritos, tortillas de maíz o harina hechas a mano, y una bebida artesanal por persona: horchata, agua de jamaica, agua de tamarindo, aguas frescas de fruta de temporada, agua embotellada o refresco en lata.</p>
+              <div class="menu-subgrid">
+                <div>
+                  <h3 class="menu-subhead" data-i18n="mnBowlHeading">Burrito Bowl</h3>
+                  <p class="menu-note" data-i18n="mnBowlProteins"><strong>Elige tu proteína:</strong> Asada, Pastor, Pollo Asado, Birria o Chile Relleno.</p>
+                  <p class="menu-note" data-i18n="mnBowlIncludes">Incluye lechuga fresca, arroz, frijoles enteros, pico de gallo, queso, crema, guacamole y salsa verde casera.</p>
+                </div>
+                <div>
+                  <h3 class="menu-subhead" data-i18n="mnPastaHeading">Pasta Italiana</h3>
+                  <ul class="menu-list single-col">
+                    <li><span class="menu-item-name" data-i18n="cat2i1n">Pasta con Pollo</span><span class="menu-item-desc" data-i18n="cat2i1d">Pasta cremosa con espinacas, jitomates cherry, pan de ajo y brócoli.</span></li>
+                    <li><span class="menu-item-name" data-i18n="cat2i2n">Pasta con Camarón</span><span class="menu-item-desc" data-i18n="cat2i2d">Pasta cremosa con espinacas, jitomates cherry, pan de ajo y brócoli.</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3 — Classic American breakfasts -->
+      <section class="acc-item">
+        <h2 class="acc-header">
+          <button type="button" class="acc-trigger" id="trigger-cat3" aria-controls="panel-cat3" aria-expanded="false">
+            <span class="acc-title" data-i18n="cat3Name">Desayunos Americanos Clásicos</span>
+            <span class="acc-sep" aria-hidden="true">•</span>
+            <span class="acc-price" data-i18n="cat3Price">$18 / persona</span>
+            <span class="acc-chevron" aria-hidden="true"></span>
+          </button>
+        </h2>
+        <div class="acc-panel" id="panel-cat3" role="region" aria-labelledby="trigger-cat3" hidden>
+          <div class="acc-panel-inner">
+            <div class="placeholder-img acc-photo" data-label="American breakfast photo — pancakes, eggs, bacon, coffee"></div>
+            <div>
+              <p class="acc-includes" data-i18n="mnIncludesAmBreakfast">Incluye una bebida por persona: café de olla, jugo de naranja, jugo de manzana, agua embotellada o refresco en lata.</p>
+              <ul class="menu-list single-col">
+                <li><span class="menu-item-name" data-i18n="cat3i1n">Mini Hotcakes</span><span class="menu-item-desc" data-i18n="cat3i1d">Mini hotcakes esponjosos recién hechos, servidos con miel, lechera, cajeta, Nutella, fresas, arándanos, chispas de colores, crema batida y plátano.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat3i2n">Pan Francés</span><span class="menu-item-desc" data-i18n="cat3i2d">Pan francés dorado y mantecoso, coronado con fruta fresca, crema batida, miel y tus toppings dulces favoritos.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat3i3n">Opciones de Proteína</span><span class="menu-item-desc" data-i18n="cat3i3d">Elige entre mini salchichas, huevo revuelto o tocino crujiente.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4 — Soups & broths -->
+      <section class="acc-item">
+        <h2 class="acc-header">
+          <button type="button" class="acc-trigger" id="trigger-cat4" aria-controls="panel-cat4" aria-expanded="false">
+            <span class="acc-title" data-i18n="cat4Name">Sopas y Caldos</span>
+            <span class="acc-sep" aria-hidden="true">•</span>
+            <span class="acc-price" data-i18n="cat4Price">$20 / persona</span>
+            <span class="acc-chevron" aria-hidden="true"></span>
+          </button>
+        </h2>
+        <div class="acc-panel" id="panel-cat4" role="region" aria-labelledby="trigger-cat4" hidden>
+          <div class="acc-panel-inner">
+            <div class="placeholder-img acc-photo" data-label="Soups photo — pozole bowl with cabbage, lime, radish"></div>
+            <div>
+              <p class="acc-includes" data-i18n="mnIncludesStandard">Incluye arroz, frijoles refritos, tortillas de maíz o harina hechas a mano, y una bebida artesanal por persona: horchata, agua de jamaica, agua de tamarindo, aguas frescas de fruta de temporada, agua embotellada o refresco en lata.</p>
+              <ul class="menu-list">
+                <li><span class="menu-item-name" data-i18n="cat4i1n">Pozole Verde</span><span class="menu-item-desc" data-i18n="cat4i1d">Pozole tradicional de pollo en salsa verde. Servido con repollo fresco, cebolla, cilantro, limón y salsa casera.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat4i2n">Pozole Rojo</span><span class="menu-item-desc" data-i18n="cat4i2d">Pozole tradicional de cerdo en caldo de chile rojo. Servido con repollo fresco, cebolla, cilantro, limón y salsa casera.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat4i3n">Sopa de Albóndigas</span><span class="menu-item-desc" data-i18n="cat4i3d">Albóndigas de res caseras cocidas con arroz, verduras frescas y caldo sabroso.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat4i4n">Crema de Pollo con Brócoli</span><span class="menu-item-desc" data-i18n="cat4i4d">Pollo, brócoli y caldo ligero con crema.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5 — Premium dinners -->
+      <section class="acc-item">
+        <h2 class="acc-header">
+          <button type="button" class="acc-trigger" id="trigger-cat5" aria-controls="panel-cat5" aria-expanded="false">
+            <span class="acc-title" data-i18n="cat5Name">Cenas Premium</span>
+            <span class="acc-sep" aria-hidden="true">•</span>
+            <span class="acc-price" data-i18n="cat5Price">$28 / persona</span>
+            <span class="acc-chevron" aria-hidden="true"></span>
+          </button>
+        </h2>
+        <div class="acc-panel" id="panel-cat5" role="region" aria-labelledby="trigger-cat5" hidden>
+          <div class="acc-panel-inner">
+            <div class="placeholder-img acc-photo" data-label="Premium dinners photo — grilled steak and shrimp platter"></div>
+            <div>
+              <p class="acc-includes" data-i18n="mnIncludesStandard">Incluye arroz, frijoles refritos, tortillas de maíz o harina hechas a mano, y una bebida artesanal por persona: horchata, agua de jamaica, agua de tamarindo, aguas frescas de fruta de temporada, agua embotellada o refresco en lata.</p>
+              <ul class="menu-list">
+                <li><span class="menu-item-name" data-i18n="cat5i1n">Rib Eye</span><span class="menu-item-desc" data-i18n="cat5i1d">Rib eye premium asado a la perfección.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat5i2n">Corte New York</span><span class="menu-item-desc" data-i18n="cat5i2d">Jugoso corte New York con ajo y pimienta.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat5i3n">Camarones a la Diabla</span><span class="menu-item-desc" data-i18n="cat5i3d">Camarones en salsa roja picante.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat5i4n">Camarones al Mojo de Ajo</span><span class="menu-item-desc" data-i18n="cat5i4d">Camarones salteados en mantequilla de ajo.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat5i5n">Camarones a la Mexicana</span><span class="menu-item-desc" data-i18n="cat5i5d">Camarones con jitomate, cebolla, jalapeño y cilantro.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat5i6n">Camarones Momia</span><span class="menu-item-desc" data-i18n="cat5i6d">Camarones envueltos en tocino, rellenos de queso y jalapeño.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat5i7n">Camarones Rancheros</span><span class="menu-item-desc" data-i18n="cat5i7d">Camarones en salsa ranchera.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6 — Mexican breakfasts -->
+      <section class="acc-item">
+        <h2 class="acc-header">
+          <button type="button" class="acc-trigger" id="trigger-cat6" aria-controls="panel-cat6" aria-expanded="false">
+            <span class="acc-title" data-i18n="cat6Name">Desayunos Mexicanos</span>
+            <span class="acc-sep" aria-hidden="true">•</span>
+            <span class="acc-price" data-i18n="cat6Price">$18 / persona</span>
+            <span class="acc-chevron" aria-hidden="true"></span>
+          </button>
+        </h2>
+        <div class="acc-panel" id="panel-cat6" role="region" aria-labelledby="trigger-cat6" hidden>
+          <div class="acc-panel-inner">
+            <div class="placeholder-img acc-photo" data-label="Mexican breakfast photo — huevos rancheros with rice and beans"></div>
+            <div>
+              <p class="acc-includes" data-i18n="mnIncludesMxBreakfast">Incluye arroz, frijoles refritos, tortillas de maíz o harina hechas a mano, y una bebida por persona: café de olla, jugo de naranja, jugo de manzana, agua embotellada o refresco en lata.</p>
+              <ul class="menu-list">
+                <li><span class="menu-item-name" data-i18n="cat6i1n">Huevo con Salchicha</span><span class="menu-item-desc" data-i18n="cat6i1d">Huevo revuelto con salchicha sazonada.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat6i2n">Huevos Rancheros</span><span class="menu-item-desc" data-i18n="cat6i2d">Huevos bañados en salsa ranchera casera.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat6i3n">Huevos a la Mexicana</span><span class="menu-item-desc" data-i18n="cat6i3d">Huevos con jitomate, cebolla y chile.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat6i4n">Huevo con Chorizo</span><span class="menu-item-desc" data-i18n="cat6i4d">Huevo revuelto con chorizo mexicano.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat6i5n">Huevo con Tocino</span><span class="menu-item-desc" data-i18n="cat6i5d">Huevos servidos con tocino crujiente.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat6i6n">Huevos con Verduras</span><span class="menu-item-desc" data-i18n="cat6i6d">Huevos con champiñones, nopales, pimientos y cebolla.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7 — Desserts -->
+      <section class="acc-item">
+        <h2 class="acc-header">
+          <button type="button" class="acc-trigger" id="trigger-cat7" aria-controls="panel-cat7" aria-expanded="false">
+            <span class="acc-title" data-i18n="cat7Name">Postres</span>
+            <span class="acc-sep" aria-hidden="true">•</span>
+            <span class="acc-price" data-i18n="cat7Price">$6 / persona</span>
+            <span class="acc-chevron" aria-hidden="true"></span>
+          </button>
+        </h2>
+        <div class="acc-panel" id="panel-cat7" role="region" aria-labelledby="trigger-cat7" hidden>
+          <div class="acc-panel-inner">
+            <div class="placeholder-img acc-photo" data-label="Desserts photo — chia pudding cups, flan, rice pudding"></div>
+            <div>
+              <ul class="menu-list">
+                <li><span class="menu-item-name" data-i18n="cat7i1n">Chía con Mango</span><span class="menu-item-desc" data-i18n="cat7i1d">Preparado con leche de almendra y miel.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat7i2n">Chía con Fresa</span><span class="menu-item-desc" data-i18n="cat7i2d">Preparado con leche de almendra y miel.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat7i3n">Flan Mexicano</span><span class="menu-item-desc" data-i18n="cat7i3d">Flan casero tradicional.</span></li>
+                <li><span class="menu-item-name" data-i18n="cat7i4n">Arroz con Leche</span><span class="menu-item-desc" data-i18n="cat7i4d">Arroz dulce con canela y vainilla.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</section>
+
+<!-- Add-ons -->
+<section class="section sides-section" id="sides">
+  <div class="container">
+    <p class="eyebrow center"><span aria-hidden="true">◈</span> <span data-i18n="mnAddonsEyebrow">Para Acompañar</span> <span aria-hidden="true">◈</span></p>
+    <h2 class="section-title" data-i18n="mnAddonsTitle">Aguas Frescas y Charolas de Fruta</h2>
+    <div class="divider-flourish center-flourish">◈</div>
+
+    <div class="sides-grid">
+      <article class="side-card">
+        <div class="side-head">
+          <h3 class="side-name" data-i18n="mnWatersName">Aguas Frescas</h3>
+          <span class="side-price" data-i18n="mnWatersPrice">5 galones $85</span>
+        </div>
+        <p class="side-copy" data-i18n="mnWatersFlavors">Sabores: fresa, horchata, jamaica, tamarindo, sandía, limonada, naranja, piña y melón.</p>
+      </article>
+      <article class="side-card">
+        <div class="side-head">
+          <h3 class="side-name" data-i18n="mnFruitName">Charola de Fruta de Temporada</h3>
+          <span class="side-price" data-i18n="mnFruitPrice">$95</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Closing -->
+<section class="section booking-section">
+  <div class="container booking-inner">
+    <h2 data-i18n="mnBookTitle">Reserva Tu Evento Hoy</h2>
+    <p class="booking-types" data-i18n="mnBookTypes">Bodas · Corporativos · Eventos Privados · Reuniones Familiares</p>
+    <p class="booking-copy" data-i18n="mnBookCopy">Contáctanos para menús personalizados y servicio de catering.</p>
+
+    <div class="delivery-note">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 6h12v10H1z"/><path d="M13 9h4l4 4v3h-8z"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>
+      <div>
+        <h3 data-i18n="mnDeliveryTitle">Servicio de Entrega, Montaje y Equipo</h3>
+        <p data-i18n="mnDeliveryCopy">Se aplica una cuota de servicio de $150 por la entrega de alimentos, el montaje del buffet y la recolección posterior de utensilios y equipo.</p>
+      </div>
+    </div>
+
+    <div class="build-block">
+      <h3 class="build-title" data-i18n="mnBuildTitle">Arma Tu Buffet a Tu Manera</h3>
+      <p class="build-copy" data-i18n="mnBuildCopy">Elige hasta 6 platillos principales, 6 ensaladas frescas, salsas caseras, arroz, frijoles y tortillas de maíz o harina hechas a mano para crear una experiencia de buffet única y personalizada para tu evento especial. Aplica un mínimo de invitados.</p>
+      <a href="contact.html" class="btn btn-primary"><span data-i18n="heroCtaQuote">Cotiza Tu Evento</span> <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="images/logo-dark.png" data-i18n-alt="altLogo" alt="Chef Gabe Inc — Cocinando con amor" class="footer-logo-img">
+      <p class="footer-quote" data-i18n="footerQuote">Porque cada celebración merece lo mejor.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footerContact">Contacto</h4>
+      <p><a href="tel:12097476746">(209) 747-6746</a></p>
+      <p><a href="mailto:zamora.rosa85@gmail.com">zamora.rosa85@gmail.com</a></p>
+      <p>1149 E Market St.<br>Stockton, CA 95205</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footerServing">Servimos</h4>
+      <p data-i18n="footerServingCopy">Stockton, Lodi, Manteca,<br>Tracy, Modesto y<br>áreas cercanas.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footerFollow">Síguenos</h4>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p><span aria-hidden="true">©</span> <span id="year"></span> <span data-i18n="footerRights">Chef Gabe Inc. Todos los derechos reservados.</span></p>
+  </div>
+
+  <svg class="footer-agave" viewBox="0 0 200 164" fill="none" stroke="currentColor"
+       stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+       aria-hidden="true" focusable="false">
+    <path d="M100 152 Q94 112 100 66 Q106 112 100 152 Z" transform="rotate(-68 100 152)"/>
+    <path d="M100 152 Q93 100 100 44 Q107 100 100 152 Z" transform="rotate(-51 100 152)"/>
+    <path d="M100 152 Q93 100 100 44 Q107 100 100 152 Z" transform="rotate(-34 100 152)"/>
+    <path d="M100 152 Q92 88 100 18 Q108 88 100 152 Z" transform="rotate(-17 100 152)"/>
+    <path d="M100 152 Q92 88 100 12 Q108 88 100 152 Z"/>
+    <path d="M100 152 Q92 88 100 18 Q108 88 100 152 Z" transform="rotate(17 100 152)"/>
+    <path d="M100 152 Q93 100 100 44 Q107 100 100 152 Z" transform="rotate(34 100 152)"/>
+    <path d="M100 152 Q93 100 100 44 Q107 100 100 152 Z" transform="rotate(51 100 152)"/>
+    <path d="M100 152 Q94 112 100 66 Q106 112 100 152 Z" transform="rotate(68 100 152)"/>
+    <path d="M78 154 Q100 146 122 154" stroke-width="1.6"/>
+  </svg>
+</footer>
+
+<script src="js/translations.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
