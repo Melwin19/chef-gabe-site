@@ -16,6 +16,7 @@
      data-i18n-alt        -> img alt attribute
      data-i18n-aria-label -> aria-label attribute
      data-i18n-content    -> content attribute (meta description)
+     data-i18n-placeholder -> input/textarea placeholder
    Use "\n" inside a string to produce a line break (<br>).
    ========================================================= */
 const translations = {
@@ -215,7 +216,69 @@ const translations = {
     mnDeliveryTitle: 'Servicio de Entrega, Montaje y Equipo',
     mnDeliveryCopy: 'Se aplica una cuota de servicio de $150 por la entrega de alimentos, el montaje del buffet y la recolección posterior de utensilios y equipo.',
     mnBuildTitle: 'Arma Tu Buffet a Tu Manera',
-    mnBuildCopy: 'Elige hasta 6 platillos principales, 6 ensaladas frescas, salsas caseras, arroz, frijoles y tortillas de maíz o harina hechas a mano para crear una experiencia de buffet única y personalizada para tu evento especial. Aplica un mínimo de invitados.'
+    mnBuildCopy: 'Elige hasta 6 platillos principales, 6 ensaladas frescas, salsas caseras, arroz, frijoles y tortillas de maíz o harina hechas a mano para crear una experiencia de buffet única y personalizada para tu evento especial. Aplica un mínimo de invitados.',
+
+    /* ===== Contact / quote page ===== */
+    pageTitleContact: 'Cotización | Chef Gabe Catering — Stockton, CA',
+    metaDescContact: 'Arma un estimado para tu evento y solicita tu cotización de catering mexicano. Bodas, quinceañeras, eventos corporativos y familiares en Stockton, CA.',
+
+    ctEyebrow: 'Planeemos Algo Increíble',
+    ctTitle: 'Solicita Tu\nCotización',
+    ctCopy: 'Arma un estimado en segundos con nuestra calculadora, o escríbenos y lo planeamos juntos.',
+
+    /* Calculator */
+    calcEyebrow: 'Calculadora',
+    calcTitle: 'Estima Tu Evento',
+    calcLead: 'Elige las categorías que te interesan y el número de invitados para cada una. Puedes usar un número distinto en cada categoría.',
+    calcGuestsLabel: 'Invitados',
+    calcQtyLabel: 'Cantidad',
+    calcAddonsTitle: 'Extras',
+    calcServiceTitle: 'Servicio',
+    calcDeliveryLabel: 'Servicio de Entrega, Montaje y Equipo',
+    calcDeliveryIncluded: 'Se incluye en todos los estimados.',
+    calcWatersUnit: 'por 5 galones',
+    calcFruitUnit: 'por charola',
+    calcSummaryTitle: 'Tu Estimado',
+    calcEmpty: 'Selecciona una categoría arriba para comenzar tu estimado.',
+    calcTotalLabel: 'Total Estimado',
+    calcNote: 'Esto es un estimado. El precio final se confirma cuando platiquemos sobre tu evento.',
+    calcGuestsWord: 'invitados',
+    calcEachWord: 'c/u',
+
+    /* Form */
+    formEyebrow: 'Cuéntanos',
+    formTitle: 'Detalles del Evento',
+    formLead: 'Entre más nos cuentes, mejor te podemos atender.',
+    formName: 'Nombre',
+    formNamePh: 'Tu nombre completo',
+    formEmail: 'Correo electrónico',
+    formEmailPh: 'tu@ejemplo.com',
+    formPhone: 'Teléfono',
+    formPhonePh: '(209) 123-4567',
+    formDate: 'Fecha del evento',
+    formType: 'Tipo de evento',
+    formTypePh: 'Selecciona una opción',
+    formTypeWedding: 'Boda',
+    formTypeQuince: 'Quinceañera',
+    formTypeCorporate: 'Corporativo',
+    formTypeFamily: 'Familiar / Privado',
+    formTypeOther: 'Otro',
+    formMessage: 'Cuéntanos más sobre tu evento',
+    formMessagePh: '¿Alguna petición especial, necesidad dietética o detalle que debamos saber?',
+    formSubmit: 'Enviar Mi Cotización',
+    formPrivacy: 'Tu información está segura con nosotros y nunca será compartida.',
+    formEstimateNote: 'Tu estimado se envía junto con este mensaje.',
+
+    /* Prefer to talk */
+    talkEyebrow: 'Contáctanos',
+    talkTitle: '¿Prefieres Hablar?',
+    talkLead: 'Estamos aquí para ayudarte a planear cada detalle.',
+    hoursTitle: 'Con Gusto Te Atendemos',
+    hoursWeekday: 'Lunes – Viernes',
+    hoursSat: 'Sábado',
+    hoursSun: 'Domingo',
+    hoursSunValue: 'Con cita previa',
+    talkSignature: 'Comida hecha con amor.'
   },
 
   /* ------------------------------------------------------- */
@@ -412,6 +475,68 @@ const translations = {
     mnDeliveryTitle: 'Delivery, Setup & Equipment Service',
     mnDeliveryCopy: 'A $150 service fee applies for food delivery, buffet setup, and later pickup of utensils and equipment.',
     mnBuildTitle: 'Build Your Buffet Your Way',
-    mnBuildCopy: 'Select up to 6 signature entrées, 6 fresh salads, homemade salsas, rice, beans, and freshly handmade corn or flour tortillas to craft a unique and personalized buffet experience for your special event. Minimum order of guests applies.'
+    mnBuildCopy: 'Select up to 6 signature entrées, 6 fresh salads, homemade salsas, rice, beans, and freshly handmade corn or flour tortillas to craft a unique and personalized buffet experience for your special event. Minimum order of guests applies.',
+
+    /* ===== Contact / quote page ===== */
+    pageTitleContact: 'Get a Quote | Chef Gabe Catering — Stockton, CA',
+    metaDescContact: 'Build an estimate for your event and request your Mexican catering quote. Weddings, quinceañeras, corporate and family events in Stockton, CA.',
+
+    ctEyebrow: "Let's Plan Something Amazing",
+    ctTitle: 'Get Your\nQuote',
+    ctCopy: 'Build an estimate in seconds with our calculator, or just reach out and we will plan it together.',
+
+    /* Calculator */
+    calcEyebrow: 'Calculator',
+    calcTitle: 'Estimate Your Event',
+    calcLead: 'Pick the categories you want and the guest count for each. You can use a different count for every category.',
+    calcGuestsLabel: 'Guests',
+    calcQtyLabel: 'Quantity',
+    calcAddonsTitle: 'Add-ons',
+    calcServiceTitle: 'Service',
+    calcDeliveryLabel: 'Delivery, Setup & Equipment Service',
+    calcDeliveryIncluded: 'Included on every estimate.',
+    calcWatersUnit: 'per 5 gallons',
+    calcFruitUnit: 'per tray',
+    calcSummaryTitle: 'Your Estimate',
+    calcEmpty: 'Select a category above to start your estimate.',
+    calcTotalLabel: 'Estimated Total',
+    calcNote: 'This is an estimate. Final pricing will be confirmed when we discuss your event.',
+    calcGuestsWord: 'guests',
+    calcEachWord: 'each',
+
+    /* Form */
+    formEyebrow: 'Tell Us',
+    formTitle: 'Event Details',
+    formLead: 'The more details you share, the better we can serve you.',
+    formName: 'Name',
+    formNamePh: 'Your full name',
+    formEmail: 'Email',
+    formEmailPh: 'you@example.com',
+    formPhone: 'Phone',
+    formPhonePh: '(209) 123-4567',
+    formDate: 'Event date',
+    formType: 'Event type',
+    formTypePh: 'Select event type',
+    formTypeWedding: 'Wedding',
+    formTypeQuince: 'Quinceañera',
+    formTypeCorporate: 'Corporate',
+    formTypeFamily: 'Family / Private',
+    formTypeOther: 'Other',
+    formMessage: 'Tell us more about your event',
+    formMessagePh: 'Any special requests, dietary needs, or details we should know?',
+    formSubmit: 'Get My Quote',
+    formPrivacy: 'Your information is safe with us and will never be shared.',
+    formEstimateNote: 'Your estimate is sent along with this message.',
+
+    /* Prefer to talk */
+    talkEyebrow: 'Reach Us',
+    talkTitle: 'Prefer to Talk?',
+    talkLead: 'We are here to help you plan every detail.',
+    hoursTitle: "We're Happy to Help",
+    hoursWeekday: 'Monday – Friday',
+    hoursSat: 'Saturday',
+    hoursSun: 'Sunday',
+    hoursSunValue: 'By appointment',
+    talkSignature: 'Comida hecha con amor.'
   }
 };

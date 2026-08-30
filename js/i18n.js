@@ -91,7 +91,8 @@
     var attrMap = [
       ['data-i18n-alt', 'alt'],
       ['data-i18n-aria-label', 'aria-label'],
-      ['data-i18n-content', 'content']
+      ['data-i18n-content', 'content'],
+      ['data-i18n-placeholder', 'placeholder']
     ];
     for (var a = 0; a < attrMap.length; a++) {
       var dataAttr = attrMap[a][0];
