@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="pageTitleReviews">Reseñas | Chef Gabe Catering — Stockton, CA</title>
+<meta name="description" data-i18n-content="metaDescReviews" content="Lo que dicen nuestros clientes sobre el catering de Chef Gabe: bodas, quinceañeras y eventos familiares en Stockton y el Valle Central.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Utility bar -->
+<div class="utility-bar">
+  <div class="container utility-inner">
+    <div class="utility-left">
+      <a class="phone-link" href="tel:12097476746">
+        <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (209) 747-6746
+      </a>
+      <div class="lang-toggle" role="group" data-i18n-aria-label="langToggleLabel" aria-label="Cambiar idioma">
+        <button type="button" class="lang-btn is-active" data-lang="es" aria-pressed="true">ES</button>
+        <span class="lang-sep" aria-hidden="true">/</span>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+    <div class="social-links">
+      <a href="https://www.instagram.com/agave_banquetes/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+      <a href="https://www.facebook.com/profile.php?id=100064198117109" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+      <a href="https://wa.me/12097476746" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5 5 15.9a8.4 8.4 0 1 1 15.5-4.2z"/><path d="M9.6 9.4c.1-.3.3-.4.5-.4h.6c.2 0 .3.1.4.3l.6 1.3c.1.2 0 .4-.1.5l-.4.4c.4.9 1.1 1.6 2 2l.4-.4c.1-.1.3-.2.5-.1l1.3.6c.2.1.3.2.3.4v.6c0 .3-.2.4-.4.5-1.6.6-4.5-1.2-5.4-3.3-.3-.8-.4-1.7-.3-2.4z"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<!-- Hero: same full-photo component as index.html and events.html -->
+<header class="hero">
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo-cream.png" data-i18n-alt="altLogo" alt="Chef Gabe Inc — Cocinando con amor" class="logo-img">
+      </a>
+      <button class="nav-toggle" data-i18n-aria-label="navToggleLabel" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="navHome">Inicio</a></li>
+        <li><a href="our-food.html" data-i18n="navFood">Nuestra Comida</a></li>
+        <li><a href="events.html" data-i18n="navEvents">Eventos</a></li>
+        <li><a href="menus.html" data-i18n="navMenus">Menús</a></li>
+        <li><a href="reviews.html" class="active" data-i18n="navReviews">Reseñas</a></li>
+        <li><a href="about.html" data-i18n="navAbout">Nosotros</a></li>
+        <li><a href="contact.html" data-i18n="navContact">Contacto</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta" data-i18n="navQuote">Cotizar</a>
+    </div>
+  </nav>
+
+  <div class="hero-media">
+    <div class="placeholder-img hero-img" data-label="Reviews hero photo: banquet hall buffet line with florals"></div>
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="container hero-content">
+    <p class="eyebrow eyebrow-light"><span aria-hidden="true">◈</span> <span data-i18n="rvEyebrow">Lo Que Dicen Nuestros Clientes</span> <span aria-hidden="true">◈</span></p>
+    <h1 class="h1-soft" data-i18n="rvTitle">De confianza para los<br>momentos que importan.</h1>
+    <p class="script-accent script-light"><span data-i18n="talkSignature">Comida hecha con amor.</span> <span aria-hidden="true">♡</span></p>
+    <p class="hero-copy" data-i18n="rvCopy">Es un honor ser parte de tantas celebraciones familiares, bodas y eventos especiales en todo el Valle Central.</p>
+  </div>
+</header>
+
+<!-- Stats bar -->
+<section class="stats-bar">
+  <div class="container stats-grid">
+    <div class="stat">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.2"/><path d="M3 19v-1.5A4.5 4.5 0 0 1 7.5 13h3a4.5 4.5 0 0 1 4.5 4.5V19"/><path d="M17 13.5a3.5 3.5 0 0 1 3.5 3.5V19"/></svg>
+      <div>
+        <p class="stat-num" data-i18n="rvStat1Num">300+</p>
+        <p class="stat-label" data-i18n="rvStat1Label">Invitados Atendidos</p>
+      </div>
+    </div>
+    <div class="stat">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 16h18a9 9 0 0 0-18 0z"/><path d="M2 19h20"/><path d="M12 4v3"/><circle cx="12" cy="3.2" r="1"/></svg>
+      <div>
+        <p class="stat-num" data-i18n="rvStat2Num">Incontables</p>
+        <p class="stat-label" data-i18n="rvStat2Label">Familias y negocios que hemos atendido</p>
+      </div>
+    </div>
+    <div class="stat">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      <div>
+        <p class="stat-num" data-i18n="rvStat3Num">100%</p>
+        <p class="stat-label" data-i18n="rvStat3Label">Recomendado</p>
+      </div>
+    </div>
+    <div class="stat">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M5 3v8a2 2 0 0 0 4 0V3"/><path d="M7 11v10"/><circle cx="16" cy="12" r="5"/><path d="M16 3v4"/></svg>
+      <div>
+        <p class="stat-num" data-i18n="rvStat4Num">Comida Mexicana Tradicional</p>
+        <p class="stat-label" data-i18n="rvStat4Label">Hecha con ingredientes de calidad</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="section reviews-section" id="reviews">
+  <div class="container">
+    <h2 class="section-heading-ornate"><span aria-hidden="true">◈</span> <span data-i18n="rvSectionTitle">Nuestros Clientes Lo Dicen Mejor</span> <span aria-hidden="true">◈</span></h2>
+    <div class="divider-flourish center-flourish">◈</div>
+
+    <noscript>
+      <p class="calc-noscript">Las reseñas se cargan con JavaScript. Escríbenos y con gusto te compartimos referencias de clientes.</p>
+    </noscript>
+
+    <!-- Cards are rendered from js/reviews.js by js/reviews-ui.js. -->
+    <div class="reviews-grid" id="reviews-grid"></div>
+
+    <div class="center-btn">
+      <button type="button" class="btn btn-outline" id="reviews-more" hidden>
+        <span data-i18n="rvLoadMore">Ver Más Reseñas</span> <span aria-hidden="true">→</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Moments we've catered -->
+<section class="section moments-section" id="moments">
+  <div class="container">
+    <h2 class="section-heading-ornate"><span aria-hidden="true">◈</span> <span data-i18n="rvMomentsTitle">Momentos Que Hemos Atendido</span> <span aria-hidden="true">◈</span></h2>
+    <div class="divider-flourish center-flourish">◈</div>
+
+    <div class="moments-strip">
+      <div class="placeholder-img moment-img" data-label="Buffet line photo"></div>
+      <div class="placeholder-img moment-img" data-label="Handmade tortillas photo"></div>
+      <div class="placeholder-img moment-img" data-label="Plated dish photo"></div>
+      <div class="placeholder-img moment-img" data-label="Outdoor event setup photo"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Closing CTA -->
+<section class="reviews-cta">
+  <div class="reviews-cta-panel">
+    <div class="reviews-cta-inner">
+      <p class="script-accent script-light" data-i18n="rvCtaScript">Hagamos tu evento inolvidable.</p>
+      <p class="reviews-cta-copy" data-i18n="rvCtaCopy">La buena comida une a la gente — nos encantaría ser parte de tu próxima celebración.</p>
+
+      <a href="contact.html" class="btn btn-primary"><span data-i18n="heroCtaQuote">Cotiza Tu Evento</span> <span aria-hidden="true">→</span></a>
+
+      <ul class="cta-features">
+        <li>
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>
+          <span data-i18n="rvFeat1">Todo Tipo de Eventos</span>
+        </li>
+        <li>
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 3v8a2 2 0 0 0 4 0V3"/><path d="M7 11v10"/><path d="M17 3c-1.5 2-2 4-2 6s.5 3 2 3 2-1 2-3-.5-4-2-6z"/><path d="M17 12v9"/></svg>
+          <span data-i18n="rvFeat2">Menús Personalizados</span>
+        </li>
+        <li>
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M11 20A7 7 0 0 1 4 13c0-4 3-8 7-9 4 1 7 5 7 9a7 7 0 0 1-7 7z"/><path d="M11 20v-9"/></svg>
+          <span data-i18n="rvFeat3">Ingredientes Frescos</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="reviews-cta-media">
+    <div class="placeholder-img" data-label="Plated dish photo"></div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="images/logo-dark.png" data-i18n-alt="altLogo" alt="Chef Gabe Inc — Cocinando con amor" class="footer-logo-img">
+      <p class="footer-quote" data-i18n="footerQuote">Porque cada celebración merece lo mejor.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footerContact">Contacto</h4>
+      <p><a href="tel:12097476746">(209) 747-6746</a></p>
+      <p><a href="mailto:orderchefgabe@gmail.com">orderchefgabe@gmail.com</a></p>
+      <p>1149 E Market St.<br>Stockton, CA 95205</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footerServing">Servimos</h4>
+      <p data-i18n="footerServingCopy">Stockton, Lodi, Manteca,<br>Tracy, Modesto y<br>áreas cercanas.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footerFollow">Síguenos</h4>
+      <div class="social-links">
+        <a href="https://www.instagram.com/agave_banquetes/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="https://www.facebook.com/profile.php?id=100064198117109" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="https://wa.me/12097476746" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5 5 15.9a8.4 8.4 0 1 1 15.5-4.2z"/><path d="M9.6 9.4c.1-.3.3-.4.5-.4h.6c.2 0 .3.1.4.3l.6 1.3c.1.2 0 .4-.1.5l-.4.4c.4.9 1.1 1.6 2 2l.4-.4c.1-.1.3-.2.5-.1l1.3.6c.2.1.3.2.3.4v.6c0 .3-.2.4-.4.5-1.6.6-4.5-1.2-5.4-3.3-.3-.8-.4-1.7-.3-2.4z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p><span aria-hidden="true">©</span> <span id="year"></span> <span data-i18n="footerRights">Chef Gabe Inc. Todos los derechos reservados.</span></p>
+  </div>
+
+  <svg class="footer-agave" viewBox="0 0 200 164" fill="none" stroke="currentColor"
+       stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+       aria-hidden="true" focusable="false">
+    <path d="M100 152 Q94 112 100 66 Q106 112 100 152 Z" transform="rotate(-68 100 152)"/>
+    <path d="M100 152 Q93 100 100 44 Q107 100 100 152 Z" transform="rotate(-51 100 152)"/>
+    <path d="M100 152 Q93 100 100 44 Q107 100 100 152 Z" transform="rotate(-34 100 152)"/>
+    <path d="M100 152 Q92 88 100 18 Q108 88 100 152 Z" transform="rotate(-17 100 152)"/>
+    <path d="M100 152 Q92 88 100 12 Q108 88 100 152 Z"/>
+    <path d="M100 152 Q92 88 100 18 Q108 88 100 152 Z" transform="rotate(17 100 152)"/>
+    <path d="M100 152 Q93 100 100 44 Q107 100 100 152 Z" transform="rotate(34 100 152)"/>
+    <path d="M100 152 Q93 100 100 44 Q107 100 100 152 Z" transform="rotate(51 100 152)"/>
+    <path d="M100 152 Q94 112 100 66 Q106 112 100 152 Z" transform="rotate(68 100 152)"/>
+    <path d="M78 154 Q100 146 122 154" stroke-width="1.6"/>
+  </svg>
+</footer>
+
+<script src="js/translations.js"></script>
+<script src="js/reviews.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/reviews-ui.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

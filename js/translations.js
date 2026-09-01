@@ -41,6 +41,7 @@ const translations = {
     navMenus: 'Menús',
     navAbout: 'Nosotros',
     navContact: 'Contacto',
+    navReviews: 'Reseñas',
     navQuote: 'Cotizar',
     navToggleLabel: 'Abrir menú',
 
@@ -278,7 +279,125 @@ const translations = {
     hoursSat: 'Sábado',
     hoursSun: 'Domingo',
     hoursSunValue: 'Con cita previa',
-    talkSignature: 'Comida hecha con amor.'
+    talkSignature: 'Comida hecha con amor.',
+
+    /* ===== Events page ===== */
+    pageTitleEvents: 'Eventos | Chef Gabe Catering — Stockton, CA',
+    metaDescEvents: 'Catering para bodas, eventos corporativos, cumpleaños, reuniones familiares, graduaciones y eventos religiosos en Stockton, CA.',
+
+    evEyebrow: 'Desde reuniones íntimas hasta grandes celebraciones—',
+    evTitle: 'Servimos Momentos\nQue Importan.',
+    evCopy: 'Comida deliciosa, servicio confiable y detalles personales que hacen que tu evento sea verdaderamente inolvidable.',
+
+    evTypesTitle: 'Servimos Todo Tipo de Eventos',
+    evWedTitle: 'Bodas',
+    evWedCopy: 'Celebra tu gran día con comida sabrosa y bellamente presentada.',
+    evCorpTitle: 'Eventos Corporativos',
+    evCorpCopy: 'Servicio profesional y platillos deliciosos para juntas y celebraciones.',
+    evBdayTitle: 'Cumpleaños',
+    evBdayCopy: 'Desde niños hasta adultos, hacemos que cada cumpleaños sea especial.',
+    evFamTitle: 'Reuniones Familiares',
+    evFamCopy: 'Reencuentros, quinceañeras, baby showers y más. Nosotros nos encargamos.',
+    evGradTitle: 'Graduaciones',
+    evGradCopy: 'Celebra los logros con comida que tus invitados van a disfrutar.',
+    evRelTitle: 'Eventos Religiosos',
+    evRelCopy: 'Bautizos, confirmaciones y otras celebraciones llenas de significado.',
+
+    evMadeTitle: 'Hecho Para Tu Evento',
+    /* Signature Spanish accent line — stays Spanish on both sides, the
+       way the mockup pairs it under an English heading. */
+    evMadeScript: 'Hecho a tu medida.',
+    evMadeCopy: 'Cada evento es único. Trabajamos contigo para crear un menú personalizado, cuidar cada detalle y ofrecer una experiencia que tus invitados siempre recordarán.',
+    evChk1: 'Menús personalizados para cualquier ocasión',
+    evChk2: 'Ingredientes frescos, hechos desde cero',
+    evChk3: 'Servicio profesional y amable',
+    evChk4: 'Montaje puntual y presentación impecable',
+    evChk5: 'Entrega, montaje y equipo disponibles',
+
+    evMemTitle: 'Eventos Reales. Recuerdos Reales.',
+    evGalleryCta: 'Ver Nuestra Galería',
+
+    evCtaTitle: '¿Listo Para Planear Tu Evento?',
+    evCtaScript: 'Hagamos realidad tu visión.',
+    evCtaCopy: 'Haz clic abajo para recibir una cotización personalizada y comenzar a planear tu celebración perfecta.',
+
+    /* ===== Reviews page =====
+       Page chrome only. The review text itself lives in js/reviews.js
+       and is never translated. */
+    pageTitleReviews: 'Reseñas | Chef Gabe Catering — Stockton, CA',
+    metaDescReviews: 'Lo que dicen nuestros clientes sobre el catering de Chef Gabe: bodas, quinceañeras y eventos familiares en Stockton y el Valle Central.',
+
+    rvEyebrow: 'Lo Que Dicen Nuestros Clientes',
+    rvTitle: 'De confianza para los\nmomentos que importan.',
+    rvCopy: 'Es un honor ser parte de tantas celebraciones familiares, bodas y eventos especiales en todo el Valle Central.',
+
+    rvStat1Num: '300+',
+    rvStat1Label: 'Invitados Atendidos',
+    rvStat2Num: 'Incontables',
+    rvStat2Label: 'Familias y negocios que hemos atendido',
+    rvStat3Num: '100%',
+    rvStat3Label: 'Recomendado',
+    rvStat4Num: 'Comida Mexicana Tradicional',
+    rvStat4Label: 'Hecha con ingredientes de calidad',
+
+    rvSectionTitle: 'Nuestros Clientes Lo Dicen Mejor',
+    rvLoadMore: 'Ver Más Reseñas',
+    rvStarsOf: 'de 5 estrellas',
+
+    rvMomentsTitle: 'Momentos Que Hemos Atendido',
+
+    rvCtaScript: 'Hagamos tu evento inolvidable.',
+    rvCtaCopy: 'La buena comida une a la gente — nos encantaría ser parte de tu próxima celebración.',
+    rvFeat1: 'Todo Tipo de Eventos',
+    rvFeat2: 'Menús Personalizados',
+    rvFeat3: 'Ingredientes Frescos',
+
+    /* ===== About page =====
+       The Spanish here is Gabe's own story, taken verbatim from the
+       approved comp. Do not reword it — the English side is the
+       translation, not the other way round. */
+    pageTitleAbout: 'Nosotros | Chef Gabe Catering — Stockton, CA',
+    metaDescAbout: 'La historia de Chef Gabe: de San Benito, Michoacán al Valle Central de California, cocinando con amor desde hace más de 14 años.',
+
+    abEyebrow: 'Mi Historia',
+    abTitle1: 'Cocinando con amor,',
+    abTitle2: 'desde siempre.',
+    abCopy: 'Más que un negocio, es mi forma de honrar mis raíces y compartir lo que mi familia me enseñó: que la comida es una manera de demostrar nuestro amor.',
+
+    abMichTitle: 'De Michoacán a California',
+    abMichP1: 'Nací y crecí en San Benito, Michoacán, donde soy el mayor de ocho hermanos.',
+    abMichP2: 'Mis primeros recuerdos están en la cocina, viendo a mi abuela y a mi mamá preparar los platillos tradicionales de nuestra región.',
+    abMichP3: 'En nuestra casa siempre había una olla grande en la estufa, mucha comida y espacio para uno más en la mesa.',
+    abMichHighlight: 'Ahí fue donde aprendí a cocinar.',
+    abMichScript: 'La comida es una manera de demostrar nuestro amor.',
+    abMichRight: 'Mi mamá siempre cocinaba suficiente para todos. Familia, amigos, cualquiera que llegara — se sentaba y comía.',
+    abMichRightHighlight: 'Eso es algo que llevo conmigo todos los días.',
+
+    abYearsTitle: '14+ Años Sirviendo al Valle Central',
+    abYearsP1: 'Hoy, tengo el privilegio de cocinar para familias y comunidades en todo el Valle Central de California.',
+    abYearsP2: 'He cocinado para reuniones familiares, bodas, celebraciones, empresas y eventos con cientos de invitados.',
+    abYearsP3: 'Y todavía me encanta.',
+    abYearsP4: 'Hay algo muy especial en ver a tantas personas disfrutando de la comida que mi familia me enseñó a hacer.',
+    abYearsHighlight: 'En muchos sentidos, sigo haciendo lo que vi hacer a mi mamá y a mi abuela cuando era niño: hacer mucha comida rica y unir a la gente alrededor de la mesa.',
+
+    abTimelineTitle: 'Un camino lleno de trabajo, fe y pasión.',
+    abTl1Year: '2010',
+    abTl1Copy: 'Nuestros primeros eventos.',
+    abTl2Year: '2012',
+    abTl2Copy: 'Creciendo con cada familia que confió en nuestro trabajo.',
+    abTl3Year: '2016',
+    abTl3Copy: 'Más eventos, más experiencia, misma pasión.',
+    abTl4Year: '2019',
+    abTl4Copy: 'Bodas y celebraciones inolvidables.',
+    abTl5Year: 'Hoy',
+    abTl5Copy: 'Seguir cocinando con amor para nuestra comunidad.',
+
+    abCloseTitle: 'De mi familia a la tuya.',
+    abCloseP1: 'Cuando me invitas a tu boda, cumpleaños, reunión familiar o evento de empresa, entiendo que me estás confiando un momento importante en tu vida.',
+    abCloseP2: 'No lo tomo a la ligera.',
+    abCloseP3: 'Quiero que tus invitados coman bien, que haya de sobra y que la comida que servimos se sienta como hecha para familia.',
+    abCloseScript: 'Gracias por dejarme cocinar para ustedes.',
+    abCloseSign: '— Gabe'
   },
 
   /* ------------------------------------------------------- */
@@ -300,6 +419,7 @@ const translations = {
     navMenus: 'Menus',
     navAbout: 'About',
     navContact: 'Contact',
+    navReviews: 'Reviews',
     navQuote: 'Get a Quote',
     navToggleLabel: 'Toggle menu',
 
@@ -537,6 +657,124 @@ const translations = {
     hoursSat: 'Saturday',
     hoursSun: 'Sunday',
     hoursSunValue: 'By appointment',
-    talkSignature: 'Comida hecha con amor.'
+    talkSignature: 'Comida hecha con amor.',
+
+    /* ===== Events page ===== */
+    pageTitleEvents: 'Events | Chef Gabe Catering — Stockton, CA',
+    metaDescEvents: 'Catering for weddings, corporate events, birthdays, family gatherings, graduations and religious celebrations in Stockton, CA.',
+
+    evEyebrow: 'From intimate gatherings to large celebrations—',
+    evTitle: 'We Cater Moments\nThat Matter.',
+    evCopy: 'Delicious food, reliable service, and personal touches that make your event truly unforgettable.',
+
+    evTypesTitle: 'We Cater All Kinds of Events',
+    evWedTitle: 'Weddings',
+    evWedCopy: 'Celebrate your big day with flavorful, beautifully presented food.',
+    evCorpTitle: 'Corporate Events',
+    evCorpCopy: 'Professional service and delicious meals for meetings and celebrations.',
+    evBdayTitle: 'Birthdays',
+    evBdayCopy: 'From kids to adults, we make birthdays extra special.',
+    evFamTitle: 'Family Gatherings',
+    evFamCopy: "Reunions, quinceañeras, baby showers & more. We've got you covered.",
+    evGradTitle: 'Graduations',
+    evGradCopy: 'Celebrate achievements with food your guests will love.',
+    evRelTitle: 'Religious Events',
+    evRelCopy: 'Baptisms, confirmations, and other meaningful celebrations.',
+
+    evMadeTitle: 'Made for Your Event',
+    /* Signature Spanish accent line — see the es note; intentionally the
+       same Spanish phrase under the English heading. */
+    evMadeScript: 'Hecho a tu medida.',
+    evMadeCopy: "Every event is unique. We'll work with you to create a custom menu, handle the details, and deliver an experience your guests will always remember.",
+    evChk1: 'Custom menus for any occasion',
+    evChk2: 'Fresh ingredients, made from scratch',
+    evChk3: 'Professional and friendly service',
+    evChk4: 'On-time setup and clean presentation',
+    evChk5: 'Delivery, setup & equipment available',
+
+    evMemTitle: 'Real Events. Real Memories.',
+    evGalleryCta: 'View Our Gallery',
+
+    evCtaTitle: 'Ready to Plan Your Event?',
+    evCtaScript: "Let's bring your vision to life.",
+    evCtaCopy: 'Click below to get a personalized quote and start planning your perfect celebration.',
+
+    /* ===== Reviews page =====
+       Page chrome only. The review text itself lives in js/reviews.js
+       and is never translated. */
+    pageTitleReviews: 'Reviews | Chef Gabe Catering — Stockton, CA',
+    metaDescReviews: 'What our clients say about Chef Gabe catering: weddings, quinceañeras and family events in Stockton and the Central Valley.',
+
+    rvEyebrow: 'What Our Clients Say',
+    rvTitle: 'Trusted for the\nmoments that matter.',
+    rvCopy: "We're honored to be part of so many family celebrations, weddings and special events across the Central Valley.",
+
+    rvStat1Num: '300+',
+    rvStat1Label: 'Guests Served',
+    rvStat2Num: 'Countless',
+    rvStat2Label: "Families & businesses we've catered",
+    rvStat3Num: '100%',
+    rvStat3Label: 'Recommended',
+    rvStat4Num: 'Traditional Mexican Food',
+    rvStat4Label: 'Made with quality ingredients',
+
+    rvSectionTitle: 'Our Clients Say It Best',
+    rvLoadMore: 'Load More Reviews',
+    rvStarsOf: 'out of 5 stars',
+
+    rvMomentsTitle: "Moments We've Catered",
+
+    rvCtaScript: "Let's make your event unforgettable.",
+    rvCtaCopy: "Great food brings people together — we'd love to be part of your next celebration.",
+    rvFeat1: 'All Events Welcome',
+    rvFeat2: 'Custom Menus',
+    rvFeat3: 'Made With Fresh Ingredients',
+
+    /* ===== About page =====
+       Translation of Gabe's own story. The Spanish side is the source
+       of truth; keep this faithful to it rather than polishing it into
+       something he did not say. */
+    pageTitleAbout: 'About | Chef Gabe Catering — Stockton, CA',
+    metaDescAbout: "Chef Gabe's story: from San Benito, Michoacán to California's Central Valley, cooking with love for more than 14 years.",
+
+    abEyebrow: 'My Story',
+    abTitle1: 'Cooking with love,',
+    abTitle2: 'for as long as I can remember.',
+    abCopy: 'More than a business, this is my way of honoring my roots and sharing what my family taught me: that food is a way of showing our love.',
+
+    abMichTitle: 'From Michoacán to California',
+    abMichP1: 'I was born and raised in San Benito, Michoacán, the oldest of eight children.',
+    abMichP2: 'My earliest memories are in the kitchen, watching my grandmother and my mother prepare the traditional dishes of our region.',
+    abMichP3: 'In our house there was always a big pot on the stove, plenty of food, and room for one more at the table.',
+    abMichHighlight: 'That is where I learned to cook.',
+    abMichScript: 'Food is a way of showing our love.',
+    abMichRight: 'My mother always cooked enough for everyone. Family, friends, whoever showed up — they sat down and ate.',
+    abMichRightHighlight: 'That is something I carry with me every day.',
+
+    abYearsTitle: '14+ Years Serving the Central Valley',
+    abYearsP1: "Today I have the privilege of cooking for families and communities across California's Central Valley.",
+    abYearsP2: 'I have cooked for family gatherings, weddings, celebrations, businesses, and events with hundreds of guests.',
+    abYearsP3: 'And I still love it.',
+    abYearsP4: 'There is something very special about seeing so many people enjoying the food my family taught me to make.',
+    abYearsHighlight: 'In many ways, I am still doing what I watched my mother and my grandmother do when I was a boy: making plenty of good food and bringing people together around the table.',
+
+    abTimelineTitle: 'A journey built on hard work, faith and passion.',
+    abTl1Year: '2010',
+    abTl1Copy: 'Our first events.',
+    abTl2Year: '2012',
+    abTl2Copy: 'Growing with every family who trusted our work.',
+    abTl3Year: '2016',
+    abTl3Copy: 'More events, more experience, the same passion.',
+    abTl4Year: '2019',
+    abTl4Copy: 'Unforgettable weddings and celebrations.',
+    abTl5Year: 'Today',
+    abTl5Copy: 'Still cooking with love for our community.',
+
+    abCloseTitle: 'From my family to yours.',
+    abCloseP1: 'When you invite me to your wedding, birthday, family gathering or company event, I understand that you are trusting me with an important moment in your life.',
+    abCloseP2: 'I do not take that lightly.',
+    abCloseP3: 'I want your guests to eat well, for there to be plenty, and for the food we serve to feel like it was made for family.',
+    abCloseScript: 'Thank you for letting me cook for you.',
+    abCloseSign: '— Gabe'
   }
 };

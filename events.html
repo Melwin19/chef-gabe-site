@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="pageTitleEvents">Eventos | Chef Gabe Catering — Stockton, CA</title>
+<meta name="description" data-i18n-content="metaDescEvents" content="Catering para bodas, eventos corporativos, cumpleaños, reuniones familiares, graduaciones y eventos religiosos en Stockton, CA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Utility bar -->
+<div class="utility-bar">
+  <div class="container utility-inner">
+    <div class="utility-left">
+      <a class="phone-link" href="tel:12097476746">
+        <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (209) 747-6746
+      </a>
+      <div class="lang-toggle" role="group" data-i18n-aria-label="langToggleLabel" aria-label="Cambiar idioma">
+        <button type="button" class="lang-btn is-active" data-lang="es" aria-pressed="true">ES</button>
+        <span class="lang-sep" aria-hidden="true">/</span>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+    <div class="social-links">
+      <a href="https://www.instagram.com/agave_banquetes/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+      <a href="https://www.facebook.com/profile.php?id=100064198117109" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+      <a href="https://wa.me/12097476746" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5 5 15.9a8.4 8.4 0 1 1 15.5-4.2z"/><path d="M9.6 9.4c.1-.3.3-.4.5-.4h.6c.2 0 .3.1.4.3l.6 1.3c.1.2 0 .4-.1.5l-.4.4c.4.9 1.1 1.6 2 2l.4-.4c.1-.1.3-.2.5-.1l1.3.6c.2.1.3.2.3.4v.6c0 .3-.2.4-.4.5-1.6.6-4.5-1.2-5.4-3.3-.3-.8-.4-1.7-.3-2.4z"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<!-- Hero: reuses the homepage .hero component (photo + layered overlay)
+     rather than the mockup's cream nav bar, so the header treatment is
+     identical site-wide. -->
+<header class="hero">
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo-cream.png" data-i18n-alt="altLogo" alt="Chef Gabe Inc — Cocinando con amor" class="logo-img">
+      </a>
+      <button class="nav-toggle" data-i18n-aria-label="navToggleLabel" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="navHome">Inicio</a></li>
+        <li><a href="our-food.html" data-i18n="navFood">Nuestra Comida</a></li>
+        <li><a href="events.html" class="active" data-i18n="navEvents">Eventos</a></li>
+        <li><a href="menus.html" data-i18n="navMenus">Menús</a></li>
+        <li><a href="reviews.html" data-i18n="navReviews">Reseñas</a></li>
+        <li><a href="about.html" data-i18n="navAbout">Nosotros</a></li>
+        <li><a href="contact.html" data-i18n="navContact">Contacto</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta" data-i18n="navQuote">Cotizar</a>
+    </div>
+  </nav>
+
+  <div class="hero-media">
+    <div class="placeholder-img hero-img" data-label="Event hero photo: catering spread with florals"></div>
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="container hero-content">
+    <p class="eyebrow eyebrow-light" data-i18n="evEyebrow">Desde reuniones íntimas hasta grandes celebraciones—</p>
+    <h1 data-i18n="evTitle">Servimos Momentos<br>Que Importan.</h1>
+    <div class="divider-flourish light">◈</div>
+    <p class="hero-copy" data-i18n="evCopy">Comida deliciosa, servicio confiable y detalles personales que hacen que tu evento sea verdaderamente inolvidable.</p>
+  </div>
+</header>
+
+<!-- Event types -->
+<section class="section event-types-section" id="types">
+  <div class="container">
+    <h2 class="section-heading-ornate"><span aria-hidden="true">◈</span> <span data-i18n="evTypesTitle">Servimos Todo Tipo de Eventos</span> <span aria-hidden="true">◈</span></h2>
+    <div class="divider-flourish center-flourish">◈</div>
+
+    <div class="event-type-grid">
+      <article class="event-type">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="9" cy="15" r="5"/><circle cx="15" cy="15" r="5"/><path d="M9 10V6l2-2 2 2v4"/></svg>
+        <h3 data-i18n="evWedTitle">Bodas</h3>
+        <p data-i18n="evWedCopy">Celebra tu gran día con comida sabrosa y bellamente presentada.</p>
+      </article>
+
+      <article class="event-type">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 19v-1.5A4.5 4.5 0 0 1 7.5 13h3A4.5 4.5 0 0 1 15 17.5V19"/><path d="M17 14a4 4 0 0 1 4 4v1"/></svg>
+        <h3 data-i18n="evCorpTitle">Eventos Corporativos</h3>
+        <p data-i18n="evCorpCopy">Servicio profesional y platillos deliciosos para juntas y celebraciones.</p>
+      </article>
+
+      <article class="event-type">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 3a6 6 0 0 1 6 6c0 4-3.5 6.5-6 7.5C9.5 15.5 6 13 6 9a6 6 0 0 1 6-6z"/><path d="M12 16.5V19"/><path d="M10.5 21c.5-1 2.5-1 3 0"/></svg>
+        <h3 data-i18n="evBdayTitle">Cumpleaños</h3>
+        <p data-i18n="evBdayCopy">Desde niños hasta adultos, hacemos que cada cumpleaños sea especial.</p>
+      </article>
+
+      <article class="event-type">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="7" r="2.6"/><circle cx="5.5" cy="9.5" r="2.2"/><circle cx="18.5" cy="9.5" r="2.2"/><path d="M8 19v-1a4 4 0 0 1 8 0v1"/><path d="M2 19v-.8A3.2 3.2 0 0 1 5.2 15"/><path d="M22 19v-.8A3.2 3.2 0 0 0 18.8 15"/></svg>
+        <h3 data-i18n="evFamTitle">Reuniones Familiares</h3>
+        <p data-i18n="evFamCopy">Reencuentros, quinceañeras, baby showers y más. Nosotros nos encargamos.</p>
+      </article>
+
+      <article class="event-type">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 9l10-4 10 4-10 4z"/><path d="M6 11v4c0 1.7 2.7 3 6 3s6-1.3 6-3v-4"/><path d="M21 9.5V15"/></svg>
+        <h3 data-i18n="evGradTitle">Graduaciones</h3>
+        <p data-i18n="evGradCopy">Celebra los logros con comida que tus invitados van a disfrutar.</p>
+      </article>
+
+      <article class="event-type">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 2v6"/><path d="M9.5 4.5h5"/><path d="M5 21V11l7-4 7 4v10z"/><path d="M10 21v-5h4v5"/></svg>
+        <h3 data-i18n="evRelTitle">Eventos Religiosos</h3>
+        <p data-i18n="evRelCopy">Bautizos, confirmaciones y otras celebraciones llenas de significado.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Made for your event -->
+<section class="section made-section" id="made">
+  <div class="container made-grid">
+    <div class="placeholder-img made-photo" data-label="Outdoor event setup photo"></div>
+
+    <div class="made-copy">
+      <h2 data-i18n="evMadeTitle">Hecho Para Tu Evento</h2>
+      <p class="script-accent" data-i18n="evMadeScript">Hecho a tu medida.</p>
+      <p class="made-lead" data-i18n="evMadeCopy">Cada evento es único. Trabajamos contigo para crear un menú personalizado, cuidar cada detalle y ofrecer una experiencia que tus invitados siempre recordarán.</p>
+
+      <ul class="check-list">
+        <li>
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12.5 2.5 2.5L16 9.5"/></svg>
+          <span data-i18n="evChk1">Menús personalizados para cualquier ocasión</span>
+        </li>
+        <li>
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12.5 2.5 2.5L16 9.5"/></svg>
+          <span data-i18n="evChk2">Ingredientes frescos, hechos desde cero</span>
+        </li>
+        <li>
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12.5 2.5 2.5L16 9.5"/></svg>
+          <span data-i18n="evChk3">Servicio profesional y amable</span>
+        </li>
+        <li>
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12.5 2.5 2.5L16 9.5"/></svg>
+          <span data-i18n="evChk4">Montaje puntual y presentación impecable</span>
+        </li>
+        <li>
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12.5 2.5 2.5L16 9.5"/></svg>
+          <span data-i18n="evChk5">Entrega, montaje y equipo disponibles</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Decorative leaf sprig, same line-art family as the footer agave -->
+    <svg class="made-leaf" viewBox="0 0 160 220" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" focusable="false">
+      <path d="M80 214 C80 150 84 96 104 44"/>
+      <path d="M92 168 C112 166 128 150 132 128 C112 128 94 144 92 168 Z"/>
+      <path d="M88 140 C68 138 52 122 48 100 C68 100 86 116 88 140 Z"/>
+      <path d="M96 112 C116 110 132 94 136 72 C116 72 98 88 96 112 Z"/>
+      <path d="M100 84 C80 82 64 66 60 44 C80 44 98 60 100 84 Z"/>
+      <path d="M106 56 C122 52 134 38 136 20 C120 22 108 36 106 56 Z"/>
+    </svg>
+  </div>
+</section>
+
+<!-- Real events, real memories -->
+<section class="section memories-section" id="memories">
+  <div class="container">
+    <h2 class="section-heading-ornate"><span aria-hidden="true">◈</span> <span data-i18n="evMemTitle">Eventos Reales. Recuerdos Reales.</span> <span aria-hidden="true">◈</span></h2>
+    <div class="divider-flourish center-flourish">◈</div>
+
+    <!-- PHOTOS NEEDED: five event photos. Swap each div for
+         <img class="memory-img" src="images/<name>.png" alt="..."> -->
+    <div class="memories-strip">
+      <div class="placeholder-img memory-img" data-label="event photo 1"></div>
+      <div class="placeholder-img memory-img" data-label="event photo 2"></div>
+      <div class="placeholder-img memory-img" data-label="event photo 3"></div>
+      <div class="placeholder-img memory-img" data-label="event photo 4"></div>
+      <div class="placeholder-img memory-img" data-label="event photo 5"></div>
+    </div>
+
+    <div class="center-btn">
+      <a href="gallery.html" class="btn btn-outline">
+        <span data-i18n="evGalleryCta">Ver Nuestra Galería</span>
+        <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="15" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="m4 17 5-5 4 4 3-2 4 4"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Closing CTA -->
+<section class="event-cta">
+  <div class="event-cta-media">
+    <div class="placeholder-img" data-label="Closing CTA photo: table spread with tortillas"></div>
+  </div>
+
+  <div class="event-cta-panel">
+    <div class="event-cta-inner">
+      <h2 data-i18n="evCtaTitle">¿Listo Para Planear Tu Evento?</h2>
+      <p class="script-accent" data-i18n="evCtaScript">Hagamos realidad tu visión.</p>
+      <p class="event-cta-copy" data-i18n="evCtaCopy">Haz clic abajo para recibir una cotización personalizada y comenzar a planear tu celebración perfecta.</p>
+
+      <div class="event-cta-actions">
+        <a href="contact.html" class="btn btn-primary"><span data-i18n="heroCtaQuote">Cotiza Tu Evento</span> <span aria-hidden="true">→</span></a>
+        <a href="tel:12097476746" class="btn btn-outline">
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (209) 747-6746
+        </a>
+      </div>
+    </div>
+
+    <svg class="cta-leaf" viewBox="0 0 160 220" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" focusable="false">
+      <path d="M80 214 C80 150 84 96 104 44"/>
+      <path d="M92 168 C112 166 128 150 132 128 C112 128 94 144 92 168 Z"/>
+      <path d="M88 140 C68 138 52 122 48 100 C68 100 86 116 88 140 Z"/>
+      <path d="M96 112 C116 110 132 94 136 72 C116 72 98 88 96 112 Z"/>
+      <path d="M100 84 C80 82 64 66 60 44 C80 44 98 60 100 84 Z"/>
+      <path d="M106 56 C122 52 134 38 136 20 C120 22 108 36 106 56 Z"/>
+    </svg>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="images/logo-dark.png" data-i18n-alt="altLogo" alt="Chef Gabe Inc — Cocinando con amor" class="footer-logo-img">
+      <p class="footer-quote" data-i18n="footerQuote">Porque cada celebración merece lo mejor.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footerContact">Contacto</h4>
+      <p><a href="tel:12097476746">(209) 747-6746</a></p>
+      <p><a href="mailto:orderchefgabe@gmail.com">orderchefgabe@gmail.com</a></p>
+      <p>1149 E Market St.<br>Stockton, CA 95205</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footerServing">Servimos</h4>
+      <p data-i18n="footerServingCopy">Stockton, Lodi, Manteca,<br>Tracy, Modesto y<br>áreas cercanas.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footerFollow">Síguenos</h4>
+      <div class="social-links">
+        <a href="https://www.instagram.com/agave_banquetes/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="https://www.facebook.com/profile.php?id=100064198117109" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="https://wa.me/12097476746" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5 5 15.9a8.4 8.4 0 1 1 15.5-4.2z"/><path d="M9.6 9.4c.1-.3.3-.4.5-.4h.6c.2 0 .3.1.4.3l.6 1.3c.1.2 0 .4-.1.5l-.4.4c.4.9 1.1 1.6 2 2l.4-.4c.1-.1.3-.2.5-.1l1.3.6c.2.1.3.2.3.4v.6c0 .3-.2.4-.4.5-1.6.6-4.5-1.2-5.4-3.3-.3-.8-.4-1.7-.3-2.4z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p><span aria-hidden="true">©</span> <span id="year"></span> <span data-i18n="footerRights">Chef Gabe Inc. Todos los derechos reservados.</span></p>
+  </div>
+
+  <svg class="footer-agave" viewBox="0 0 200 164" fill="none" stroke="currentColor"
+       stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+       aria-hidden="true" focusable="false">
+    <path d="M100 152 Q94 112 100 66 Q106 112 100 152 Z" transform="rotate(-68 100 152)"/>
+    <path d="M100 152 Q93 100 100 44 Q107 100 100 152 Z" transform="rotate(-51 100 152)"/>
+    <path d="M100 152 Q93 100 100 44 Q107 100 100 152 Z" transform="rotate(-34 100 152)"/>
+    <path d="M100 152 Q92 88 100 18 Q108 88 100 152 Z" transform="rotate(-17 100 152)"/>
+    <path d="M100 152 Q92 88 100 12 Q108 88 100 152 Z"/>
+    <path d="M100 152 Q92 88 100 18 Q108 88 100 152 Z" transform="rotate(17 100 152)"/>
+    <path d="M100 152 Q93 100 100 44 Q107 100 100 152 Z" transform="rotate(34 100 152)"/>
+    <path d="M100 152 Q93 100 100 44 Q107 100 100 152 Z" transform="rotate(51 100 152)"/>
+    <path d="M100 152 Q94 112 100 66 Q106 112 100 152 Z" transform="rotate(68 100 152)"/>
+    <path d="M78 154 Q100 146 122 154" stroke-width="1.6"/>
+  </svg>
+</footer>
+
+<script src="js/translations.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="pageTitleAbout">Nosotros | Chef Gabe Catering — Stockton, CA</title>
+<meta name="description" data-i18n-content="metaDescAbout" content="La historia de Chef Gabe: de San Benito, Michoacán al Valle Central de California, cocinando con amor desde hace más de 14 años.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Utility bar -->
+<div class="utility-bar">
+  <div class="container utility-inner">
+    <div class="utility-left">
+      <a class="phone-link" href="tel:12097476746">
+        <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (209) 747-6746
+      </a>
+      <div class="lang-toggle" role="group" data-i18n-aria-label="langToggleLabel" aria-label="Cambiar idioma">
+        <button type="button" class="lang-btn is-active" data-lang="es" aria-pressed="true">ES</button>
+        <span class="lang-sep" aria-hidden="true">/</span>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+    <div class="social-links">
+      <a href="https://www.instagram.com/agave_banquetes/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+      <a href="https://www.facebook.com/profile.php?id=100064198117109" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+      <a href="https://wa.me/12097476746" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5 5 15.9a8.4 8.4 0 1 1 15.5-4.2z"/><path d="M9.6 9.4c.1-.3.3-.4.5-.4h.6c.2 0 .3.1.4.3l.6 1.3c.1.2 0 .4-.1.5l-.4.4c.4.9 1.1 1.6 2 2l.4-.4c.1-.1.3-.2.5-.1l1.3.6c.2.1.3.2.3.4v.6c0 .3-.2.4-.4.5-1.6.6-4.5-1.2-5.4-3.3-.3-.8-.4-1.7-.3-2.4z"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<!-- Hero: same full-photo component as the other pages -->
+<header class="hero">
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo-cream.png" data-i18n-alt="altLogo" alt="Chef Gabe Inc — Cocinando con amor" class="logo-img">
+      </a>
+      <button class="nav-toggle" data-i18n-aria-label="navToggleLabel" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="navHome">Inicio</a></li>
+        <li><a href="our-food.html" data-i18n="navFood">Nuestra Comida</a></li>
+        <li><a href="events.html" data-i18n="navEvents">Eventos</a></li>
+        <li><a href="menus.html" data-i18n="navMenus">Menús</a></li>
+        <li><a href="reviews.html" data-i18n="navReviews">Reseñas</a></li>
+        <li><a href="about.html" class="active" data-i18n="navAbout">Nosotros</a></li>
+        <li><a href="contact.html" data-i18n="navContact">Contacto</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta" data-i18n="navQuote">Cotizar</a>
+    </div>
+  </nav>
+
+  <div class="hero-media">
+    <div class="placeholder-img hero-img" data-label="Chef portrait: Gabe cooking, plating birria in a clay dish"></div>
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="container hero-content">
+    <p class="eyebrow eyebrow-light"><span aria-hidden="true">◈</span> <span data-i18n="abEyebrow">Mi Historia</span> <span aria-hidden="true">◈</span></p>
+    <h1 class="h1-soft about-title">
+      <span data-i18n="abTitle1">Cocinando con amor,</span><br>
+      <em class="title-accent" data-i18n="abTitle2">desde siempre.</em>
+    </h1>
+    <p class="hero-copy" data-i18n="abCopy">Más que un negocio, es mi forma de honrar mis raíces y compartir lo que mi familia me enseñó: que la comida es una manera de demostrar nuestro amor.</p>
+    <div class="divider-flourish light">◈</div>
+  </div>
+</header>
+
+<!-- From Michoacán to California -->
+<section class="section origin-section" id="origin">
+  <div class="container origin-grid">
+    <div class="origin-copy">
+      <h2 data-i18n="abMichTitle">De Michoacán a California</h2>
+      <div class="divider-flourish">◈</div>
+      <p data-i18n="abMichP1">Nací y crecí en San Benito, Michoacán, donde soy el mayor de ocho hermanos.</p>
+      <p data-i18n="abMichP2">Mis primeros recuerdos están en la cocina, viendo a mi abuela y a mi mamá preparar los platillos tradicionales de nuestra región.</p>
+      <p data-i18n="abMichP3">En nuestra casa siempre había una olla grande en la estufa, mucha comida y espacio para uno más en la mesa.</p>
+      <p class="highlight" data-i18n="abMichHighlight">Ahí fue donde aprendí a cocinar.</p>
+      <p class="script-accent" data-i18n="abMichScript">La comida es una manera de demostrar nuestro amor.</p>
+    </div>
+
+    <figure class="polaroid">
+      <div class="polaroid-tape" aria-hidden="true"></div>
+      <div class="placeholder-img polaroid-img" data-label="Family photo: Gabe as a child with his mother and seven siblings"></div>
+    </figure>
+
+    <div class="origin-aside">
+      <p data-i18n="abMichRight">Mi mamá siempre cocinaba suficiente para todos. Familia, amigos, cualquiera que llegara — se sentaba y comía.</p>
+      <p class="highlight" data-i18n="abMichRightHighlight">Eso es algo que llevo conmigo todos los días.</p>
+    </div>
+
+    <svg class="origin-leaf" viewBox="0 0 160 220" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" focusable="false">
+      <path d="M80 214 C80 150 84 96 104 44"/>
+      <path d="M92 168 C112 166 128 150 132 128 C112 128 94 144 92 168 Z"/>
+      <path d="M88 140 C68 138 52 122 48 100 C68 100 86 116 88 140 Z"/>
+      <path d="M96 112 C116 110 132 94 136 72 C116 72 98 88 96 112 Z"/>
+      <path d="M100 84 C80 82 64 66 60 44 C80 44 98 60 100 84 Z"/>
+      <path d="M106 56 C122 52 134 38 136 20 C120 22 108 36 106 56 Z"/>
+    </svg>
+  </div>
+</section>
+
+<!-- 14+ years serving the Central Valley -->
+<section class="years-section" id="years">
+  <div class="years-media">
+    <div class="placeholder-img" data-label="Buffet spread with florals and a Birria de Res chalkboard sign"></div>
+  </div>
+  <div class="years-panel">
+    <div class="years-inner">
+      <h2 data-i18n="abYearsTitle">14+ Años Sirviendo al Valle Central</h2>
+      <div class="divider-flourish">◈</div>
+      <p data-i18n="abYearsP1">Hoy, tengo el privilegio de cocinar para familias y comunidades en todo el Valle Central de California.</p>
+      <p data-i18n="abYearsP2">He cocinado para reuniones familiares, bodas, celebraciones, empresas y eventos con cientos de invitados.</p>
+      <p data-i18n="abYearsP3">Y todavía me encanta.</p>
+      <p data-i18n="abYearsP4">Hay algo muy especial en ver a tantas personas disfrutando de la comida que mi familia me enseñó a hacer.</p>
+      <p class="highlight" data-i18n="abYearsHighlight">En muchos sentidos, sigo haciendo lo que vi hacer a mi mamá y a mi abuela cuando era niño: hacer mucha comida rica y unir a la gente alrededor de la mesa.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Timeline -->
+<section class="section timeline-section" id="timeline">
+  <div class="container">
+    <h2 class="section-heading-ornate"><span aria-hidden="true">◈</span> <span data-i18n="abTimelineTitle">Un camino lleno de trabajo, fe y pasión.</span> <span aria-hidden="true">◈</span></h2>
+    <div class="divider-flourish center-flourish">◈</div>
+  </div>
+
+  <!-- Scrolls sideways on narrow screens: a timeline reads
+       left-to-right, so stacking it would lose the point. -->
+  <div class="timeline-scroll">
+    <ol class="timeline">
+      <li class="timeline-item">
+        <div class="placeholder-img timeline-img" data-label="2010 photo: Gabe cooking early on"></div>
+        <p class="timeline-year" data-i18n="abTl1Year">2010</p>
+        <p class="timeline-copy" data-i18n="abTl1Copy">Nuestros primeros eventos.</p>
+      </li>
+      <li class="timeline-item">
+        <div class="placeholder-img timeline-img" data-label="2012 photo: buffet line with florals"></div>
+        <p class="timeline-year" data-i18n="abTl2Year">2012</p>
+        <p class="timeline-copy" data-i18n="abTl2Copy">Creciendo con cada familia que confió en nuestro trabajo.</p>
+      </li>
+      <li class="timeline-item">
+        <div class="placeholder-img timeline-img" data-label="2016 photo: the team behind the serving line"></div>
+        <p class="timeline-year" data-i18n="abTl3Year">2016</p>
+        <p class="timeline-copy" data-i18n="abTl3Copy">Más eventos, más experiencia, misma pasión.</p>
+      </li>
+      <li class="timeline-item">
+        <div class="placeholder-img timeline-img" data-label="2019 photo: wedding reception under string lights"></div>
+        <p class="timeline-year" data-i18n="abTl4Year">2019</p>
+        <p class="timeline-copy" data-i18n="abTl4Copy">Bodas y celebraciones inolvidables.</p>
+      </li>
+      <li class="timeline-item">
+        <div class="placeholder-img timeline-img" data-label="Today photo: the team serving at an outdoor event"></div>
+        <p class="timeline-year" data-i18n="abTl5Year">Hoy</p>
+        <p class="timeline-copy" data-i18n="abTl5Copy">Seguir cocinando con amor para nuestra comunidad.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- From my family to yours -->
+<section class="closing-section" id="closing">
+  <div class="closing-media">
+    <div class="placeholder-img" data-label="Food spread photo: clay bowls of birria, rice, beans and tortillas"></div>
+  </div>
+  <div class="closing-panel">
+    <div class="closing-inner">
+      <h2 data-i18n="abCloseTitle">De mi familia a la tuya.</h2>
+      <div class="divider-flourish">◈</div>
+      <p data-i18n="abCloseP1">Cuando me invitas a tu boda, cumpleaños, reunión familiar o evento de empresa, entiendo que me estás confiando un momento importante en tu vida.</p>
+      <p data-i18n="abCloseP2">No lo tomo a la ligera.</p>
+      <p data-i18n="abCloseP3">Quiero que tus invitados coman bien, que haya de sobra y que la comida que servimos se sienta como hecha para familia.</p>
+      <p class="script-accent closing-signoff">
+        <span data-i18n="abCloseScript">Gracias por dejarme cocinar para ustedes.</span>
+        <span class="closing-sign" data-i18n="abCloseSign">— Gabe</span>
+      </p>
+    </div>
+
+    <svg class="closing-leaf" viewBox="0 0 160 220" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" focusable="false">
+      <path d="M80 214 C80 150 84 96 104 44"/>
+      <path d="M92 168 C112 166 128 150 132 128 C112 128 94 144 92 168 Z"/>
+      <path d="M88 140 C68 138 52 122 48 100 C68 100 86 116 88 140 Z"/>
+      <path d="M96 112 C116 110 132 94 136 72 C116 72 98 88 96 112 Z"/>
+      <path d="M100 84 C80 82 64 66 60 44 C80 44 98 60 100 84 Z"/>
+      <path d="M106 56 C122 52 134 38 136 20 C120 22 108 36 106 56 Z"/>
+    </svg>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="images/logo-dark.png" data-i18n-alt="altLogo" alt="Chef Gabe Inc — Cocinando con amor" class="footer-logo-img">
+      <p class="footer-quote" data-i18n="footerQuote">Porque cada celebración merece lo mejor.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footerContact">Contacto</h4>
+      <p><a href="tel:12097476746">(209) 747-6746</a></p>
+      <p><a href="mailto:orderchefgabe@gmail.com">orderchefgabe@gmail.com</a></p>
+      <p>1149 E Market St.<br>Stockton, CA 95205</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footerServing">Servimos</h4>
+      <p data-i18n="footerServingCopy">Stockton, Lodi, Manteca,<br>Tracy, Modesto y<br>áreas cercanas.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footerFollow">Síguenos</h4>
+      <div class="social-links">
+        <a href="https://www.instagram.com/agave_banquetes/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="https://www.facebook.com/profile.php?id=100064198117109" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="https://wa.me/12097476746" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5 5 15.9a8.4 8.4 0 1 1 15.5-4.2z"/><path d="M9.6 9.4c.1-.3.3-.4.5-.4h.6c.2 0 .3.1.4.3l.6 1.3c.1.2 0 .4-.1.5l-.4.4c.4.9 1.1 1.6 2 2l.4-.4c.1-.1.3-.2.5-.1l1.3.6c.2.1.3.2.3.4v.6c0 .3-.2.4-.4.5-1.6.6-4.5-1.2-5.4-3.3-.3-.8-.4-1.7-.3-2.4z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p><span aria-hidden="true">©</span> <span id="year"></span> <span data-i18n="footerRights">Chef Gabe Inc. Todos los derechos reservados.</span></p>
+  </div>
+
+  <svg class="footer-agave" viewBox="0 0 200 164" fill="none" stroke="currentColor"
+       stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+       aria-hidden="true" focusable="false">
+    <path d="M100 152 Q94 112 100 66 Q106 112 100 152 Z" transform="rotate(-68 100 152)"/>
+    <path d="M100 152 Q93 100 100 44 Q107 100 100 152 Z" transform="rotate(-51 100 152)"/>
+    <path d="M100 152 Q93 100 100 44 Q107 100 100 152 Z" transform="rotate(-34 100 152)"/>
+    <path d="M100 152 Q92 88 100 18 Q108 88 100 152 Z" transform="rotate(-17 100 152)"/>
+    <path d="M100 152 Q92 88 100 12 Q108 88 100 152 Z"/>
+    <path d="M100 152 Q92 88 100 18 Q108 88 100 152 Z" transform="rotate(17 100 152)"/>
+    <path d="M100 152 Q93 100 100 44 Q107 100 100 152 Z" transform="rotate(34 100 152)"/>
+    <path d="M100 152 Q93 100 100 44 Q107 100 100 152 Z" transform="rotate(51 100 152)"/>
+    <path d="M100 152 Q94 112 100 66 Q106 112 100 152 Z" transform="rotate(68 100 152)"/>
+    <path d="M78 154 Q100 146 122 154" stroke-width="1.6"/>
+  </svg>
+</footer>
+
+<script src="js/translations.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
