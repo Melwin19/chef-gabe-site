@@ -397,7 +397,53 @@ const translations = {
     abCloseP2: 'No lo tomo a la ligera.',
     abCloseP3: 'Quiero que tus invitados coman bien, que haya de sobra y que la comida que servimos se sienta como hecha para familia.',
     abCloseScript: 'Gracias por dejarme cocinar para ustedes.',
-    abCloseSign: '— Gabe'
+    abCloseSign: '— Gabe',
+
+    /* ===== Our Food page ===== */
+    pageTitleFood: 'Nuestra Comida | Chef Gabe Catering — Stockton, CA',
+    metaDescFood: 'Platillos mexicanos tradicionales para catering: birria, mole, carnitas, barbacoa, chiles rellenos y más. Stockton y el Valle Central.',
+
+    ofTitle: 'Sabor que\nune tradiciones.',
+    ofCopy: 'Comida mexicana tradicional hecha con ingredientes frescos y recetas auténticas para hacer de tu evento algo inolvidable.',
+
+    ofExploreTitle: 'Explora Nuestro Menú',
+    ofCat1: 'Platos Principales',
+    ofCat2: 'Acompañamientos',
+    ofCat3: 'Bebidas',
+    ofCat4: 'Antojitos y Guarniciones',
+    ofCat5: 'Postres',
+    ofCat6: 'Desayunos',
+    ofCat7: 'Opciones Vegetarianas',
+    ofSeeAll: 'Ver todos los platillos principales',
+    ofFullMenu: 'Ver Menú Completo',
+
+    ofD1n: 'Birria de Res',
+    ofD1d: 'Carne de res cocida lentamente con chiles y especias. Servida con consomé, cebolla, cilantro y limón.',
+    ofD2n: 'Pollo con Mole',
+    ofD2d: 'Pollo tierno bañado en nuestro mole tradicional, acompañado de arroz y frijoles.',
+    ofD3n: 'Carne de Puerco en Chile Verde',
+    ofD3d: 'Trozos de puerco en salsa de chile verde tatemado. Acompañado de arroz y frijoles.',
+    ofD4n: 'Barbacoa de Res',
+    ofD4d: 'Res cocida lentamente con hierbas y especias. Servida con consomé, cebolla y cilantro.',
+    ofD5n: 'Fajitas de Pollo',
+    ofD5d: 'Tiras de pollo a la plancha con pimientos y cebolla. Servidas con arroz, frijoles y tortillas.',
+    ofD6n: 'Camarones a la Plancha',
+    ofD6d: 'Camarones sazonados y a la plancha, servidos con arroz, ensalada y tortillas.',
+    ofD7n: 'Carnitas de Puerco',
+    ofD7d: 'Puerco doradito y jugoso. Servido con arroz, frijoles, cebolla, cilantro y salsas.',
+    ofD8n: 'Chiles Rellenos',
+    ofD8d: 'Chiles poblanos rellenos de queso, bañados en salsa roja o verde. Acompañados de arroz y frijoles.',
+
+    ofCustomTitle: 'Menús personalizados para cada ocasión',
+    ofCustomScript: 'Tú celebras, nosotros nos encargamos del sabor.',
+    ofCustomCopy: 'Cada evento es único. Trabajamos contigo para crear el menú perfecto según tus gustos, número de invitados y estilo de celebración.',
+    ofSpecialTitle: '¡Pregúntanos por nuestras opciones especiales!',
+    ofSpecialList: 'Bodas • XV años • Bautizos • Eventos corporativos y más',
+
+    ofPrev: 'Reseñas anteriores',
+    ofNext: 'Siguientes reseñas',
+    ofCtaTitle: '¿Listo para planear tu evento?',
+    ofCtaCopy: 'Déjanos llevar el sabor a tu celebración.'
   },
 
   /* ------------------------------------------------------- */
@@ -775,6 +821,54 @@ const translations = {
     abCloseP2: 'I do not take that lightly.',
     abCloseP3: 'I want your guests to eat well, for there to be plenty, and for the food we serve to feel like it was made for family.',
     abCloseScript: 'Thank you for letting me cook for you.',
-    abCloseSign: '— Gabe'
+    abCloseSign: '— Gabe',
+
+    /* ===== Our Food page =====
+       Dish names stay in Spanish on both sides — they are the names of
+       the dishes, not words to translate. Descriptions are translated. */
+    pageTitleFood: 'Our Food | Chef Gabe Catering — Stockton, CA',
+    metaDescFood: 'Traditional Mexican catering dishes: birria, mole, carnitas, barbacoa, chiles rellenos and more. Stockton and the Central Valley.',
+
+    ofTitle: 'Flavor that brings\ntraditions together.',
+    ofCopy: 'Traditional Mexican food made with fresh ingredients and authentic recipes, to make your event unforgettable.',
+
+    ofExploreTitle: 'Explore Our Menu',
+    ofCat1: 'Main Dishes',
+    ofCat2: 'Sides',
+    ofCat3: 'Drinks',
+    ofCat4: 'Antojitos & Garnishes',
+    ofCat5: 'Desserts',
+    ofCat6: 'Breakfasts',
+    ofCat7: 'Vegetarian Options',
+    ofSeeAll: 'See all main dishes',
+    ofFullMenu: 'View Full Menu',
+
+    ofD1n: 'Birria de Res',
+    ofD1d: 'Beef slow-cooked with chiles and spices. Served with consommé, onion, cilantro and lime.',
+    ofD2n: 'Pollo con Mole',
+    ofD2d: 'Tender chicken in our traditional mole, served with rice and beans.',
+    ofD3n: 'Carne de Puerco en Chile Verde',
+    ofD3d: 'Pork in a roasted green chile sauce. Served with rice and beans.',
+    ofD4n: 'Barbacoa de Res',
+    ofD4d: 'Beef slow-cooked with herbs and spices. Served with consommé, onion and cilantro.',
+    ofD5n: 'Fajitas de Pollo',
+    ofD5d: 'Grilled chicken strips with peppers and onion. Served with rice, beans and tortillas.',
+    ofD6n: 'Camarones a la Plancha',
+    ofD6d: 'Seasoned grilled shrimp, served with rice, salad and tortillas.',
+    ofD7n: 'Carnitas de Puerco',
+    ofD7d: 'Golden, juicy pork. Served with rice, beans, onion, cilantro and salsas.',
+    ofD8n: 'Chiles Rellenos',
+    ofD8d: 'Poblano peppers stuffed with cheese in a red or green sauce. Served with rice and beans.',
+
+    ofCustomTitle: 'Custom menus for every occasion',
+    ofCustomScript: 'You celebrate — we take care of the flavor.',
+    ofCustomCopy: 'Every event is unique. We work with you to build the right menu for your tastes, your guest count and your style of celebration.',
+    ofSpecialTitle: 'Ask us about our special options!',
+    ofSpecialList: 'Weddings • Quinceañeras • Baptisms • Corporate events and more',
+
+    ofPrev: 'Previous reviews',
+    ofNext: 'Next reviews',
+    ofCtaTitle: 'Ready to plan your event?',
+    ofCtaCopy: 'Let us bring the flavor to your celebration.'
   }
 };

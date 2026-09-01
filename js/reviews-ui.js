@@ -108,14 +108,73 @@
     render();
   }
 
-  function init() {
-    grid = document.getElementById('reviews-grid');
-    if (!grid) return;
+  /* ---------------------------------------------------------------
+     Carousel used on the Our Food page. Same data, same card builder —
+     three at a time with prev/next and dots, so the two pages can never
+     show different versions of the same customer's words.
+     --------------------------------------------------------------- */
+  var carousel, dotsWrap, page = 0, PER_VIEW = 3;
 
+  function pageCount() {
+    return Math.max(1, Math.ceil(reviews.length / PER_VIEW));
+  }
+
+  function renderCarousel() {
+    if (!carousel) return;
+    var total = pageCount();
+    if (page >= total) page = 0;
+    if (page < 0) page = total - 1;
+
+    carousel.textContent = '';
+    var start = page * PER_VIEW;
+    for (var i = start; i < start + PER_VIEW && i < reviews.length; i++) {
+      carousel.appendChild(card(reviews[i]));
+    }
+
+    if (dotsWrap) {
+      dotsWrap.textContent = '';
+      for (var p = 0; p < total; p++) {
+        var dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = 'carousel-dot' + (p === page ? ' is-active' : '');
+        dot.setAttribute('aria-label', String(p + 1));
+        dot.setAttribute('aria-current', p === page ? 'true' : 'false');
+        (function (target) {
+          dot.addEventListener('click', function () { page = target; renderCarousel(); });
+        })(p);
+        dotsWrap.appendChild(dot);
+      }
+      // A single page needs no controls at all.
+      dotsWrap.hidden = total < 2;
+    }
+    var nav = document.querySelectorAll('.carousel-arrow');
+    for (var n = 0; n < nav.length; n++) nav[n].hidden = total < 2;
+  }
+
+  function initCarousel() {
+    carousel = document.getElementById('reviews-carousel');
+    if (!carousel) return;
+    dotsWrap = document.getElementById('carousel-dots');
+
+    var prev = document.getElementById('carousel-prev');
+    var next = document.getElementById('carousel-next');
+    if (prev) prev.addEventListener('click', function () { page--; renderCarousel(); });
+    if (next) next.addEventListener('click', function () { page++; renderCarousel(); });
+
+    renderCarousel();
+    document.addEventListener('languagechange', renderCarousel);
+  }
+
+  function init() {
     if (typeof reviews === 'undefined') {
       console.error('[reviews] reviews.js must load before reviews-ui.js');
       return;
     }
+
+    initCarousel();
+
+    grid = document.getElementById('reviews-grid');
+    if (!grid) return;
 
     button = document.getElementById('reviews-more');
     shown = Math.min(BATCH, reviews.length);
