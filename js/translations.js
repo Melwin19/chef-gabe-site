@@ -120,6 +120,22 @@ const translations = {
     altCatSoups: 'Sopa de albóndigas con zanahoria, calabaza, elote, hierbabuena y limón',
     altCatMxBreakfast: 'Huevos rancheros en salsa roja con aguacate, crema, arroz mexicano y frijoles refritos',
     altCatPremium: 'Corte de res asado a la parrilla con cebollitas y chile toreado, arroz mexicano y frijoles refritos',
+    altPozole: 'Pozole rojo con repollo, rábano, cebolla, limón y tostadas',
+    altCamarones: 'Camarones en salsa roja servidos con arroz, ensalada fresca y verduras al vapor',
+    altPolloAsado: 'Pollo asado a la parrilla en tabla de madera con cebollitas, limón, salsa y pico de gallo',
+    altSalad: 'Ensalada de espinaca con fresa, mora azul, manzana verde, nuez y almendra en un tazón grande de madera',
+    altBurritoBowls: 'Filas de burrito bowls con carne asada, arroz, frijoles y pimientos, listos para servir',
+
+    /* Event and story photography */
+    altAbHero: 'Chef Gabe en la cocina, sirviendo tazones de caldo en charolas antes de un evento',
+    altAbYears: 'Línea de buffet con mantelería rosa, cajas de madera, piñas y pizarrones con los nombres de las salsas',
+    altTortillas: 'Tortillas de maíz hechas a mano cociéndose en un comal durante un evento',
+    altCorpBuffet: 'Invitados sirviéndose de la línea de buffet en un evento de empresa',
+    altFarmBuffet: 'Línea de buffet al aire libre sobre cajas de madera, decorada con guirnalda de rosas, en un evento en el campo',
+    altDessertTable: 'Mesa de postres montada sobre barricas de vino, decorada con eucalipto y rosas',
+    altBigEvent: 'Salón lleno de invitados comiendo en mesas redondas durante un evento institucional',
+    altPackagedMeals: 'Comidas individuales empacadas en tazones con tapa, apiladas y listas para entregar',
+    altFruitTrays: 'Charolas de fruta de temporada con uva, fresa, piña y melón, preparadas en la cocina',
     altMenudo: 'Tazón de menudo en caldo rojo con cebolla, cilantro, rábano y limón',
 
     /* Footer */
@@ -556,6 +572,22 @@ const translations = {
     altCatSoups: 'Albondigas soup with carrot, squash, corn, mint and lime',
     altCatMxBreakfast: 'Huevos rancheros in red salsa with avocado, crema, Mexican rice and refried beans',
     altCatPremium: 'Grilled steak with charred spring onions and chile toreado, Mexican rice and refried beans',
+    altPozole: 'Red pozole with cabbage, radish, onion, lime and tostadas',
+    altCamarones: 'Shrimp in red sauce served with rice, fresh salad and steamed vegetables',
+    altPolloAsado: 'Grilled pollo asado on a wooden board with charred onions, lime, salsa and pico de gallo',
+    altSalad: 'Spinach salad with strawberry, blueberry, green apple, walnut and almond in a large wooden bowl',
+    altBurritoBowls: 'Rows of burrito bowls with carne asada, rice, beans and peppers, ready to serve',
+
+    /* Event and story photography */
+    altAbHero: 'Chef Gabe in the kitchen, plating bowls of broth onto trays before an event',
+    altAbYears: 'Buffet line with blush linens, wood crates, pineapples and chalkboard signs naming the salsas',
+    altTortillas: 'Handmade corn tortillas cooking on a griddle at an event',
+    altCorpBuffet: 'Guests serving themselves along the buffet line at a corporate event',
+    altFarmBuffet: 'Outdoor buffet line on wood crates, trimmed with a rose garland, at an event in the country',
+    altDessertTable: 'Dessert table set on wine barrels, styled with eucalyptus and roses',
+    altBigEvent: 'A hall full of guests eating at round tables during an institutional event',
+    altPackagedMeals: 'Individually packaged meals in lidded bowls, stacked and ready for delivery',
+    altFruitTrays: 'Seasonal fruit trays with grapes, strawberries, pineapple and melon, prepped in the kitchen',
     altMenudo: 'Bowl of menudo in red broth with onion, cilantro, radish and lime',
 
     /* Footer */

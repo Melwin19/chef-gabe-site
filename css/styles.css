@@ -599,7 +599,11 @@ img.dish-img,
 img.event-img,
 img.food-img,
 img.acc-photo,
-img.moment-img {
+img.moment-img,
+img.made-photo,
+img.memory-img,
+img.timeline-img,
+img.polaroid-img {
   width: 100%;
   object-fit: cover;
 }
@@ -608,7 +612,10 @@ img.moment-img {
    block used to hold, cropped rather than letterboxed. */
 .food-cta-media img,
 .custom-media img,
-.reviews-cta-media img {
+.reviews-cta-media img,
+.event-cta-media img,
+.years-media img,
+.closing-media img {
   position: absolute;
   inset: 0;
   width: 100%;
