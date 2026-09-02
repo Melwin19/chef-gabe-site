@@ -110,6 +110,18 @@ const translations = {
     altTrustTeam: 'Chef de Chef Gabe sirviendo a los invitados en la línea de buffet',
     altTrustFood: 'Platillo servido con tostada, arroz mexicano y frijoles refritos',
 
+    /* Dish and menu photography */
+    altDishAsada: 'Carne asada a la parrilla con cebollitas y chile toreado, arroz mexicano y frijoles refritos',
+    altDishCarnitas: 'Carnitas de puerco doraditas con arroz mexicano, frijoles refritos, chile toreado y limón',
+    altFoodHero: 'Mesa de madera con varios platillos mexicanos, arroz, frijoles, sopa de albóndigas y aguas frescas',
+    altAguasFrescas: 'Agua de jamaica y horchata en vasos altos sobre una tabla de madera con canela, naranja y flor de jamaica',
+    altCatMexican: 'Chile colorado: res en salsa roja de chile guajillo, servida en plato hondo con cilantro',
+    altCatPasta: 'Pasta italiana cremosa con queso parmesano y albahaca fresca',
+    altCatSoups: 'Sopa de albóndigas con zanahoria, calabaza, elote, hierbabuena y limón',
+    altCatMxBreakfast: 'Huevos rancheros en salsa roja con aguacate, crema, arroz mexicano y frijoles refritos',
+    altCatPremium: 'Corte de res asado a la parrilla con cebollitas y chile toreado, arroz mexicano y frijoles refritos',
+    altMenudo: 'Tazón de menudo en caldo rojo con cebolla, cilantro, rábano y limón',
+
     /* Footer */
     footerQuote: 'Porque cada celebración merece lo mejor.',
     footerContact: 'Contacto',
@@ -533,6 +545,18 @@ const translations = {
     altTrustMain: 'Serving table with bread, desserts and a fresh fruit platter',
     altTrustTeam: 'Chef Gabe team member serving guests along the buffet line',
     altTrustFood: 'Plated tostada with Mexican rice and refried beans',
+
+    /* Dish and menu photography */
+    altDishAsada: 'Grilled carne asada with charred spring onions and chile toreado, Mexican rice and refried beans',
+    altDishCarnitas: 'Crispy pork carnitas with Mexican rice, refried beans, chile toreado and lime',
+    altFoodHero: 'Wooden table spread with several Mexican plates, rice, beans, albondigas soup and aguas frescas',
+    altAguasFrescas: 'Hibiscus and horchata aguas frescas in tall glasses on a wooden board with cinnamon, orange and dried hibiscus',
+    altCatMexican: 'Chile colorado: beef in red guajillo chile sauce, served in a bowl with cilantro',
+    altCatPasta: 'Creamy Italian pasta with parmesan and fresh basil',
+    altCatSoups: 'Albondigas soup with carrot, squash, corn, mint and lime',
+    altCatMxBreakfast: 'Huevos rancheros in red salsa with avocado, crema, Mexican rice and refried beans',
+    altCatPremium: 'Grilled steak with charred spring onions and chile toreado, Mexican rice and refried beans',
+    altMenudo: 'Bowl of menudo in red broth with onion, cilantro, radish and lime',
 
     /* Footer */
     footerQuote: 'Because every celebration deserves the very best.',

@@ -596,8 +596,23 @@ a:focus-visible, button:focus-visible {
 }
 
 img.dish-img,
-img.event-img {
+img.event-img,
+img.food-img,
+img.acc-photo,
+img.moment-img {
   width: 100%;
+  object-fit: cover;
+}
+
+/* Full-bleed CTA / panel media: the photo fills the slot the placeholder
+   block used to hold, cropped rather than letterboxed. */
+.food-cta-media img,
+.custom-media img,
+.reviews-cta-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
