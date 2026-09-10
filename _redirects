@@ -1,0 +1,13 @@
+# Permanently redirect every .html address to its clean URL, so each page
+# has one canonical address (matching the nav links and sitemap.xml).
+#
+# The "!" forces the rule. Without it Netlify skips a redirect whenever a
+# file exists at the source path — and every one of these .html files does
+# exist, so an unforced rule would never fire.
+/index.html     /          301!
+/menus.html     /menus     301!
+/our-food.html  /our-food  301!
+/events.html    /events    301!
+/reviews.html   /reviews   301!
+/about.html     /about     301!
+/contact.html   /contact   301!
