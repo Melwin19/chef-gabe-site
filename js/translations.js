@@ -27,9 +27,10 @@ const translations = {
     pageTitleHome: 'Chef Gabe Catering | Cocinando con amor — Stockton, CA',
     metaDescHome: 'Catering mexicano tradicional para bodas, quinceañeras, eventos corporativos y celebraciones familiares. Servimos Stockton, Lodi, Manteca, Tracy, Modesto y áreas cercanas.',
 
-    /* Brand — "Cocinando con amor" is a signature phrase and stays in
-       Spanish on both sides of the dictionary. Deliberately identical. */
-    altLogo: 'Chef Gabe Inc — Cocinando con amor',
+    /* Brand — the alt text reads out the logo's own lettering, which
+       is in English ("Catering With Soul"), so it is deliberately
+       identical on both sides of the dictionary. */
+    altLogo: 'Chef Gabe Inc — Catering With Soul',
 
     /* Utility bar */
     langToggleLabel: 'Cambiar idioma',
@@ -128,6 +129,7 @@ const translations = {
 
     /* Event and story photography */
     altAbHero: 'Chef Gabe en la cocina, sirviendo tazones de caldo en charolas antes de un evento',
+    altAbPortrait: 'Chef Gabe de joven, en un retrato con camisa blanca y corbata roja',
     altAbYears: 'Línea de buffet con mantelería rosa, cajas de madera, piñas y pizarrones con los nombres de las salsas',
     altTortillas: 'Tortillas de maíz hechas a mano cociéndose en un comal durante un evento',
     altCorpBuffet: 'Invitados sirviéndose de la línea de buffet en un evento de empresa',
@@ -480,8 +482,8 @@ const translations = {
     pageTitleHome: 'Chef Gabe Catering | Cocinando con amor — Stockton, CA',
     metaDescHome: 'Traditional Mexican catering for weddings, quinceañeras, corporate events and family celebrations. Serving Stockton, Lodi, Manteca, Tracy, Modesto and surrounding areas.',
 
-    /* Brand — see the es note; intentionally the same Spanish phrase. */
-    altLogo: 'Chef Gabe Inc — Cocinando con amor',
+    /* Brand — see the es note; intentionally identical to the es value. */
+    altLogo: 'Chef Gabe Inc — Catering With Soul',
 
     /* Utility bar */
     langToggleLabel: 'Change language',
@@ -580,6 +582,7 @@ const translations = {
 
     /* Event and story photography */
     altAbHero: 'Chef Gabe in the kitchen, plating bowls of broth onto trays before an event',
+    altAbPortrait: 'A young Chef Gabe in a portrait, wearing a white shirt and red tie',
     altAbYears: 'Buffet line with blush linens, wood crates, pineapples and chalkboard signs naming the salsas',
     altTortillas: 'Handmade corn tortillas cooking on a griddle at an event',
     altCorpBuffet: 'Guests serving themselves along the buffet line at a corporate event',

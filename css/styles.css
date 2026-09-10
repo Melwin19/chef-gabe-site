@@ -175,7 +175,9 @@ h1, h2, h3 {
   gap: 24px;
 }
 .logo { display: flex; align-items: center; }
-.logo-img { height: 64px; width: auto; }
+/* Round badge logo: taller than the old wordmark so the small
+   "Catering With Soul" line inside it stays legible. */
+.logo-img { height: 80px; width: auto; }
 .nav-links {
   display: flex;
   gap: 28px;
@@ -344,7 +346,7 @@ h1, h2, h3 {
   padding-bottom: 40px;
   border-bottom: 1px solid #c8b99e;
 }
-.footer-logo-img { height: 70px; width: auto; margin-bottom: 16px; }
+.footer-logo-img { height: 96px; width: auto; margin-bottom: 16px; }
 .footer-quote { font-style: italic; font-size: 0.9rem; max-width: 260px; color: #4a4632; }
 .footer-col h4 { font-family: var(--font-body); font-size: 0.8rem; letter-spacing: var(--track-nav); text-transform: uppercase; margin-bottom: 12px; }
 .footer-col p { margin: 0 0 8px; font-size: 0.9rem; color: #4a4632; }
@@ -416,7 +418,7 @@ a:focus-visible, button:focus-visible {
 /* =========================================================
    Interior page hero (menus, our-food, events, …)
    Olive rather than cream: .navbar inherits offwhite text from
-   .hero and the mark is logo-cream.png, so a cream band would
+   .hero and the mark is logo-badge-light.png, so a cream band would
    need the whole nav restyled. Olive reuses it as-is.
    ========================================================= */
 .page-hero { background: var(--color-olive); }
@@ -1870,6 +1872,9 @@ img.trust-img-team { object-position: center top; }
   transform: rotate(-1.6deg);
 }
 .polaroid-img { aspect-ratio: 4 / 3.4; }
+/* A single-person portrait: the landscape frame above would crop off
+   either the hair or the chin, so this photo gets a portrait polaroid. */
+.polaroid-img--portrait { aspect-ratio: 4 / 5; }
 .polaroid-tape {
   position: absolute;
   top: -13px;
