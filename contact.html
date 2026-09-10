@@ -304,6 +304,14 @@
            captures it. -->
       <textarea id="estimate-summary" name="estimate-summary" hidden></textarea>
 
+      <!-- Machine-readable twin of the summary above, filled by the same
+           render pass in calculator.js. line-items-json holds the itemised
+           breakdown as a JSON array and estimate-total the grand total as a
+           bare number, so the quote can be loaded into the admin dashboard
+           without re-parsing the human-readable text. -->
+      <input type="hidden" id="line-items-json" name="line_items_json" value="">
+      <input type="hidden" id="estimate-total" name="estimate_total" value="">
+
       <button type="submit" class="btn btn-primary form-submit"><span data-i18n="formSubmit">Enviar Mi Cotización</span> <span aria-hidden="true">→</span></button>
 
       <p class="form-privacy">

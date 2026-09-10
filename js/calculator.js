@@ -11,11 +11,20 @@
    It also writes a plain-text version of the same breakdown into the
    hidden #estimate-summary textarea, so the full itemisation rides
    along with the Netlify form submission.
+
+   The same render pass writes a machine-readable twin of that
+   breakdown into #line-items-json (a JSON array of
+   { category, guests_or_qty, unit_price, subtotal }) and the bare
+   grand total into #estimate-total, so the submission can be loaded
+   straight into the admin dashboard's quotes table. Those two carry
+   the canonical English category names on purpose: the stored record
+   should not change shape depending on which language the visitor
+   happened to be browsing in.
    ========================================================= */
 (function () {
   'use strict';
 
-  var form, list, totalEl, noteEl, hiddenField;
+  var form, list, totalEl, noteEl, hiddenField, jsonField, totalField;
 
   function lang() {
     var l = document.documentElement.getAttribute('lang');
@@ -25,6 +34,15 @@
   function t(key) {
     var dict = (typeof translations !== 'undefined') ? translations[lang()] : null;
     return (dict && Object.prototype.hasOwnProperty.call(dict, key)) ? dict[key] : key;
+  }
+
+  /* Canonical English label, whatever the page is currently showing.
+     Falls back to the displayed label if the English dictionary is
+     missing, so a lookup miss degrades to a readable name rather than
+     a bare key. */
+  function tEn(key) {
+    var dict = (typeof translations !== 'undefined') ? translations.en : null;
+    return (dict && Object.prototype.hasOwnProperty.call(dict, key)) ? dict[key] : t(key);
   }
 
   /* 1640 -> "$1,640". Whole dollars only: every price on the menu is a
@@ -39,7 +57,10 @@
   }
 
   /* Collects the current selection as a list of line items.
-     Each: { label, detail, amount, plain } */
+     Each: { label, detail, amount, plain, category, qty, unitPrice }
+     - label/detail/plain are display strings in the current language
+     - category/qty/unitPrice feed the JSON payload and stay language-
+       independent (English category name, plain numbers) */
   function collect() {
     var lines = [];
 
@@ -56,7 +77,10 @@
         label: label,
         detail: guests + ' ' + t('calcGuestsWord') + ' × ' + money(price),
         amount: amount,
-        plain: label + ': ' + guests + ' ' + t('calcGuestsWord') + ' x ' + money(price) + ' = ' + money(amount)
+        plain: label + ': ' + guests + ' ' + t('calcGuestsWord') + ' x ' + money(price) + ' = ' + money(amount),
+        category: tEn(card.getAttribute('data-label-key')),
+        qty: guests,
+        unitPrice: price
       });
     });
 
@@ -71,7 +95,10 @@
         label: label,
         detail: '×' + qty + ' · ' + money(price) + ' ' + t('calcEachWord'),
         amount: amount,
-        plain: label + ' x' + qty + ' = ' + money(amount)
+        plain: label + ' x' + qty + ' = ' + money(amount),
+        category: tEn(card.getAttribute('data-label-key')),
+        qty: qty,
+        unitPrice: price
       });
     });
 
@@ -87,7 +114,10 @@
         label: dLabel,
         detail: money(fee),
         amount: fee,
-        plain: dLabel + ': ' + money(fee)
+        plain: dLabel + ': ' + money(fee),
+        category: tEn('calcDeliveryLabel'),
+        qty: 1,
+        unitPrice: fee
       });
     }
 
@@ -141,6 +171,28 @@
           '. ' + t('calcTotalLabel') + ': ' + money(total) + '.'
         : '';
     }
+
+    /* Structured twin of the same breakdown. Rounded the same way the
+       displayed figures are, so estimate_total always agrees with the
+       total on screen. An empty selection submits empty strings rather
+       than '[]'/'0' — no estimate was built, and a stray zero-dollar
+       quote in the dashboard would be worse than a blank one. */
+    if (jsonField) {
+      jsonField.value = lines.length
+        ? JSON.stringify(lines.map(function (l) {
+            return {
+              category: l.category,
+              guests_or_qty: l.qty,
+              unit_price: l.unitPrice,
+              subtotal: Math.round(l.amount)
+            };
+          }))
+        : '';
+    }
+
+    if (totalField) {
+      totalField.value = lines.length ? String(Math.round(total)) : '';
+    }
   }
 
   function init() {
@@ -151,6 +203,8 @@
     totalEl = document.getElementById('calc-total');
     noteEl = document.getElementById('calc-note');
     hiddenField = document.getElementById('estimate-summary');
+    jsonField = document.getElementById('line-items-json');
+    totalField = document.getElementById('estimate-total');
 
     /* Checking a category reveals its own guest input. Each category
        keeps a separate count on purpose — 30 for dinners and 80 for
