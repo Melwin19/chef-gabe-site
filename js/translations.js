@@ -299,6 +299,29 @@ const translations = {
     formPrivacy: 'Tu información está segura con nosotros y nunca será compartida.',
     formEstimateNote: 'Tu estimado se envía junto con este mensaje.',
 
+    /* FAQ */
+    faqEyebrow: 'Preguntas Frecuentes',
+    faqTitle: 'Preguntas Que Nos Hacen Seguido',
+    faqLead: 'Si no encuentras lo que buscas, escríbenos y con gusto te respondemos.',
+
+    faqQ1: '¿Con cuánta anticipación debo reservar mi evento?',
+    faqA1: 'Te recomendamos contactarnos lo antes posible, sobre todo para bodas y quinceañeras de fin de semana en temporada alta. Aun así, escríbenos aunque tu evento sea pronto y haremos todo lo posible por atenderte.',
+
+    faqQ2: '¿Cuánto cuesta el catering?',
+    faqA2: 'El precio depende de las categorías del menú y del número de invitados que elijas. Consulta nuestra página de Menús para ver los precios por persona, o usa nuestra calculadora de cotización para armar un estimado personalizado al instante.',
+
+    faqQ3: '¿Se encargan de la entrega y el montaje?',
+    faqA3: 'Sí. Nuestro Servicio de Entrega, Montaje y Equipo incluye la entrega de la comida, el montaje del bufet y la recolección de utensilios y equipo al finalizar.',
+
+    faqQ4: '¿Puedo personalizar el menú para mi evento?',
+    faqA4: 'Claro que sí. Ofrecemos opciones de bufet armado a tu gusto, donde puedes elegir platillos fuertes, ensaladas, salsas y guarniciones para crear un menú personalizado para tu celebración.',
+
+    faqQ5: '¿Qué áreas atienden?',
+    faqA5: 'Con mucho gusto servimos en Stockton, Lodi, Manteca, Tracy, Modesto y el resto del Valle Central.',
+
+    faqQ6: '¿Hay un mínimo de invitados?',
+    faqA6: 'El mínimo puede variar según el evento y el menú. Escríbenos y con gusto te decimos exactamente qué funciona para tu celebración.',
+
     /* Prefer to talk */
     talkEyebrow: 'Contáctanos',
     talkTitle: '¿Prefieres Hablar?',
@@ -751,6 +774,29 @@ const translations = {
     formSubmit: 'Get My Quote',
     formPrivacy: 'Your information is safe with us and will never be shared.',
     formEstimateNote: 'Your estimate is sent along with this message.',
+
+    /* FAQ */
+    faqEyebrow: 'Frequently Asked',
+    faqTitle: 'Questions We Hear Often',
+    faqLead: "If you don't find what you're looking for, reach out and we'll gladly answer.",
+
+    faqQ1: 'How far in advance should I book my event?',
+    faqA1: "We recommend reaching out as early as possible, especially for weekend weddings and quinceañeras during busy seasons — but reach out even if your event is coming up soon, and we'll do our best to accommodate you.",
+
+    faqQ2: 'How much does catering cost?',
+    faqA2: 'Pricing depends on the menu categories and guest count you choose — check out our Menus page for per-person pricing, or use our quote calculator to build a custom estimate instantly.',
+
+    faqQ3: 'Do you handle delivery and setup?',
+    faqA3: 'Yes — our Delivery, Setup & Equipment Service covers food delivery, buffet setup, and pickup of utensils and equipment afterward.',
+
+    faqQ4: 'Can I customize the menu for my event?',
+    faqA4: 'Absolutely. We offer build-your-own buffet options where you can select entrées, salads, salsas, and sides to create a menu personalized for your celebration.',
+
+    faqQ5: 'What areas do you serve?',
+    faqA5: 'We proudly serve Stockton, Lodi, Manteca, Tracy, Modesto, and the surrounding Central Valley.',
+
+    faqQ6: 'Is there a minimum guest count?',
+    faqA6: "Minimums can vary depending on the event and menu — reach out and we'll let you know exactly what works for your celebration.",
 
     /* Prefer to talk */
     talkEyebrow: 'Reach Us',

@@ -249,6 +249,93 @@
   </div>
 </section>
 
+<!-- FAQ. Panels are hidden in the markup, so with JavaScript off every
+     answer is still in the DOM for search engines and Ctrl+F — same
+     contract as the menus.html accordion. -->
+<section class="section faq-section" id="faq">
+  <div class="container faq-container">
+    <p class="eyebrow center"><span aria-hidden="true">◈</span> <span data-i18n="faqEyebrow">Preguntas Frecuentes</span> <span aria-hidden="true">◈</span></p>
+    <h2 class="section-title" data-i18n="faqTitle">Preguntas Que Nos Hacen Seguido</h2>
+    <div class="divider-flourish center-flourish">◈</div>
+    <p class="section-lead" data-i18n="faqLead">Si no encuentras lo que buscas, escríbenos y con gusto te respondemos.</p>
+
+    <div class="faq-accordion">
+
+      <section class="acc-item">
+        <h3 class="acc-header">
+          <button type="button" class="acc-trigger" id="trigger-faq1" aria-controls="panel-faq1" aria-expanded="false">
+            <span class="faq-q" data-i18n="faqQ1">¿Con cuánta anticipación debo reservar mi evento?</span>
+            <span class="acc-chevron" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="acc-panel" id="panel-faq1" role="region" aria-labelledby="trigger-faq1" hidden>
+          <p class="faq-a" data-i18n="faqA1">Te recomendamos contactarnos lo antes posible, sobre todo para bodas y quinceañeras de fin de semana en temporada alta. Aun así, escríbenos aunque tu evento sea pronto y haremos todo lo posible por atenderte.</p>
+        </div>
+      </section>
+
+      <section class="acc-item">
+        <h3 class="acc-header">
+          <button type="button" class="acc-trigger" id="trigger-faq2" aria-controls="panel-faq2" aria-expanded="false">
+            <span class="faq-q" data-i18n="faqQ2">¿Cuánto cuesta el catering?</span>
+            <span class="acc-chevron" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="acc-panel" id="panel-faq2" role="region" aria-labelledby="trigger-faq2" hidden>
+          <p class="faq-a" data-i18n="faqA2">El precio depende de las categorías del menú y del número de invitados que elijas. Consulta nuestra página de Menús para ver los precios por persona, o usa nuestra calculadora de cotización para armar un estimado personalizado al instante.</p>
+        </div>
+      </section>
+
+      <section class="acc-item">
+        <h3 class="acc-header">
+          <button type="button" class="acc-trigger" id="trigger-faq3" aria-controls="panel-faq3" aria-expanded="false">
+            <span class="faq-q" data-i18n="faqQ3">¿Se encargan de la entrega y el montaje?</span>
+            <span class="acc-chevron" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="acc-panel" id="panel-faq3" role="region" aria-labelledby="trigger-faq3" hidden>
+          <p class="faq-a" data-i18n="faqA3">Sí. Nuestro Servicio de Entrega, Montaje y Equipo incluye la entrega de la comida, el montaje del bufet y la recolección de utensilios y equipo al finalizar.</p>
+        </div>
+      </section>
+
+      <section class="acc-item">
+        <h3 class="acc-header">
+          <button type="button" class="acc-trigger" id="trigger-faq4" aria-controls="panel-faq4" aria-expanded="false">
+            <span class="faq-q" data-i18n="faqQ4">¿Puedo personalizar el menú para mi evento?</span>
+            <span class="acc-chevron" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="acc-panel" id="panel-faq4" role="region" aria-labelledby="trigger-faq4" hidden>
+          <p class="faq-a" data-i18n="faqA4">Claro que sí. Ofrecemos opciones de bufet armado a tu gusto, donde puedes elegir platillos fuertes, ensaladas, salsas y guarniciones para crear un menú personalizado para tu celebración.</p>
+        </div>
+      </section>
+
+      <section class="acc-item">
+        <h3 class="acc-header">
+          <button type="button" class="acc-trigger" id="trigger-faq5" aria-controls="panel-faq5" aria-expanded="false">
+            <span class="faq-q" data-i18n="faqQ5">¿Qué áreas atienden?</span>
+            <span class="acc-chevron" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="acc-panel" id="panel-faq5" role="region" aria-labelledby="trigger-faq5" hidden>
+          <p class="faq-a" data-i18n="faqA5">Con mucho gusto servimos en Stockton, Lodi, Manteca, Tracy, Modesto y el resto del Valle Central.</p>
+        </div>
+      </section>
+
+      <section class="acc-item">
+        <h3 class="acc-header">
+          <button type="button" class="acc-trigger" id="trigger-faq6" aria-controls="panel-faq6" aria-expanded="false">
+            <span class="faq-q" data-i18n="faqQ6">¿Hay un mínimo de invitados?</span>
+            <span class="acc-chevron" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="acc-panel" id="panel-faq6" role="region" aria-labelledby="trigger-faq6" hidden>
+          <p class="faq-a" data-i18n="faqA6">El mínimo puede variar según el evento y el menú. Escríbenos y con gusto te decimos exactamente qué funciona para tu celebración.</p>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+
 <!-- Contact form -->
 <section class="section form-section" id="quote">
   <div class="container form-container">
@@ -421,6 +508,7 @@
 
 <script src="js/translations.js"></script>
 <script src="js/i18n.js"></script>
+<script src="js/faq-schema.js"></script>
 <script src="js/calculator.js"></script>
 <script src="js/script.js"></script>
 </body>
