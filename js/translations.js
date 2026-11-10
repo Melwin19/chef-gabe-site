@@ -419,11 +419,11 @@ const translations = {
 
     abMichTitle: 'De Michoacán a California',
     abMichP1: 'Nací y crecí en San Benito, Michoacán, donde soy el mayor de ocho hermanos.',
-    abMichP2: 'Mis primeros recuerdos están en la cocina, viendo a mi abuela y a mi mamá preparar los platillos tradicionales de nuestra región.',
+    abMichP2: 'Mis primeros recuerdos están en la cocina, rodeado de los platillos tradicionales de nuestra región.',
     abMichP3: 'En nuestra casa siempre había una olla grande en la estufa, mucha comida y espacio para uno más en la mesa.',
     abMichHighlight: 'Ahí fue donde aprendí a cocinar.',
     abMichScript: 'La comida es una manera de demostrar nuestro amor.',
-    abMichRight: 'Mi mamá siempre cocinaba suficiente para todos. Familia, amigos, cualquiera que llegara — se sentaba y comía.',
+    abMichRight: 'Siempre había comida suficiente para todos. Familia, amigos, cualquiera que llegara — se sentaba y comía.',
     abMichRightHighlight: 'Eso es algo que llevo conmigo todos los días.',
 
     abYearsTitle: '14+ Años Sirviendo al Valle Central',
@@ -431,7 +431,7 @@ const translations = {
     abYearsP2: 'He cocinado para reuniones familiares, bodas, celebraciones, empresas y eventos con cientos de invitados.',
     abYearsP3: 'Y todavía me encanta.',
     abYearsP4: 'Hay algo muy especial en ver a tantas personas disfrutando de la comida que mi familia me enseñó a hacer.',
-    abYearsHighlight: 'En muchos sentidos, sigo haciendo lo que vi hacer a mi mamá y a mi abuela cuando era niño: hacer mucha comida rica y unir a la gente alrededor de la mesa.',
+    abYearsHighlight: 'En muchos sentidos, sigo haciendo lo que vi en casa cuando era niño: hacer mucha comida rica y unir a la gente alrededor de la mesa.',
 
     abTimelineTitle: 'Un camino lleno de trabajo, fe y pasión.',
     abTl1Year: '2015',
@@ -440,8 +440,6 @@ const translations = {
     abTl2Copy: 'Creciendo con cada familia que confió en nuestro trabajo.',
     abTl3Year: '2017',
     abTl3Copy: 'Más eventos, más experiencia, misma pasión.',
-    abTl4Year: '2019',
-    abTl4Copy: 'Bodas y celebraciones inolvidables.',
     abTl5Year: 'Hoy',
     abTl5Copy: 'Seguir cocinando con amor para nuestra comunidad.',
 
@@ -922,11 +920,11 @@ const translations = {
 
     abMichTitle: 'From Michoacán to California',
     abMichP1: 'I was born and raised in San Benito, Michoacán, the oldest of eight children.',
-    abMichP2: 'My earliest memories are in the kitchen, watching my grandmother and my mother prepare the traditional dishes of our region.',
+    abMichP2: 'My earliest memories are in the kitchen, surrounded by the traditional dishes of our region.',
     abMichP3: 'In our house there was always a big pot on the stove, plenty of food, and room for one more at the table.',
     abMichHighlight: 'That is where I learned to cook.',
     abMichScript: 'Food is a way of showing our love.',
-    abMichRight: 'My mother always cooked enough for everyone. Family, friends, whoever showed up — they sat down and ate.',
+    abMichRight: 'There was always enough food for everyone. Family, friends, whoever showed up — they sat down and ate.',
     abMichRightHighlight: 'That is something I carry with me every day.',
 
     abYearsTitle: '14+ Years Serving the Central Valley',
@@ -934,7 +932,7 @@ const translations = {
     abYearsP2: 'I have cooked for family gatherings, weddings, celebrations, businesses, and events with hundreds of guests.',
     abYearsP3: 'And I still love it.',
     abYearsP4: 'There is something very special about seeing so many people enjoying the food my family taught me to make.',
-    abYearsHighlight: 'In many ways, I am still doing what I watched my mother and my grandmother do when I was a boy: making plenty of good food and bringing people together around the table.',
+    abYearsHighlight: 'In many ways, I am still doing what I saw at home as a boy: making plenty of good food and bringing people together around the table.',
 
     abTimelineTitle: 'A journey built on hard work, faith and passion.',
     abTl1Year: '2015',
@@ -943,8 +941,6 @@ const translations = {
     abTl2Copy: 'Growing with every family who trusted our work.',
     abTl3Year: '2017',
     abTl3Copy: 'More events, more experience, the same passion.',
-    abTl4Year: '2019',
-    abTl4Copy: 'Unforgettable weddings and celebrations.',
     abTl5Year: 'Today',
     abTl5Copy: 'Still cooking with love for our community.',
 
