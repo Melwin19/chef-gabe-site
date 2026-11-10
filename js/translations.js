@@ -501,7 +501,7 @@ const translations = {
     /* Home — Meet the Chef */
     homeChefEyebrow: 'Conoce al Chef',
     homeChefTitle: 'Chef Gabe',
-    homeChefCopy: 'Nacido en San Benito, Michoacán, y el mayor de ocho hermanos, Gabe aprendió a cocinar viendo a su abuela y a su mamá. Hoy lleva más de 14 años compartiendo esas recetas con familias de todo el Valle Central.',
+    homeChefCopy: 'Nacido en San Benito, Michoacán, y el mayor de ocho hermanos, Chef Gabe lleva más de 14 años cocinando para familias, bodas y empresas en todo el Valle Central — con recetas tradicionales hechas desde cero y siempre comida de sobra.',
     homeChefCta: 'Conoce Su Historia',
 
     /* Event photography (2026 shoot) */
@@ -517,7 +517,13 @@ const translations = {
     altBuffetLights: 'Línea de buffet completa con manteles blancos bajo una terraza con luces colgantes',
     altSnackBar: 'Barra de botanas con canastas tejidas de papitas, duros y otras botanas',
     altSnackCloseup: 'Barra de botanas con duros, totopos y salsa picante en canastas tejidas',
-    altFruitCandyBar: 'Barra de fruta y dulces con sandía, pepino, chamoy y dulces mexicanos'
+    altFruitCandyBar: 'Barra de fruta y dulces con sandía, pepino, chamoy y dulces mexicanos',
+
+    /* Stock photos standing in until real ones exist */
+    stockLabel: 'Foto ilustrativa',
+    altEnchiladas: 'Enchiladas bañadas en salsa roja y salsa verde con queso gratinado y crema',
+    altAmBreakfast: 'Hotcakes con huevos estrellados y tocino, acompañados de café',
+    altFlan: 'Flan con caramelo sobre una tabla de madera, con una porción en cuchara'
   },
 
   /* ------------------------------------------------------- */
@@ -1000,7 +1006,7 @@ const translations = {
     /* Home — Meet the Chef */
     homeChefEyebrow: 'Meet the Chef',
     homeChefTitle: 'Chef Gabe',
-    homeChefCopy: 'Born in San Benito, Michoacán, the oldest of eight, Gabe learned to cook watching his grandmother and his mother. For more than 14 years he has been sharing those recipes with families across the Central Valley.',
+    homeChefCopy: 'Born in San Benito, Michoacán, the oldest of eight, Chef Gabe has spent more than 14 years cooking for families, weddings and businesses across the Central Valley — traditional recipes made from scratch, and always plenty to go around.',
     homeChefCta: 'Read His Story',
 
     /* Event photography (2026 shoot) */
@@ -1016,6 +1022,12 @@ const translations = {
     altBuffetLights: 'Full buffet line with white linens under a patio strung with lights',
     altSnackBar: 'Snack bar with woven baskets of chips, duros and other botanas',
     altSnackCloseup: 'Snack bar with duros, tortilla chips and hot sauce in woven baskets',
-    altFruitCandyBar: 'Fruit and candy bar with watermelon, cucumber, chamoy and Mexican candies'
+    altFruitCandyBar: 'Fruit and candy bar with watermelon, cucumber, chamoy and Mexican candies',
+
+    /* Stock photos standing in until real ones exist */
+    stockLabel: 'Illustrative photo',
+    altEnchiladas: 'Enchiladas in red and green sauce with melted cheese and crema',
+    altAmBreakfast: 'Pancakes with fried eggs and bacon, served with coffee',
+    altFlan: 'Caramel flan on a wooden board, with a portion on a spoon'
   }
 };

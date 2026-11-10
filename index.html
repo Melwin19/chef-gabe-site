@@ -118,10 +118,11 @@
       <a href="menus.html" class="btn btn-outline"><span data-i18n="foodCta">Ver Nuestros Menús</span> <span aria-hidden="true">→</span></a>
     </div>
 
-    <!-- PHOTO NEEDED: the Enchiladas card still uses a placeholder block.
-         Nothing currently in images/ shows enchiladas. Drop a real photo in
-         and swap the .placeholder-img div for:
-           <img src="images/<name>.jpg" class="dish-img" data-i18n-alt="<key>" alt="..."> -->
+    <!-- The Enchiladas card uses a Pexels stock photo (free license, no credit
+         required: https://www.pexels.com/photo/12097599/) until there is a real
+         one. Pexels forbids presenting stock as your own, so it carries the
+         "Foto ilustrativa" label — drop the .stock-photo wrapper and label
+         when swapping in a real photo. -->
     <div class="dish-cards">
       <article class="dish-card">
         <img src="images/carne-asada.png" class="dish-img" data-i18n-alt="altDishAsada" alt="Carne asada a la parrilla con cebollitas y chile toreado, arroz mexicano y frijoles refritos">
@@ -131,7 +132,10 @@
         </div>
       </article>
       <article class="dish-card">
-        <div class="placeholder-img dish-img" data-label="Enchiladas photo"></div>
+        <div class="stock-photo">
+          <img src="images/enchiladas-illustrative.jpg" class="dish-img" data-i18n-alt="altEnchiladas" alt="Enchiladas bañadas en salsa roja y salsa verde con queso gratinado y crema">
+          <span class="stock-label" data-i18n="stockLabel">Foto ilustrativa</span>
+        </div>
         <div class="dish-caption">
           <h3 data-i18n="dish2Name">Enchiladas</h3>
           <p data-i18n="dish2Tag">Sabor auténtico.</p>
@@ -241,7 +245,7 @@
       <p class="eyebrow"><span aria-hidden="true">◈</span> <span data-i18n="homeChefEyebrow">Conoce al Chef</span> <span aria-hidden="true">◈</span></p>
       <h2 data-i18n="homeChefTitle">Chef Gabe</h2>
       <div class="divider-flourish">◈</div>
-      <p data-i18n="homeChefCopy">Nacido en San Benito, Michoacán, y el mayor de ocho hermanos, Gabe aprendió a cocinar viendo a su abuela y a su mamá. Hoy lleva más de 14 años compartiendo esas recetas con familias de todo el Valle Central.</p>
+      <p data-i18n="homeChefCopy">Nacido en San Benito, Michoacán, y el mayor de ocho hermanos, Chef Gabe lleva más de 14 años cocinando para familias, bodas y empresas en todo el Valle Central — con recetas tradicionales hechas desde cero y siempre comida de sobra.</p>
       <a href="about.html" class="btn btn-outline"><span data-i18n="homeChefCta">Conoce Su Historia</span> <span aria-hidden="true">→</span></a>
     </div>
   </div>

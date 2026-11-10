@@ -670,7 +670,26 @@ img.trust-img-team { object-position: center top; }
 /* Two-tray chafing-dish shots where the named dish is the back-right tray
    (birria behind the beans, chile verde behind the pastor): bias the crop
    toward it so a narrow card doesn't show only the front tray. */
-img.focus-back-right { object-position: 100% 0%; }
+img.focus-back-right { object-position: 60% 0%; }
+
+/* Stock photos standing in for dishes we have no real photo of yet.
+   Pexels' license forbids presenting them as our own, so each carries a
+   small visible "illustrative photo" label. */
+.stock-photo { position: relative; overflow: hidden; }
+.stock-photo img { display: block; }
+.stock-label {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  padding: 3px 8px;
+  font-size: 0.68rem;
+  letter-spacing: var(--track-label);
+  color: var(--color-offwhite);
+  background: rgba(10, 10, 8, 0.6);
+  border-radius: var(--radius);
+  pointer-events: none;
+}
+img.focus-lower { object-position: center 75%; }
 
 /* Portrait headshot in a wide panel: keep the face in frame. */
 img.focus-face { object-position: center 15%; }
