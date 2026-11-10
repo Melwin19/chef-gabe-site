@@ -675,6 +675,9 @@ img.trust-img-team { object-position: center top; }
    toward it so a narrow card doesn't show only the front tray. */
 img.focus-back-right { object-position: 60% 0%; }
 
+/* Portrait headshot in a wide panel: keep his face in frame. */
+img.focus-face { object-position: center 15%; }
+
 /* Stock photos standing in for dishes we have no real photo of yet.
    Pexels' license forbids presenting them as our own, so each carries a
    small visible "illustrative photo" label. */
