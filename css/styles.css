@@ -195,66 +195,69 @@ h1, h2, h3 {
 .nav-cta { flex-shrink: 0; }
 .nav-toggle { display: none; }
 
-.hero-media {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
+/* Every page shares one solid header: the espresso utility bar, then a
+   single olive block holding the nav and headline, closed by a thin rust
+   rule where it meets the light first section below. Photo heroes were
+   dropped — under a dark scrim they read muddy, and a solid block keeps
+   all seven pages consistent. */
+.hero {
+  background: var(--color-olive);
+  border-bottom: 3px solid var(--color-rust);
 }
-.hero-media .placeholder-img { width: 100%; height: 100%; position: absolute; inset: 0; }
-/* Two stacked gradients, matching the mockup's hero treatment:
-   – vertical: dark at top (nav legibility) and bottom (trust strip),
-     lightest through the middle so the photo still reads;
-   – horizontal: heavier on the left, where the headline sits, fading
-     out to the right so the food stays visible.
-   A flat single-opacity tint either washes out the photo or loses the
-   text; layering keeps both. */
-.hero-overlay {
+
+/* Faint agave watermark echoing the logo mark (same drawing as
+   .footer-agave), anchored to the container's right edge. */
+.hero::after {
+  content: "";
   position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(180deg,
-      rgba(10,10,8,0.82) 0%,
-      rgba(10,10,8,0.42) 26%,
-      rgba(10,10,8,0.38) 55%,
-      rgba(10,10,8,0.70) 82%,
-      rgba(10,10,8,0.92) 100%),
-    linear-gradient(90deg,
-      rgba(10,10,8,0.80) 0%,
-      rgba(10,10,8,0.55) 32%,
-      rgba(10,10,8,0.12) 68%,
-      rgba(10,10,8,0) 100%);
+  right: max(24px, calc((100vw - var(--container-width)) / 2));
+  bottom: 0;
+  width: 320px;
+  height: 262px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 164' fill='none' stroke='%23EBE2D4' stroke-width='1.6' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M100 152 Q94 112 100 66 Q106 112 100 152 Z' transform='rotate(-68 100 152)'/%3E%3Cpath d='M100 152 Q93 100 100 44 Q107 100 100 152 Z' transform='rotate(-51 100 152)'/%3E%3Cpath d='M100 152 Q93 100 100 44 Q107 100 100 152 Z' transform='rotate(-34 100 152)'/%3E%3Cpath d='M100 152 Q92 88 100 18 Q108 88 100 152 Z' transform='rotate(-17 100 152)'/%3E%3Cpath d='M100 152 Q92 88 100 12 Q108 88 100 152 Z'/%3E%3Cpath d='M100 152 Q92 88 100 18 Q108 88 100 152 Z' transform='rotate(17 100 152)'/%3E%3Cpath d='M100 152 Q93 100 100 44 Q107 100 100 152 Z' transform='rotate(34 100 152)'/%3E%3Cpath d='M100 152 Q93 100 100 44 Q107 100 100 152 Z' transform='rotate(51 100 152)'/%3E%3Cpath d='M100 152 Q94 112 100 66 Q106 112 100 152 Z' transform='rotate(68 100 152)'/%3E%3C/svg%3E") no-repeat right bottom / contain;
+  opacity: 0.09;
+  pointer-events: none;
+}
+.hero-content,
+.page-hero-content { position: relative; z-index: 1; }
+
+@media (max-width: 720px) {
+  .hero::after { display: none; }
 }
 
 /* Keep the full container width so the headline starts at the container's
    left edge, as the mockup does, and constrain the children instead for
    line length. (Capping .hero-content itself at 640px let .container's
-   margin:auto centre the whole block, which fought the left-weighted
-   overlay gradient.) */
+   margin:auto centre the whole block.) */
 .hero-content {
-  padding: 70px 24px 120px;
+  padding: 64px 24px 72px;
   max-width: var(--container-width);
 }
 .hero-content > * { max-width: 620px; }
+/* Interior pages share one headline size; the home page steps up. */
 .hero-content h1 {
-  font-size: 3.6rem;
+  font-size: 3rem;
   text-transform: uppercase;
   line-height: 1.05;
 }
+.hero-content--home h1 { font-size: 3.6rem; }
+/* Eyebrows on the olive header read in tan on every page (the rust used
+   on cream sections is too dim here). */
+.hero .eyebrow { color: var(--color-tan); }
 .hero-copy { font-size: 1.05rem; max-width: 480px; margin: 16px 0 28px; color: var(--color-offwhite); }
 .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
 
-/* Sits on the hero photo itself, as in the mockup. An opaque cream panel
-   here only spans the container, so the hero photo showed through as
-   black gutters to its left and right. Transparent + light text removes
-   the seam; the overlay's dark bottom stop carries the contrast. */
+/* Home only: sits inside the olive header, under a hairline divider. */
 .trust-strip {
   position: relative;
+  z-index: 1;
   background: transparent;
   color: var(--color-offwhite);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
-  padding: 8px 24px 56px;
+  padding: 36px 24px 48px;
+  border-top: 1px solid rgba(235, 226, 212, 0.18);
 }
 .trust-item { display: flex; align-items: flex-start; gap: 14px; }
 .icon { width: 30px; height: 30px; flex-shrink: 0; color: var(--color-rust); }
@@ -262,56 +265,6 @@ h1, h2, h3 {
 .trust-item h3 { font-family: var(--font-body); font-size: 0.9rem; text-transform: uppercase; letter-spacing: var(--track-label); margin-bottom: 4px; }
 .trust-item p { margin: 0; font-size: 0.85rem; color: #cfcabb; }
 
-/* Split hero (home, about): headline on a solid olive panel at left, photo
-   at full brightness on the right. A full-bleed photo under a dark scrim
-   turned bright food muddy; giving the text its own panel removes the need
-   for the scrim. Pure CSS over the standard hero markup — grid areas place
-   the nav, photo, copy and (home only) trust strip. */
-.hero--split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "nav     nav"
-    "content media"
-    "trust   trust";
-  background: var(--color-olive);
-}
-.hero--split .navbar { grid-area: nav; background: var(--color-olive-dark); }
-.hero--split .hero-overlay { display: none; }
-.hero--split .hero-media {
-  grid-area: media;
-  position: relative;
-  inset: auto;
-  z-index: 0;
-  min-height: 560px;
-}
-/* Copy starts on the site container's left edge even though it lives in
-   the left grid column. */
-.hero--split .hero-content {
-  grid-area: content;
-  align-self: center;
-  margin: 0;
-  max-width: none;
-  padding: 72px 56px 72px max(24px, calc((100vw - var(--container-width)) / 2 + 24px));
-}
-.hero--split .hero-content > * { max-width: 520px; }
-.hero--split .hero-content h1 { font-size: 3.2rem; }
-.hero--split .trust-strip {
-  grid-area: trust;
-  width: 100%;
-  padding-top: 40px;
-  border-top: 1px solid rgba(235, 226, 212, 0.18);
-}
-
-@media (max-width: 860px) {
-  .hero--split {
-    grid-template-columns: 1fr;
-    grid-template-areas: "nav" "media" "content" "trust";
-  }
-  .hero--split .hero-media { min-height: 320px; }
-  .hero--split .hero-content { padding: 40px 24px 48px; }
-  .hero--split .hero-content h1 { font-size: 2.2rem; }
-}
 
 /* =========================================================
    Sections generic
@@ -501,7 +454,7 @@ a:focus-visible, button:focus-visible {
    ========================================================= */
 .page-hero { background: var(--color-olive); }
 .page-hero-content { padding: 56px 24px 72px; max-width: 660px; }
-.page-hero-content h1 { font-size: 2.8rem; text-transform: uppercase; line-height: 1.08; }
+.page-hero-content h1 { font-size: 3rem; text-transform: uppercase; line-height: 1.05; }
 .page-hero-sub {
   font-family: var(--font-display);
   font-size: 1.6rem;
@@ -666,15 +619,6 @@ a:focus-visible, button:focus-visible {
    Same aspect ratios as the placeholders, cropped to fill so a
    portrait source never letterboxes or stretches.
    ========================================================= */
-.hero-media .hero-img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 40%;
-}
-
 img.dish-img,
 img.event-img,
 img.food-img,
@@ -741,11 +685,6 @@ img.focus-back-right { object-position: 60% 0%; }
   pointer-events: none;
 }
 img.focus-lower { object-position: center 75%; }
-
-/* Portrait headshot in a wide panel: keep the face in frame. */
-img.focus-face { object-position: center 15%; }
-/* The about hero shows a short, wide window of the portrait headshot. */
-.hero-media .hero-img.focus-face { object-position: center top; }
 
 @media (max-width: 960px) {
   /* .trust-media collapses to one column here, so the main photo has no
@@ -903,11 +842,6 @@ img.focus-face { object-position: center 15%; }
 /* =========================================================
    Render-pass corrections
    ========================================================= */
-
-/* restaurant-table-spread is a near-square source in a wide slot, so the
-   crop only keeps a horizontal band. Anchor slightly above centre to hold
-   the plated food and drinks rather than the empty table edge. */
-.hero-media .hero-img { object-position: center 44%; }
 
 /* Spanish event labels ("Eventos Corporativos") run far longer than the
    English ones and were wrapping into the sub-label. Smaller caption type
