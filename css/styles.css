@@ -337,6 +337,33 @@ h1, h2, h3 {
 .trust-media-side { display: grid; grid-template-rows: 1fr 1fr; gap: 12px; }
 .trust-img-team, .trust-img-food { aspect-ratio: 4 / 3; }
 
+/* Meet the Chef (home): headshot beside a short teaser for about.html */
+.chef-section { background: var(--color-cream); }
+.chef-grid {
+  display: grid;
+  grid-template-columns: minmax(220px, 340px) 1fr;
+  gap: 56px;
+  align-items: center;
+  max-width: 940px;
+}
+.chef-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center 20%;
+  border: 1px solid #d9cdb6;
+}
+.chef-copy h2 { font-size: 2.3rem; text-transform: uppercase; line-height: 1.15; }
+.chef-copy p:not(.eyebrow) { margin: 16px 0 24px; color: #4a4632; max-width: 480px; }
+
+@media (max-width: 760px) {
+  .chef-grid { grid-template-columns: 1fr; gap: 32px; text-align: center; }
+  .chef-photo { max-width: 300px; margin: 0 auto; }
+  .chef-copy .eyebrow,
+  .chef-copy .divider-flourish { justify-content: center; }
+  .chef-copy p:not(.eyebrow) { margin-left: auto; margin-right: auto; }
+}
+
 /* Footer */
 .site-footer { background: var(--color-tan); color: var(--color-ink); padding: 56px 0 0; }
 .footer-grid {
@@ -639,6 +666,14 @@ img.trust-img-main {
 /* The chef sits high in this frame and the slot only shows a ~55% tall
    window, so anchor to the top instead of cropping through his head. */
 img.trust-img-team { object-position: center top; }
+
+/* Two-tray chafing-dish shots where the named dish is the back-right tray
+   (birria behind the beans, chile verde behind the pastor): bias the crop
+   toward it so a narrow card doesn't show only the front tray. */
+img.focus-back-right { object-position: 100% 0%; }
+
+/* Portrait headshot in a wide panel: keep the face in frame. */
+img.focus-face { object-position: center 15%; }
 
 @media (max-width: 960px) {
   /* .trust-media collapses to one column here, so the main photo has no

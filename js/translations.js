@@ -496,7 +496,28 @@ const translations = {
     ofPrev: 'Reseñas anteriores',
     ofNext: 'Siguientes reseñas',
     ofCtaTitle: '¿Listo para planear tu evento?',
-    ofCtaCopy: 'Déjanos llevar el sabor a tu celebración.'
+    ofCtaCopy: 'Déjanos llevar el sabor a tu celebración.',
+
+    /* Home — Meet the Chef */
+    homeChefEyebrow: 'Conoce al Chef',
+    homeChefTitle: 'Chef Gabe',
+    homeChefCopy: 'Nacido en San Benito, Michoacán, y el mayor de ocho hermanos, Gabe aprendió a cocinar viendo a su abuela y a su mamá. Hoy lleva más de 14 años compartiendo esas recetas con familias de todo el Valle Central.',
+    homeChefCta: 'Conoce Su Historia',
+
+    /* Event photography (2026 shoot) */
+    altHeadshot: 'Chef Gabe con filipina negra, sonriendo con los brazos cruzados',
+    altGrazingTable: 'Gran mesa de botanas con quesos, carnes frías, uvas, fresas y galletas, decorada con eucalipto en un jardín',
+    altBirriaBeans: 'Charola de buffet con birria de res y frijoles refritos',
+    altPastorChileVerde: 'Charola de buffet con carne al pastor y puerco en chile verde',
+    altFajitas: 'Charola de buffet con fajitas de pollo y de res con pimientos y cebolla',
+    altChilesRellenos: 'Charola de buffet con chiles rellenos',
+    altSidesBar: 'Ensalada de pasta, chiles en vinagre y salsa roja en la mesa de buffet',
+    altAguasDispensers: 'Vitroleros de aguas frescas con vasos, montados al aire libre',
+    altPastaCarnitas: 'Charola de buffet con pasta Alfredo y carnitas',
+    altBuffetLights: 'Línea de buffet completa con manteles blancos bajo una terraza con luces colgantes',
+    altSnackBar: 'Barra de botanas con canastas tejidas de papitas, duros y otras botanas',
+    altSnackCloseup: 'Barra de botanas con duros, totopos y salsa picante en canastas tejidas',
+    altFruitCandyBar: 'Barra de fruta y dulces con sandía, pepino, chamoy y dulces mexicanos'
   },
 
   /* ------------------------------------------------------- */
@@ -974,6 +995,27 @@ const translations = {
     ofPrev: 'Previous reviews',
     ofNext: 'Next reviews',
     ofCtaTitle: 'Ready to plan your event?',
-    ofCtaCopy: 'Let us bring the flavor to your celebration.'
+    ofCtaCopy: 'Let us bring the flavor to your celebration.',
+
+    /* Home — Meet the Chef */
+    homeChefEyebrow: 'Meet the Chef',
+    homeChefTitle: 'Chef Gabe',
+    homeChefCopy: 'Born in San Benito, Michoacán, the oldest of eight, Gabe learned to cook watching his grandmother and his mother. For more than 14 years he has been sharing those recipes with families across the Central Valley.',
+    homeChefCta: 'Read His Story',
+
+    /* Event photography (2026 shoot) */
+    altHeadshot: 'Chef Gabe in a black chef coat, smiling with his arms crossed',
+    altGrazingTable: 'Grand grazing table with cheeses, cured meats, grapes, strawberries and crackers, styled with eucalyptus in a garden',
+    altBirriaBeans: 'Buffet chafing dish with beef birria and refried beans',
+    altPastorChileVerde: 'Buffet chafing dish with al pastor and chile verde pork',
+    altFajitas: 'Buffet chafing dish with chicken and beef fajitas with peppers and onions',
+    altChilesRellenos: 'Buffet chafing dish of chiles rellenos',
+    altSidesBar: 'Pasta salad, pickled chiles and salsa roja on the buffet table',
+    altAguasDispensers: 'Glass dispensers of aguas frescas with cups, set up outdoors',
+    altPastaCarnitas: 'Buffet chafing dish with pasta Alfredo and carnitas',
+    altBuffetLights: 'Full buffet line with white linens under a patio strung with lights',
+    altSnackBar: 'Snack bar with woven baskets of chips, duros and other botanas',
+    altSnackCloseup: 'Snack bar with duros, tortilla chips and hot sauce in woven baskets',
+    altFruitCandyBar: 'Fruit and candy bar with watermelon, cucumber, chamoy and Mexican candies'
   }
 };
