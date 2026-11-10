@@ -195,72 +195,84 @@ h1, h2, h3 {
 .nav-cta { flex-shrink: 0; }
 .nav-toggle { display: none; }
 
-.hero-media {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-}
-.hero-media .placeholder-img { width: 100%; height: 100%; position: absolute; inset: 0; }
-/* Two stacked gradients, matching the mockup's hero treatment:
-   – vertical: dark at top (nav legibility) and bottom (trust strip),
-     lightest through the middle so the photo still reads;
-   – horizontal: heavier on the left, where the headline sits, fading
-     out to the right so the food stays visible.
-   A flat single-opacity tint either washes out the photo or loses the
-   text; layering keeps both. */
-.hero-overlay {
-  position: absolute;
-  inset: 0;
+/* Every page shares one header: the espresso utility bar, a solid dark
+   olive nav, then a short banner over a photo of blue agave fields in
+   Jalisco, closed by a thin rust rule where it meets the light first
+   section below. The banner is tinted with the brand olive — heavy on the
+   left where the headline sits, thinning to the right so the agave and
+   sky show through.
+   Photo: Pexels 27575885 (free license, no credit required),
+   https://www.pexels.com/photo/27575885/ */
+.hero {
   background:
-    linear-gradient(180deg,
-      rgba(10,10,8,0.82) 0%,
-      rgba(10,10,8,0.42) 26%,
-      rgba(10,10,8,0.38) 55%,
-      rgba(10,10,8,0.70) 82%,
-      rgba(10,10,8,0.92) 100%),
     linear-gradient(90deg,
-      rgba(10,10,8,0.80) 0%,
-      rgba(10,10,8,0.55) 32%,
-      rgba(10,10,8,0.12) 68%,
-      rgba(10,10,8,0) 100%);
+      rgba(38, 39, 21, 0.94) 0%,
+      rgba(38, 39, 21, 0.82) 38%,
+      rgba(38, 39, 21, 0.38) 78%,
+      rgba(38, 39, 21, 0.22) 100%),
+    url("../images/agave-fields-jalisco.jpg") center 58% / cover no-repeat,
+    var(--color-olive);
+  border-bottom: 3px solid var(--color-rust);
 }
+/* Home also carries the trust strip along its bottom edge, so it darkens
+   toward the bottom as well. */
+.hero--home {
+  background:
+    linear-gradient(180deg, rgba(38, 39, 21, 0) 45%, rgba(38, 39, 21, 0.9) 100%),
+    linear-gradient(90deg,
+      rgba(38, 39, 21, 0.94) 0%,
+      rgba(38, 39, 21, 0.82) 38%,
+      rgba(38, 39, 21, 0.38) 78%,
+      rgba(38, 39, 21, 0.22) 100%),
+    url("../images/agave-fields-jalisco.jpg") center 58% / cover no-repeat,
+    var(--color-olive);
+}
+.hero .navbar { background: var(--color-olive-dark); }
+.hero-content,
+.page-hero-content { position: relative; z-index: 1; }
 
 /* Keep the full container width so the headline starts at the container's
    left edge, as the mockup does, and constrain the children instead for
    line length. (Capping .hero-content itself at 640px let .container's
-   margin:auto centre the whole block, which fought the left-weighted
-   overlay gradient.) */
+   margin:auto centre the whole block.)
+   Kept short on purpose: the banner introduces the page, it shouldn't
+   push the page's own content below the fold. */
 .hero-content {
-  padding: 70px 24px 120px;
+  padding: 44px 24px 48px;
   max-width: var(--container-width);
 }
 .hero-content > * { max-width: 620px; }
+/* Interior pages share one headline size; the home page steps up. */
 .hero-content h1 {
-  font-size: 3.6rem;
+  font-size: 2.6rem;
   text-transform: uppercase;
   line-height: 1.05;
 }
-.hero-copy { font-size: 1.05rem; max-width: 480px; margin: 16px 0 28px; color: var(--color-offwhite); }
+.hero-content--home h1 { font-size: 3.2rem; }
+/* Eyebrows on the olive header read in tan on every page (the rust used
+   on cream sections is too dim here). */
+.hero .eyebrow { color: var(--color-tan); }
+.hero-copy { font-size: 1.05rem; max-width: 480px; margin: 14px 0 24px; color: var(--color-offwhite); }
 .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
 
-/* Sits on the hero photo itself, as in the mockup. An opaque cream panel
-   here only spans the container, so the hero photo showed through as
-   black gutters to its left and right. Transparent + light text removes
-   the seam; the overlay's dark bottom stop carries the contrast. */
+/* Home only: sits inside the olive header, under a hairline divider. */
 .trust-strip {
   position: relative;
+  z-index: 1;
   background: transparent;
   color: var(--color-offwhite);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
-  padding: 8px 24px 56px;
+  padding: 22px 24px 26px;
+  border-top: 1px solid rgba(235, 226, 212, 0.18);
 }
 .trust-item { display: flex; align-items: flex-start; gap: 14px; }
 .icon { width: 30px; height: 30px; flex-shrink: 0; color: var(--color-rust); }
 .trust-strip .icon { color: var(--color-cream); }
 .trust-item h3 { font-family: var(--font-body); font-size: 0.9rem; text-transform: uppercase; letter-spacing: var(--track-label); margin-bottom: 4px; }
 .trust-item p { margin: 0; font-size: 0.85rem; color: #cfcabb; }
+
 
 /* =========================================================
    Sections generic
@@ -336,6 +348,33 @@ h1, h2, h3 {
 .trust-img-main { aspect-ratio: 4 / 3; }
 .trust-media-side { display: grid; grid-template-rows: 1fr 1fr; gap: 12px; }
 .trust-img-team, .trust-img-food { aspect-ratio: 4 / 3; }
+
+/* Meet the Chef (home): headshot beside a short teaser for about.html */
+.chef-section { background: var(--color-cream); }
+.chef-grid {
+  display: grid;
+  grid-template-columns: minmax(220px, 340px) 1fr;
+  gap: 56px;
+  align-items: center;
+  max-width: 940px;
+}
+.chef-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center 20%;
+  border: 1px solid #d9cdb6;
+}
+.chef-copy h2 { font-size: 2.3rem; text-transform: uppercase; line-height: 1.15; }
+.chef-copy p:not(.eyebrow) { margin: 16px 0 24px; color: #4a4632; max-width: 480px; }
+
+@media (max-width: 760px) {
+  .chef-grid { grid-template-columns: 1fr; gap: 32px; text-align: center; }
+  .chef-photo { max-width: 300px; margin: 0 auto; }
+  .chef-copy .eyebrow,
+  .chef-copy .divider-flourish { justify-content: center; }
+  .chef-copy p:not(.eyebrow) { margin-left: auto; margin-right: auto; }
+}
 
 /* Footer */
 .site-footer { background: var(--color-tan); color: var(--color-ink); padding: 56px 0 0; }
@@ -421,9 +460,9 @@ a:focus-visible, button:focus-visible {
    .hero and the mark is logo-badge-light.png, so a cream band would
    need the whole nav restyled. Olive reuses it as-is.
    ========================================================= */
-.page-hero { background: var(--color-olive); }
-.page-hero-content { padding: 56px 24px 72px; max-width: 660px; }
-.page-hero-content h1 { font-size: 2.8rem; text-transform: uppercase; line-height: 1.08; }
+/* Background comes from .hero (agave banner), shared with every page. */
+.page-hero-content { padding: 44px 24px 48px; max-width: 660px; }
+.page-hero-content h1 { font-size: 2.6rem; text-transform: uppercase; line-height: 1.05; }
 .page-hero-sub {
   font-family: var(--font-display);
   font-size: 1.6rem;
@@ -588,15 +627,6 @@ a:focus-visible, button:focus-visible {
    Same aspect ratios as the placeholders, cropped to fill so a
    portrait source never letterboxes or stretches.
    ========================================================= */
-.hero-media .hero-img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 40%;
-}
-
 img.dish-img,
 img.event-img,
 img.food-img,
@@ -639,6 +669,33 @@ img.trust-img-main {
 /* The chef sits high in this frame and the slot only shows a ~55% tall
    window, so anchor to the top instead of cropping through his head. */
 img.trust-img-team { object-position: center top; }
+
+/* Two-tray chafing-dish shots where the named dish is the back-right tray
+   (birria behind the beans, chile verde behind the pastor): bias the crop
+   toward it so a narrow card doesn't show only the front tray. */
+img.focus-back-right { object-position: 60% 0%; }
+
+/* Portrait headshot in a wide panel: keep his face in frame. */
+img.focus-face { object-position: center 15%; }
+
+/* Stock photos standing in for dishes we have no real photo of yet.
+   Pexels' license forbids presenting them as our own, so each carries a
+   small visible "illustrative photo" label. */
+.stock-photo { position: relative; overflow: hidden; }
+.stock-photo img { display: block; }
+.stock-label {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  padding: 3px 8px;
+  font-size: 0.68rem;
+  letter-spacing: var(--track-label);
+  color: var(--color-offwhite);
+  background: rgba(10, 10, 8, 0.6);
+  border-radius: var(--radius);
+  pointer-events: none;
+}
+img.focus-lower { object-position: center 75%; }
 
 @media (max-width: 960px) {
   /* .trust-media collapses to one column here, so the main photo has no
@@ -796,11 +853,6 @@ img.trust-img-team { object-position: center top; }
 /* =========================================================
    Render-pass corrections
    ========================================================= */
-
-/* restaurant-table-spread is a near-square source in a wide slot, so the
-   crop only keeps a horizontal band. Anchor slightly above centre to hold
-   the plated food and drinks rather than the empty table edge. */
-.hero-media .hero-img { object-position: center 44%; }
 
 /* Spanish event labels ("Eventos Corporativos") run far longer than the
    English ones and were wrapping into the sub-label. Smaller caption type
@@ -1691,7 +1743,7 @@ img.trust-img-team { object-position: center top; }
 
 /* A hero with no trust strip under it does not need the homepage's deep
    bottom padding, which is sized to sit behind that strip. */
-.hero .hero-content:last-child { padding-bottom: 84px; }
+.hero .hero-content:last-child { padding-bottom: 48px; }
 
 /* =========================================================
    Reviews page
@@ -2306,4 +2358,23 @@ p.script-accent.script-light { color: var(--color-cream); }
   .dishes-title { font-size: 1.5rem; }
   .custom-inner h2, .food-cta-copy h2 { font-size: 1.5rem; }
   .food-cta-inner { flex-direction: column; align-items: flex-start; }
+}
+
+/* Phones: keep the banner short so the page's own content starts near
+   the top of the screen. Last in the file so it beats the desktop
+   paddings declared further up. */
+@media (max-width: 760px) {
+  .hero-content,
+  .page-hero-content,
+  .hero .hero-content:last-child { padding-top: 32px; padding-bottom: 36px; }
+
+  /* Copy spans the full width here, so the left-heavy tint isn't enough
+     on the right; use an even one. */
+  .hero,
+  .hero--home {
+    background:
+      linear-gradient(rgba(38, 39, 21, 0.8), rgba(38, 39, 21, 0.8)),
+      url("../images/agave-fields-jalisco.jpg") 62% 58% / cover no-repeat,
+      var(--color-olive);
+  }
 }

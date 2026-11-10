@@ -419,11 +419,11 @@ const translations = {
 
     abMichTitle: 'De Michoacán a California',
     abMichP1: 'Nací y crecí en San Benito, Michoacán, donde soy el mayor de ocho hermanos.',
-    abMichP2: 'Mis primeros recuerdos están en la cocina, viendo a mi abuela y a mi mamá preparar los platillos tradicionales de nuestra región.',
+    abMichP2: 'Mis primeros recuerdos están en la cocina, rodeado de los platillos tradicionales de nuestra región.',
     abMichP3: 'En nuestra casa siempre había una olla grande en la estufa, mucha comida y espacio para uno más en la mesa.',
     abMichHighlight: 'Ahí fue donde aprendí a cocinar.',
     abMichScript: 'La comida es una manera de demostrar nuestro amor.',
-    abMichRight: 'Mi mamá siempre cocinaba suficiente para todos. Familia, amigos, cualquiera que llegara — se sentaba y comía.',
+    abMichRight: 'Siempre había comida suficiente para todos. Familia, amigos, cualquiera que llegara — se sentaba y comía.',
     abMichRightHighlight: 'Eso es algo que llevo conmigo todos los días.',
 
     abYearsTitle: '14+ Años Sirviendo al Valle Central',
@@ -431,7 +431,7 @@ const translations = {
     abYearsP2: 'He cocinado para reuniones familiares, bodas, celebraciones, empresas y eventos con cientos de invitados.',
     abYearsP3: 'Y todavía me encanta.',
     abYearsP4: 'Hay algo muy especial en ver a tantas personas disfrutando de la comida que mi familia me enseñó a hacer.',
-    abYearsHighlight: 'En muchos sentidos, sigo haciendo lo que vi hacer a mi mamá y a mi abuela cuando era niño: hacer mucha comida rica y unir a la gente alrededor de la mesa.',
+    abYearsHighlight: 'En muchos sentidos, sigo haciendo lo que vi en casa cuando era niño: hacer mucha comida rica y unir a la gente alrededor de la mesa.',
 
     abTimelineTitle: 'Un camino lleno de trabajo, fe y pasión.',
     abTl1Year: '2015',
@@ -440,8 +440,6 @@ const translations = {
     abTl2Copy: 'Creciendo con cada familia que confió en nuestro trabajo.',
     abTl3Year: '2017',
     abTl3Copy: 'Más eventos, más experiencia, misma pasión.',
-    abTl4Year: '2019',
-    abTl4Copy: 'Bodas y celebraciones inolvidables.',
     abTl5Year: 'Hoy',
     abTl5Copy: 'Seguir cocinando con amor para nuestra comunidad.',
 
@@ -496,7 +494,34 @@ const translations = {
     ofPrev: 'Reseñas anteriores',
     ofNext: 'Siguientes reseñas',
     ofCtaTitle: '¿Listo para planear tu evento?',
-    ofCtaCopy: 'Déjanos llevar el sabor a tu celebración.'
+    ofCtaCopy: 'Déjanos llevar el sabor a tu celebración.',
+
+    /* Home — Meet the Chef */
+    homeChefEyebrow: 'Conoce al Chef',
+    homeChefTitle: 'Chef Gabe',
+    homeChefCopy: 'Nacido en San Benito, Michoacán, y el mayor de ocho hermanos, Chef Gabe lleva más de 14 años cocinando para familias, bodas y empresas en todo el Valle Central — con recetas tradicionales hechas desde cero y siempre comida de sobra.',
+    homeChefCta: 'Conoce Su Historia',
+
+    /* Event photography (2026 shoot) */
+    altHeadshot: 'Chef Gabe con filipina negra, sonriendo con los brazos cruzados',
+    altGrazingTable: 'Gran mesa de botanas con quesos, carnes frías, uvas, fresas y galletas, decorada con eucalipto en un jardín',
+    altBirriaBeans: 'Charola de buffet con birria de res y frijoles refritos',
+    altPastorChileVerde: 'Charola de buffet con carne al pastor y puerco en chile verde',
+    altFajitas: 'Charola de buffet con fajitas de pollo y de res con pimientos y cebolla',
+    altChilesRellenos: 'Charola de buffet con chiles rellenos',
+    altSidesBar: 'Ensalada de pasta, chiles en vinagre y salsa roja en la mesa de buffet',
+    altAguasDispensers: 'Vitroleros de aguas frescas con vasos, montados al aire libre',
+    altPastaCarnitas: 'Charola de buffet con pasta Alfredo y carnitas',
+    altBuffetLights: 'Línea de buffet completa con manteles blancos bajo una terraza con luces colgantes',
+    altSnackBar: 'Barra de botanas con canastas tejidas de papitas, duros y otras botanas',
+    altSnackCloseup: 'Barra de botanas con duros, totopos y salsa picante en canastas tejidas',
+    altFruitCandyBar: 'Barra de fruta y dulces con sandía, pepino, chamoy y dulces mexicanos',
+
+    /* Stock photos standing in until real ones exist */
+    stockLabel: 'Foto ilustrativa',
+    altEnchiladas: 'Enchiladas bañadas en salsa roja y salsa verde con queso gratinado y crema',
+    altAmBreakfast: 'Hotcakes con huevos estrellados y tocino, acompañados de café',
+    altFlan: 'Flan con caramelo sobre una tabla de madera, con una porción en cuchara'
   },
 
   /* ------------------------------------------------------- */
@@ -895,11 +920,11 @@ const translations = {
 
     abMichTitle: 'From Michoacán to California',
     abMichP1: 'I was born and raised in San Benito, Michoacán, the oldest of eight children.',
-    abMichP2: 'My earliest memories are in the kitchen, watching my grandmother and my mother prepare the traditional dishes of our region.',
+    abMichP2: 'My earliest memories are in the kitchen, surrounded by the traditional dishes of our region.',
     abMichP3: 'In our house there was always a big pot on the stove, plenty of food, and room for one more at the table.',
     abMichHighlight: 'That is where I learned to cook.',
     abMichScript: 'Food is a way of showing our love.',
-    abMichRight: 'My mother always cooked enough for everyone. Family, friends, whoever showed up — they sat down and ate.',
+    abMichRight: 'There was always enough food for everyone. Family, friends, whoever showed up — they sat down and ate.',
     abMichRightHighlight: 'That is something I carry with me every day.',
 
     abYearsTitle: '14+ Years Serving the Central Valley',
@@ -907,7 +932,7 @@ const translations = {
     abYearsP2: 'I have cooked for family gatherings, weddings, celebrations, businesses, and events with hundreds of guests.',
     abYearsP3: 'And I still love it.',
     abYearsP4: 'There is something very special about seeing so many people enjoying the food my family taught me to make.',
-    abYearsHighlight: 'In many ways, I am still doing what I watched my mother and my grandmother do when I was a boy: making plenty of good food and bringing people together around the table.',
+    abYearsHighlight: 'In many ways, I am still doing what I saw at home as a boy: making plenty of good food and bringing people together around the table.',
 
     abTimelineTitle: 'A journey built on hard work, faith and passion.',
     abTl1Year: '2015',
@@ -916,8 +941,6 @@ const translations = {
     abTl2Copy: 'Growing with every family who trusted our work.',
     abTl3Year: '2017',
     abTl3Copy: 'More events, more experience, the same passion.',
-    abTl4Year: '2019',
-    abTl4Copy: 'Unforgettable weddings and celebrations.',
     abTl5Year: 'Today',
     abTl5Copy: 'Still cooking with love for our community.',
 
@@ -974,6 +997,33 @@ const translations = {
     ofPrev: 'Previous reviews',
     ofNext: 'Next reviews',
     ofCtaTitle: 'Ready to plan your event?',
-    ofCtaCopy: 'Let us bring the flavor to your celebration.'
+    ofCtaCopy: 'Let us bring the flavor to your celebration.',
+
+    /* Home — Meet the Chef */
+    homeChefEyebrow: 'Meet the Chef',
+    homeChefTitle: 'Chef Gabe',
+    homeChefCopy: 'Born in San Benito, Michoacán, the oldest of eight, Chef Gabe has spent more than 14 years cooking for families, weddings and businesses across the Central Valley — traditional recipes made from scratch, and always plenty to go around.',
+    homeChefCta: 'Read His Story',
+
+    /* Event photography (2026 shoot) */
+    altHeadshot: 'Chef Gabe in a black chef coat, smiling with his arms crossed',
+    altGrazingTable: 'Grand grazing table with cheeses, cured meats, grapes, strawberries and crackers, styled with eucalyptus in a garden',
+    altBirriaBeans: 'Buffet chafing dish with beef birria and refried beans',
+    altPastorChileVerde: 'Buffet chafing dish with al pastor and chile verde pork',
+    altFajitas: 'Buffet chafing dish with chicken and beef fajitas with peppers and onions',
+    altChilesRellenos: 'Buffet chafing dish of chiles rellenos',
+    altSidesBar: 'Pasta salad, pickled chiles and salsa roja on the buffet table',
+    altAguasDispensers: 'Glass dispensers of aguas frescas with cups, set up outdoors',
+    altPastaCarnitas: 'Buffet chafing dish with pasta Alfredo and carnitas',
+    altBuffetLights: 'Full buffet line with white linens under a patio strung with lights',
+    altSnackBar: 'Snack bar with woven baskets of chips, duros and other botanas',
+    altSnackCloseup: 'Snack bar with duros, tortilla chips and hot sauce in woven baskets',
+    altFruitCandyBar: 'Fruit and candy bar with watermelon, cucumber, chamoy and Mexican candies',
+
+    /* Stock photos standing in until real ones exist */
+    stockLabel: 'Illustrative photo',
+    altEnchiladas: 'Enchiladas in red and green sauce with melted cheese and crema',
+    altAmBreakfast: 'Pancakes with fried eggs and bacon, served with coffee',
+    altFlan: 'Caramel flan on a wooden board, with a portion on a spoon'
   }
 };
