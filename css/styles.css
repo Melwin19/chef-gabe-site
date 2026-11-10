@@ -262,6 +262,57 @@ h1, h2, h3 {
 .trust-item h3 { font-family: var(--font-body); font-size: 0.9rem; text-transform: uppercase; letter-spacing: var(--track-label); margin-bottom: 4px; }
 .trust-item p { margin: 0; font-size: 0.85rem; color: #cfcabb; }
 
+/* Split hero (home, about): headline on a solid olive panel at left, photo
+   at full brightness on the right. A full-bleed photo under a dark scrim
+   turned bright food muddy; giving the text its own panel removes the need
+   for the scrim. Pure CSS over the standard hero markup — grid areas place
+   the nav, photo, copy and (home only) trust strip. */
+.hero--split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "nav     nav"
+    "content media"
+    "trust   trust";
+  background: var(--color-olive);
+}
+.hero--split .navbar { grid-area: nav; background: var(--color-olive-dark); }
+.hero--split .hero-overlay { display: none; }
+.hero--split .hero-media {
+  grid-area: media;
+  position: relative;
+  inset: auto;
+  z-index: 0;
+  min-height: 560px;
+}
+/* Copy starts on the site container's left edge even though it lives in
+   the left grid column. */
+.hero--split .hero-content {
+  grid-area: content;
+  align-self: center;
+  margin: 0;
+  max-width: none;
+  padding: 72px 56px 72px max(24px, calc((100vw - var(--container-width)) / 2 + 24px));
+}
+.hero--split .hero-content > * { max-width: 520px; }
+.hero--split .hero-content h1 { font-size: 3.2rem; }
+.hero--split .trust-strip {
+  grid-area: trust;
+  width: 100%;
+  padding-top: 40px;
+  border-top: 1px solid rgba(235, 226, 212, 0.18);
+}
+
+@media (max-width: 860px) {
+  .hero--split {
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "media" "content" "trust";
+  }
+  .hero--split .hero-media { min-height: 320px; }
+  .hero--split .hero-content { padding: 40px 24px 48px; }
+  .hero--split .hero-content h1 { font-size: 2.2rem; }
+}
+
 /* =========================================================
    Sections generic
    ========================================================= */
@@ -693,6 +744,8 @@ img.focus-lower { object-position: center 75%; }
 
 /* Portrait headshot in a wide panel: keep the face in frame. */
 img.focus-face { object-position: center 15%; }
+/* The about hero shows a short, wide window of the portrait headshot. */
+.hero-media .hero-img.focus-face { object-position: center top; }
 
 @media (max-width: 960px) {
   /* .trust-media collapses to one column here, so the main photo has no
